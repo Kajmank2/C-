@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Obiektówka\bin\Debug\Obiektówka.exe.config
+C:\Users\Len\Desktop\C##\Obiektówka\bin\Debug\Obiektówka.exe
+C:\Users\Len\Desktop\C##\Obiektówka\bin\Debug\Obiektówka.pdb
+C:\Users\Len\Desktop\C##\Obiektówka\obj\Debug\Obiektówka.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Obiektówka\obj\Debug\Obiektówka.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Obiektówka\obj\Debug\Obiektówka.exe
+C:\Users\Len\Desktop\C##\Obiektówka\obj\Debug\Obiektówka.pdb

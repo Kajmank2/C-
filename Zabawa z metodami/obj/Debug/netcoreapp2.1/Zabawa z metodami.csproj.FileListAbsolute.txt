@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Zabawa z metodami\bin\Debug\netcoreapp2.1\Zabawa z metodami.deps.json
+C:\Users\Len\Desktop\C##\Zabawa z metodami\bin\Debug\netcoreapp2.1\Zabawa z metodami.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zabawa z metodami\bin\Debug\netcoreapp2.1\Zabawa z metodami.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zabawa z metodami\bin\Debug\netcoreapp2.1\Zabawa z metodami.dll
+C:\Users\Len\Desktop\C##\Zabawa z metodami\bin\Debug\netcoreapp2.1\Zabawa z metodami.pdb
+C:\Users\Len\Desktop\C##\Zabawa z metodami\obj\Debug\netcoreapp2.1\Zabawa z metodami.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zabawa z metodami\obj\Debug\netcoreapp2.1\Zabawa z metodami.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zabawa z metodami\obj\Debug\netcoreapp2.1\Zabawa z metodami.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zabawa z metodami\obj\Debug\netcoreapp2.1\Zabawa z metodami.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zabawa z metodami\obj\Debug\netcoreapp2.1\Zabawa z metodami.dll
+C:\Users\Len\Desktop\C##\Zabawa z metodami\obj\Debug\netcoreapp2.1\Zabawa z metodami.pdb
