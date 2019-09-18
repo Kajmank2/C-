@@ -1,0 +1,11 @@
+C:\Users\Len\Source\Repos\Nauka\bin\Debug\netcoreapp2.1\Nauka.deps.json
+C:\Users\Len\Source\Repos\Nauka\bin\Debug\netcoreapp2.1\Nauka.runtimeconfig.json
+C:\Users\Len\Source\Repos\Nauka\bin\Debug\netcoreapp2.1\Nauka.runtimeconfig.dev.json
+C:\Users\Len\Source\Repos\Nauka\bin\Debug\netcoreapp2.1\Nauka.dll
+C:\Users\Len\Source\Repos\Nauka\bin\Debug\netcoreapp2.1\Nauka.pdb
+C:\Users\Len\Source\Repos\Nauka\obj\Debug\netcoreapp2.1\Nauka.csprojAssemblyReference.cache
+C:\Users\Len\Source\Repos\Nauka\obj\Debug\netcoreapp2.1\Nauka.csproj.CoreCompileInputs.cache
+C:\Users\Len\Source\Repos\Nauka\obj\Debug\netcoreapp2.1\Nauka.AssemblyInfoInputs.cache
+C:\Users\Len\Source\Repos\Nauka\obj\Debug\netcoreapp2.1\Nauka.AssemblyInfo.cs
+C:\Users\Len\Source\Repos\Nauka\obj\Debug\netcoreapp2.1\Nauka.dll
+C:\Users\Len\Source\Repos\Nauka\obj\Debug\netcoreapp2.1\Nauka.pdb

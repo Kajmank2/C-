@@ -1,0 +1,14 @@
+C:\Users\Len\Desktop\Nauka c#\KamienPapier\bin\Debug\KamienPapier.exe.config
+C:\Users\Len\Desktop\Nauka c#\KamienPapier\bin\Debug\KamienPapier.exe
+C:\Users\Len\Desktop\Nauka c#\KamienPapier\bin\Debug\KamienPapier.pdb
+C:\Users\Len\Desktop\Nauka c#\KamienPapier\obj\Debug\KamienPapier.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\Nauka c#\KamienPapier\obj\Debug\KamienPapier.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\Nauka c#\KamienPapier\obj\Debug\KamienPapier.exe
+C:\Users\Len\Desktop\Nauka c#\KamienPapier\obj\Debug\KamienPapier.pdb
+C:\Users\Len\Desktop\Zadania\KamienPapier\bin\Debug\KamienPapier.exe.config
+C:\Users\Len\Desktop\Zadania\KamienPapier\bin\Debug\KamienPapier.exe
+C:\Users\Len\Desktop\Zadania\KamienPapier\bin\Debug\KamienPapier.pdb
+C:\Users\Len\Desktop\Zadania\KamienPapier\obj\Debug\KamienPapier.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\Zadania\KamienPapier\obj\Debug\KamienPapier.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\Zadania\KamienPapier\obj\Debug\KamienPapier.exe
+C:\Users\Len\Desktop\Zadania\KamienPapier\obj\Debug\KamienPapier.pdb

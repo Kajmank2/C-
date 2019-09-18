@@ -1,0 +1,11 @@
+C:\Users\Len\Source\Repos\Tablice\obj\Debug\netcoreapp2.1\Tablice.csprojAssemblyReference.cache
+C:\Users\Len\Source\Repos\Tablice\obj\Debug\netcoreapp2.1\Tablice.csproj.CoreCompileInputs.cache
+C:\Users\Len\Source\Repos\Tablice\obj\Debug\netcoreapp2.1\Tablice.AssemblyInfoInputs.cache
+C:\Users\Len\Source\Repos\Tablice\obj\Debug\netcoreapp2.1\Tablice.AssemblyInfo.cs
+C:\Users\Len\Source\Repos\Tablice\bin\Debug\netcoreapp2.1\Tablice.deps.json
+C:\Users\Len\Source\Repos\Tablice\bin\Debug\netcoreapp2.1\Tablice.runtimeconfig.json
+C:\Users\Len\Source\Repos\Tablice\bin\Debug\netcoreapp2.1\Tablice.runtimeconfig.dev.json
+C:\Users\Len\Source\Repos\Tablice\bin\Debug\netcoreapp2.1\Tablice.dll
+C:\Users\Len\Source\Repos\Tablice\bin\Debug\netcoreapp2.1\Tablice.pdb
+C:\Users\Len\Source\Repos\Tablice\obj\Debug\netcoreapp2.1\Tablice.dll
+C:\Users\Len\Source\Repos\Tablice\obj\Debug\netcoreapp2.1\Tablice.pdb

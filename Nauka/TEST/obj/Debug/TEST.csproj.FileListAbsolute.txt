@@ -1,0 +1,7 @@
+C:\Users\Len\Source\Repos\Nauka\TEST\bin\Debug\TEST.exe.config
+C:\Users\Len\Source\Repos\Nauka\TEST\bin\Debug\TEST.exe
+C:\Users\Len\Source\Repos\Nauka\TEST\bin\Debug\TEST.pdb
+C:\Users\Len\Source\Repos\Nauka\TEST\obj\Debug\TEST.csprojAssemblyReference.cache
+C:\Users\Len\Source\Repos\Nauka\TEST\obj\Debug\TEST.csproj.CoreCompileInputs.cache
+C:\Users\Len\Source\Repos\Nauka\TEST\obj\Debug\TEST.exe
+C:\Users\Len\Source\Repos\Nauka\TEST\obj\Debug\TEST.pdb

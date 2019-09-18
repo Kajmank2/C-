@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\Zadania\Zadania z Klasami\bin\Debug\Zadania z Klasami.exe.config
+C:\Users\Len\Desktop\Zadania\Zadania z Klasami\bin\Debug\Zadania z Klasami.exe
+C:\Users\Len\Desktop\Zadania\Zadania z Klasami\bin\Debug\Zadania z Klasami.pdb
+C:\Users\Len\Desktop\Zadania\Zadania z Klasami\obj\Debug\Zadania z Klasami.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\Zadania\Zadania z Klasami\obj\Debug\Zadania z Klasami.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\Zadania\Zadania z Klasami\obj\Debug\Zadania z Klasami.exe
+C:\Users\Len\Desktop\Zadania\Zadania z Klasami\obj\Debug\Zadania z Klasami.pdb

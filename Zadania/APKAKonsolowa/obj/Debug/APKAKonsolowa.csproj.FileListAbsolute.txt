@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\Nauka c#\APKAKonsolowa\bin\Debug\APKAKonsolowa.exe.config
+C:\Users\Len\Desktop\Nauka c#\APKAKonsolowa\bin\Debug\APKAKonsolowa.exe
+C:\Users\Len\Desktop\Nauka c#\APKAKonsolowa\bin\Debug\APKAKonsolowa.pdb
+C:\Users\Len\Desktop\Nauka c#\APKAKonsolowa\obj\Debug\APKAKonsolowa.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\Nauka c#\APKAKonsolowa\obj\Debug\APKAKonsolowa.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\Nauka c#\APKAKonsolowa\obj\Debug\APKAKonsolowa.exe
+C:\Users\Len\Desktop\Nauka c#\APKAKonsolowa\obj\Debug\APKAKonsolowa.pdb
