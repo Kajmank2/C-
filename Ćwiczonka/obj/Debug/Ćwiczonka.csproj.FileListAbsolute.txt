@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Ćwiczonka\bin\Debug\Ćwiczonka.exe.config
+C:\Users\Len\Desktop\C##\Ćwiczonka\bin\Debug\Ćwiczonka.exe
+C:\Users\Len\Desktop\C##\Ćwiczonka\bin\Debug\Ćwiczonka.pdb
+C:\Users\Len\Desktop\C##\Ćwiczonka\obj\Debug\Ćwiczonka.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Ćwiczonka\obj\Debug\Ćwiczonka.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Ćwiczonka\obj\Debug\Ćwiczonka.exe
+C:\Users\Len\Desktop\C##\Ćwiczonka\obj\Debug\Ćwiczonka.pdb

@@ -53,7 +53,7 @@ namespace Obiektówka
             Console.WriteLine(gracz[0].Id);
             Console.WriteLine(gracz[1].Id);
             Console.WriteLine(gracz[2].Id);
-            Console.WriteLine(Matematyk.dodaj(10,20));
+          //  Console.WriteLine(Matematyk.dodaj(10,20));
           
             //Gracz gracz = new Gracz("Misiek");
             //Gracz gracz2 = new Gracz("Karolek");

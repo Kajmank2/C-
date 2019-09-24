@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\bin\Debug\netcoreapp2.1\KlasyZagniezdzone.deps.json
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\bin\Debug\netcoreapp2.1\KlasyZagniezdzone.runtimeconfig.json
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\bin\Debug\netcoreapp2.1\KlasyZagniezdzone.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\bin\Debug\netcoreapp2.1\KlasyZagniezdzone.dll
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\bin\Debug\netcoreapp2.1\KlasyZagniezdzone.pdb
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\obj\Debug\netcoreapp2.1\KlasyZagniezdzone.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\obj\Debug\netcoreapp2.1\KlasyZagniezdzone.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\obj\Debug\netcoreapp2.1\KlasyZagniezdzone.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\obj\Debug\netcoreapp2.1\KlasyZagniezdzone.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\obj\Debug\netcoreapp2.1\KlasyZagniezdzone.dll
+C:\Users\Len\Desktop\C##\KlasyZagniezdzone\obj\Debug\netcoreapp2.1\KlasyZagniezdzone.pdb

@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Konstruktory\bin\Debug\Konstruktory.exe.config
+C:\Users\Len\Desktop\C##\Konstruktory\bin\Debug\Konstruktory.exe
+C:\Users\Len\Desktop\C##\Konstruktory\bin\Debug\Konstruktory.pdb
+C:\Users\Len\Desktop\C##\Konstruktory\obj\Debug\Konstruktory.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Konstruktory\obj\Debug\Konstruktory.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Konstruktory\obj\Debug\Konstruktory.exe
+C:\Users\Len\Desktop\C##\Konstruktory\obj\Debug\Konstruktory.pdb
