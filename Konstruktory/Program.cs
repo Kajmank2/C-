@@ -10,7 +10,7 @@ namespace Konstruktory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Welcomer.Message);
+           // Console.WriteLine(Welcomer.Message);
             
 
             Car samochod = new Car("jakis opis");

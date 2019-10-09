@@ -100,19 +100,7 @@ namespace Obiektówka
                     this.nick = value; //wartosc
                 }
             }
-            public void CheckId(int idd)
-               
-            {
-                this.id = idd;
-                if(idd == idd)
-                {
-                    idd++;
-                }
-                else
-                {
-                    Console.WriteLine("nie ma żadnych takich samych Id");
-                }
-            }
+
 
             public static int NastepnyId()
             {
