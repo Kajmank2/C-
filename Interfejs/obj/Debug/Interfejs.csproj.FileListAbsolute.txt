@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Interfejs\bin\Debug\Interfejs.exe.config
+C:\Users\Len\Desktop\C##\Interfejs\bin\Debug\Interfejs.exe
+C:\Users\Len\Desktop\C##\Interfejs\bin\Debug\Interfejs.pdb
+C:\Users\Len\Desktop\C##\Interfejs\obj\Debug\Interfejs.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Interfejs\obj\Debug\Interfejs.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Interfejs\obj\Debug\Interfejs.exe
+C:\Users\Len\Desktop\C##\Interfejs\obj\Debug\Interfejs.pdb

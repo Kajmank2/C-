@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Testy\bin\Debug\Testy.exe.config
+C:\Users\Len\Desktop\C##\Testy\bin\Debug\Testy.exe
+C:\Users\Len\Desktop\C##\Testy\bin\Debug\Testy.pdb
+C:\Users\Len\Desktop\C##\Testy\obj\Debug\Testy.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Testy\obj\Debug\Testy.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Testy\obj\Debug\Testy.exe
+C:\Users\Len\Desktop\C##\Testy\obj\Debug\Testy.pdb

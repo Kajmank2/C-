@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Zadankodziedziczenie\bin\Debug\Zadankodziedziczenie.exe.config
+C:\Users\Len\Desktop\C##\Zadankodziedziczenie\bin\Debug\Zadankodziedziczenie.exe
+C:\Users\Len\Desktop\C##\Zadankodziedziczenie\bin\Debug\Zadankodziedziczenie.pdb
+C:\Users\Len\Desktop\C##\Zadankodziedziczenie\obj\Debug\Zadankodziedziczenie.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zadankodziedziczenie\obj\Debug\Zadankodziedziczenie.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zadankodziedziczenie\obj\Debug\Zadankodziedziczenie.exe
+C:\Users\Len\Desktop\C##\Zadankodziedziczenie\obj\Debug\Zadankodziedziczenie.pdb

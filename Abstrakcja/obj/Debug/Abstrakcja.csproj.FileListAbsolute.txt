@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Abstrakcja\bin\Debug\Abstrakcja.exe.config
+C:\Users\Len\Desktop\C##\Abstrakcja\bin\Debug\Abstrakcja.exe
+C:\Users\Len\Desktop\C##\Abstrakcja\bin\Debug\Abstrakcja.pdb
+C:\Users\Len\Desktop\C##\Abstrakcja\obj\Debug\Abstrakcja.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Abstrakcja\obj\Debug\Abstrakcja.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Abstrakcja\obj\Debug\Abstrakcja.exe
+C:\Users\Len\Desktop\C##\Abstrakcja\obj\Debug\Abstrakcja.pdb

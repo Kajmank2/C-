@@ -1,0 +1,6 @@
+C:\Users\Len\Desktop\C##\DziedziczeniePrzykład\bin\Debug\DziedziczeniePrzykład.exe.config
+C:\Users\Len\Desktop\C##\DziedziczeniePrzykład\bin\Debug\DziedziczeniePrzykład.exe
+C:\Users\Len\Desktop\C##\DziedziczeniePrzykład\bin\Debug\DziedziczeniePrzykład.pdb
+C:\Users\Len\Desktop\C##\DziedziczeniePrzykład\obj\Debug\DziedziczeniePrzykład.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\DziedziczeniePrzykład\obj\Debug\DziedziczeniePrzykład.exe
+C:\Users\Len\Desktop\C##\DziedziczeniePrzykład\obj\Debug\DziedziczeniePrzykład.pdb
