@@ -10,14 +10,14 @@ namespace Enum
     {
         public enum TimeofDay
         {
-            Morning ,Afternoon, Evening
+            Morning=0 ,Afternoon=3, Evening // domyslnie eveening bedzie rowny 4 bo to typ wyliczeniowy
         }
         public static string getGreeting(TimeofDay time)
         {
             switch (time)
             {
                 case TimeofDay.Morning:
-                    return "good mornink";
+                    return "good morning";
                 case TimeofDay.Afternoon:
                     return "good afternoon";
                 case TimeofDay.Evening:
@@ -28,7 +28,9 @@ namespace Enum
         }
         static void Main(string[] args)
         {
-            TimeofDay a = TimeofDay.Morning;
+            //  TimeofDay a = TimeofDay.Morning;
+            TimeofDay b = (TimeofDay)1;
+            Console.WriteLine(getGreeting(b));
 
             Console.ReadKey();
         }
