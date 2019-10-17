@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Klasy Uogolnione , statyczne i domyslne wartosci\bin\Debug\Klasy Uogolnione , statyczne i domyslne wartosci.exe.config
+C:\Users\Len\Desktop\C##\Klasy Uogolnione , statyczne i domyslne wartosci\bin\Debug\Klasy Uogolnione , statyczne i domyslne wartosci.exe
+C:\Users\Len\Desktop\C##\Klasy Uogolnione , statyczne i domyslne wartosci\bin\Debug\Klasy Uogolnione , statyczne i domyslne wartosci.pdb
+C:\Users\Len\Desktop\C##\Klasy Uogolnione , statyczne i domyslne wartosci\obj\Debug\Klasy Uogolnione , statyczne i domyslne wartosci.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Klasy Uogolnione , statyczne i domyslne wartosci\obj\Debug\Klasy Uogolnione , statyczne i domyslne wartosci.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Klasy Uogolnione , statyczne i domyslne wartosci\obj\Debug\Klasy Uogolnione , statyczne i domyslne wartosci.exe
+C:\Users\Len\Desktop\C##\Klasy Uogolnione , statyczne i domyslne wartosci\obj\Debug\Klasy Uogolnione , statyczne i domyslne wartosci.pdb

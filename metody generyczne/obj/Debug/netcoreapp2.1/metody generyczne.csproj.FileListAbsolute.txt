@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\metody generyczne\bin\Debug\netcoreapp2.1\metody generyczne.deps.json
+C:\Users\Len\Desktop\C##\metody generyczne\bin\Debug\netcoreapp2.1\metody generyczne.runtimeconfig.json
+C:\Users\Len\Desktop\C##\metody generyczne\bin\Debug\netcoreapp2.1\metody generyczne.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\metody generyczne\bin\Debug\netcoreapp2.1\metody generyczne.dll
+C:\Users\Len\Desktop\C##\metody generyczne\bin\Debug\netcoreapp2.1\metody generyczne.pdb
+C:\Users\Len\Desktop\C##\metody generyczne\obj\Debug\netcoreapp2.1\metody generyczne.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\metody generyczne\obj\Debug\netcoreapp2.1\metody generyczne.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\metody generyczne\obj\Debug\netcoreapp2.1\metody generyczne.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\metody generyczne\obj\Debug\netcoreapp2.1\metody generyczne.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\metody generyczne\obj\Debug\netcoreapp2.1\metody generyczne.dll
+C:\Users\Len\Desktop\C##\metody generyczne\obj\Debug\netcoreapp2.1\metody generyczne.pdb

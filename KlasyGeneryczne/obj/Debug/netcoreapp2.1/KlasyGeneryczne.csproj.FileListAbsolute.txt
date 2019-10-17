@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\bin\Debug\netcoreapp2.1\KlasyGeneryczne.deps.json
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\bin\Debug\netcoreapp2.1\KlasyGeneryczne.runtimeconfig.json
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\bin\Debug\netcoreapp2.1\KlasyGeneryczne.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\bin\Debug\netcoreapp2.1\KlasyGeneryczne.dll
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\bin\Debug\netcoreapp2.1\KlasyGeneryczne.pdb
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\obj\Debug\netcoreapp2.1\KlasyGeneryczne.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\obj\Debug\netcoreapp2.1\KlasyGeneryczne.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\obj\Debug\netcoreapp2.1\KlasyGeneryczne.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\obj\Debug\netcoreapp2.1\KlasyGeneryczne.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\obj\Debug\netcoreapp2.1\KlasyGeneryczne.dll
+C:\Users\Len\Desktop\C##\KlasyGeneryczne\obj\Debug\netcoreapp2.1\KlasyGeneryczne.pdb

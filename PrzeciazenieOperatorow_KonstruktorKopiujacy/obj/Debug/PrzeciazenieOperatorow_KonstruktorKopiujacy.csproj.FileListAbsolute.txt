@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\PrzeciazenieOperatorow_KonstruktorKopiujacy\bin\Debug\PrzeciazenieOperatorow_KonstruktorKopiujacy.exe.config
+C:\Users\Len\Desktop\C##\PrzeciazenieOperatorow_KonstruktorKopiujacy\bin\Debug\PrzeciazenieOperatorow_KonstruktorKopiujacy.exe
+C:\Users\Len\Desktop\C##\PrzeciazenieOperatorow_KonstruktorKopiujacy\bin\Debug\PrzeciazenieOperatorow_KonstruktorKopiujacy.pdb
+C:\Users\Len\Desktop\C##\PrzeciazenieOperatorow_KonstruktorKopiujacy\obj\Debug\PrzeciazenieOperatorow_KonstruktorKopiujacy.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\PrzeciazenieOperatorow_KonstruktorKopiujacy\obj\Debug\PrzeciazenieOperatorow_KonstruktorKopiujacy.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\PrzeciazenieOperatorow_KonstruktorKopiujacy\obj\Debug\PrzeciazenieOperatorow_KonstruktorKopiujacy.exe
+C:\Users\Len\Desktop\C##\PrzeciazenieOperatorow_KonstruktorKopiujacy\obj\Debug\PrzeciazenieOperatorow_KonstruktorKopiujacy.pdb

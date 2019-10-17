@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Indeksery\bin\Debug\Indeksery.exe.config
+C:\Users\Len\Desktop\C##\Indeksery\bin\Debug\Indeksery.exe
+C:\Users\Len\Desktop\C##\Indeksery\bin\Debug\Indeksery.pdb
+C:\Users\Len\Desktop\C##\Indeksery\obj\Debug\Indeksery.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Indeksery\obj\Debug\Indeksery.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Indeksery\obj\Debug\Indeksery.exe
+C:\Users\Len\Desktop\C##\Indeksery\obj\Debug\Indeksery.pdb
