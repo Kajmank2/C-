@@ -10,11 +10,15 @@ namespace PrzeciazenieOperatorow_KonstruktorKopiujacy
     {
         static void Main(string[] args) 
         {
-            StanKonta a = new StanKonta(5, 10);
-            StanKonta b = new StanKonta(5, 10);
+            StanKonta a = new StanKonta(5, 88);
+            StanKonta b = new StanKonta(5, 89);
             Console.WriteLine(a);
             Console.WriteLine(a + b);
-            Console.WriteLine(332 / 100);
+            float e;
+            e = a;
+            Console.WriteLine(e);
+            a=(StanKonta)5.99;
+            Console.WriteLine(a.ToString()) ;
             Console.ReadKey();
         }
     }
@@ -67,7 +71,7 @@ namespace PrzeciazenieOperatorow_KonstruktorKopiujacy
         }
         public override string ToString()
         {
-            return Zl + "zl i" + Gr + "groszy";
+            return Zl + " zł i " + Gr + "gr";
         }
         public static StanKonta operator +(StanKonta L , StanKonta P) // jezeli damy + automatycznie sie ona wykonuje
         {
@@ -88,6 +92,25 @@ namespace PrzeciazenieOperatorow_KonstruktorKopiujacy
                 return false;
             return (this == (StanKonta)obj);
         }
+        //Ukryte implicit //explit musimy zrobic dodatkowo rzutowanie
+        public static implicit operator float(StanKonta value)
+        {
+            return value.Zl + (value.Gr /100.0f);
+        }
+        public static explicit operator StanKonta(float value) //explicipt jestem pewien ze tu jest pomylka
+        {
+            // ushort tmpGr = (ushort)((value - (uint)value)*100);
+            ushort tmpGr = Convert.ToUInt16((value - (uint)value) * 100);
+            return new StanKonta((uint)value, tmpGr);
+        }
+        //public static explicit operator StanKonta(float value) //(StanKonta)value;
+        //{
+        //    //ushort tmpGr = (ushort)((value - (uint)value) * 100);
+        //    ushort tmpGr = Convert.ToUInt16((value - (uint)value) * 100);
+        //    return new StanKonta((uint)value, tmpGr);
+
+        //    //5.47 - 5 = 0.47 * 100 = 47
+        //}
     }
 
 }

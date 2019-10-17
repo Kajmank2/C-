@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\MetodyRozszerzajace\obj\Debug\MetodyRozszerzajace.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\MetodyRozszerzajace\obj\Debug\MetodyRozszerzajace.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\MetodyRozszerzajace\bin\Debug\MetodyRozszerzajace.exe.config
+C:\Users\Len\Desktop\C##\MetodyRozszerzajace\bin\Debug\MetodyRozszerzajace.exe
+C:\Users\Len\Desktop\C##\MetodyRozszerzajace\bin\Debug\MetodyRozszerzajace.pdb
+C:\Users\Len\Desktop\C##\MetodyRozszerzajace\obj\Debug\MetodyRozszerzajace.exe
+C:\Users\Len\Desktop\C##\MetodyRozszerzajace\obj\Debug\MetodyRozszerzajace.pdb
