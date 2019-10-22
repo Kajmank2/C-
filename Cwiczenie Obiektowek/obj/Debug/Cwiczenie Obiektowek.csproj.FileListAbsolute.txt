@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Cwiczenie Obiektowek\bin\Debug\Cwiczenie Obiektowek.exe.config
+C:\Users\Len\Desktop\C##\Cwiczenie Obiektowek\bin\Debug\Cwiczenie Obiektowek.exe
+C:\Users\Len\Desktop\C##\Cwiczenie Obiektowek\bin\Debug\Cwiczenie Obiektowek.pdb
+C:\Users\Len\Desktop\C##\Cwiczenie Obiektowek\obj\Debug\Cwiczenie Obiektowek.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Cwiczenie Obiektowek\obj\Debug\Cwiczenie Obiektowek.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Cwiczenie Obiektowek\obj\Debug\Cwiczenie Obiektowek.exe
+C:\Users\Len\Desktop\C##\Cwiczenie Obiektowek\obj\Debug\Cwiczenie Obiektowek.pdb
