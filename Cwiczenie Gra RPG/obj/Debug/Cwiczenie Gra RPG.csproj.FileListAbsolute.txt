@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Cwiczenie Gra RPG\bin\Debug\Cwiczenie Gra RPG.exe.config
+C:\Users\Len\Desktop\C##\Cwiczenie Gra RPG\bin\Debug\Cwiczenie Gra RPG.exe
+C:\Users\Len\Desktop\C##\Cwiczenie Gra RPG\bin\Debug\Cwiczenie Gra RPG.pdb
+C:\Users\Len\Desktop\C##\Cwiczenie Gra RPG\obj\Debug\Cwiczenie Gra RPG.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Cwiczenie Gra RPG\obj\Debug\Cwiczenie Gra RPG.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Cwiczenie Gra RPG\obj\Debug\Cwiczenie Gra RPG.exe
+C:\Users\Len\Desktop\C##\Cwiczenie Gra RPG\obj\Debug\Cwiczenie Gra RPG.pdb
