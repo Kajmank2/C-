@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Len\\Source\\Repos\\Nauka\\Nauka.csproj",
+      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Nauka\\Nauka.csproj",
       "projectName": "Nauka",
-      "projectPath": "C:\\Users\\Len\\Source\\Repos\\Nauka\\Nauka.csproj",
+      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Nauka\\Nauka.csproj",
       "packagesPath": "C:\\Users\\Len\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Len\\Source\\Repos\\Nauka\\obj\\",
+      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Nauka\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

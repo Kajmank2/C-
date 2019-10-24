@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D902492-2287-4469-8498-D72B242486B8}</ProjectGuid>
+    <ProjectGuid>{AA6DAED0-BE15-448E-97ED-D3386E8F4D83}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Cwiczenie_Gra_RPG</RootNamespace>
-    <AssemblyName>Cwiczenie Gra RPG</AssemblyName>
+    <RootNamespace>GRA_RPG_</RootNamespace>
+    <AssemblyName>GRA RPG!</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Druzyna.cs" />
+    <Compile Include="IPostac.cs" />
+    <Compile Include="Mag.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeamOfHeroes.cs" />
+    <Compile Include="Wojownik.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

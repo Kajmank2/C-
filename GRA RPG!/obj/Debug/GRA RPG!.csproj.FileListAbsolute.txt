@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\GRA RPG!\bin\Debug\GRA RPG!.exe.config
+C:\Users\Len\Desktop\C##\GRA RPG!\bin\Debug\GRA RPG!.exe
+C:\Users\Len\Desktop\C##\GRA RPG!\bin\Debug\GRA RPG!.pdb
+C:\Users\Len\Desktop\C##\GRA RPG!\obj\Debug\GRA RPG!.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\GRA RPG!\obj\Debug\GRA RPG!.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\GRA RPG!\obj\Debug\GRA RPG!.exe
+C:\Users\Len\Desktop\C##\GRA RPG!\obj\Debug\GRA RPG!.pdb
