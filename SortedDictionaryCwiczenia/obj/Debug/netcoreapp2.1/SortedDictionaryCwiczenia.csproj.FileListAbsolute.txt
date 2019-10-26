@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\bin\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.deps.json
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\bin\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.runtimeconfig.json
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\bin\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\bin\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.dll
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\bin\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.pdb
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\obj\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\obj\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\obj\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\obj\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\obj\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.dll
+C:\Users\Len\Desktop\C##\SortedDictionaryCwiczenia\obj\Debug\netcoreapp2.1\SortedDictionaryCwiczenia.pdb
