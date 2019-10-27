@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\ObiektoweZadankoSamochod\bin\Debug\ObiektoweZadankoSamochod.exe.config
+C:\Users\Len\Desktop\C##\ObiektoweZadankoSamochod\bin\Debug\ObiektoweZadankoSamochod.exe
+C:\Users\Len\Desktop\C##\ObiektoweZadankoSamochod\bin\Debug\ObiektoweZadankoSamochod.pdb
+C:\Users\Len\Desktop\C##\ObiektoweZadankoSamochod\obj\Debug\ObiektoweZadankoSamochod.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\ObiektoweZadankoSamochod\obj\Debug\ObiektoweZadankoSamochod.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\ObiektoweZadankoSamochod\obj\Debug\ObiektoweZadankoSamochod.exe
+C:\Users\Len\Desktop\C##\ObiektoweZadankoSamochod\obj\Debug\ObiektoweZadankoSamochod.pdb

@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\OsobaPilkarz\bin\Debug\OsobaPilkarz.exe.config
+C:\Users\Len\Desktop\C##\Zbiór Zadań\OsobaPilkarz\bin\Debug\OsobaPilkarz.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\OsobaPilkarz\bin\Debug\OsobaPilkarz.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\OsobaPilkarz\obj\Debug\OsobaPilkarz.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\OsobaPilkarz\obj\Debug\OsobaPilkarz.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\OsobaPilkarz\obj\Debug\OsobaPilkarz.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\OsobaPilkarz\obj\Debug\OsobaPilkarz.pdb
