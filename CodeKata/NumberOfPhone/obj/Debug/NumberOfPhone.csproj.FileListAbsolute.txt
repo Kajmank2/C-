@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\CodeKata\NumberOfPhone\bin\Debug\NumberOfPhone.exe.config
+C:\Users\Len\Desktop\C##\CodeKata\NumberOfPhone\bin\Debug\NumberOfPhone.exe
+C:\Users\Len\Desktop\C##\CodeKata\NumberOfPhone\bin\Debug\NumberOfPhone.pdb
+C:\Users\Len\Desktop\C##\CodeKata\NumberOfPhone\obj\Debug\NumberOfPhone.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\CodeKata\NumberOfPhone\obj\Debug\NumberOfPhone.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\CodeKata\NumberOfPhone\obj\Debug\NumberOfPhone.exe
+C:\Users\Len\Desktop\C##\CodeKata\NumberOfPhone\obj\Debug\NumberOfPhone.pdb

@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Teoria\MJ_Dzienniczek\bin\Debug\MJ_Dzienniczek.exe.config
+C:\Users\Len\Desktop\C##\Teoria\MJ_Dzienniczek\bin\Debug\MJ_Dzienniczek.exe
+C:\Users\Len\Desktop\C##\Teoria\MJ_Dzienniczek\bin\Debug\MJ_Dzienniczek.pdb
+C:\Users\Len\Desktop\C##\Teoria\MJ_Dzienniczek\obj\Debug\MJ_Dzienniczek.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Teoria\MJ_Dzienniczek\obj\Debug\MJ_Dzienniczek.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Teoria\MJ_Dzienniczek\obj\Debug\MJ_Dzienniczek.exe
+C:\Users\Len\Desktop\C##\Teoria\MJ_Dzienniczek\obj\Debug\MJ_Dzienniczek.pdb

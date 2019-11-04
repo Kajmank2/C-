@@ -15,14 +15,21 @@ namespace OsobaPilkarz
             Osoba os1 = new Student("Jacek", "Krzynowek", "22-32-1212", 1, 3, 102232);
             Osoba os2 = new Pilkarz("Krzysiek", "Bac", "22-33-1111", "Napastnik", "Barcelona", 2);
             Pilkarz pilkarz = new Pilkarz("Krzysiek", "Bac", "22-33-1111", "Napastnik", "Barcelona", 2);
+            Student student = new Student("Karol", "bielawski", "22-33-1112", 1, 3, 102312);
             Ocena ocena = new Ocena("historia", "14-12-2018", 3);
             Ocena ocena2 = new Ocena("historia", "14-12-2018", 4);
-            List<Student> studencik = new List<Student>();
             ((Student)os1).Dodaj(ocena);
-            ((Student)os1).Dodaj(ocena2);
-            studencik.ForEach()
-            os1.WypiszInfo();
-            os2.WypiszInfo();
+            (student).Dodaj(ocena2);
+            List<Osoba> studencik = new List<Osoba>();
+            studencik.Add(student);
+            foreach (var item in studencik)
+            {
+                Console.WriteLine(item);
+            }
+            ((Student)student).Dodaj(ocena);
+            (student).Dodaj(ocena2);
+            ((Student)student).Wyswietl();
+            os1.WypiszInfo();   
 
             pilkarz.StrzelGola();
             pilkarz.WypiszInfo();
@@ -47,6 +54,7 @@ namespace OsobaPilkarz
 
             public virtual  void WypiszInfo()
             {
+                
                 Console.WriteLine($"Imie to : {Imie} , Nazwisko to {Nazwisko} , Data Urodzenia to {DataUrodzenia}");
             }
         }
@@ -55,8 +63,7 @@ namespace OsobaPilkarz
             public int Rok { get; set; }
             public int Grupa { get; set; }
             public int NrIndeksu { get; set; }
-            private List<Ocena> oceny;
-            private Ocena ocena;
+            public List<Ocena> oceny;
 
             public Student(string imie, string nazwisko, string dataurodzenia, int rok, int grupa, int nrIndeksu) : base(imie, nazwisko, dataurodzenia)
             {
@@ -79,6 +86,7 @@ namespace OsobaPilkarz
 
             public override  void WypiszInfo()
             {
+
                 Console.WriteLine(Imie+ " + " + Nazwisko + " + " + DataUrodzenia+ " + " +Rok + " +   " + Grupa + " + " +NrIndeksu);
             }
 
