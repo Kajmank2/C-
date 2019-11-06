@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ2_NaListach\bin\Debug\LINQ2_NaListach.exe.config
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ2_NaListach\bin\Debug\LINQ2_NaListach.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ2_NaListach\bin\Debug\LINQ2_NaListach.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ2_NaListach\obj\Debug\LINQ2_NaListach.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ2_NaListach\obj\Debug\LINQ2_NaListach.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ2_NaListach\obj\Debug\LINQ2_NaListach.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ2_NaListach\obj\Debug\LINQ2_NaListach.pdb

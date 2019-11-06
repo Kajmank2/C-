@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\bin\Debug\netcoreapp2.1\LINQ3ADVANCE.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\bin\Debug\netcoreapp2.1\LINQ3ADVANCE.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\bin\Debug\netcoreapp2.1\LINQ3ADVANCE.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\bin\Debug\netcoreapp2.1\LINQ3ADVANCE.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\bin\Debug\netcoreapp2.1\LINQ3ADVANCE.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\obj\Debug\netcoreapp2.1\LINQ3ADVANCE.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\obj\Debug\netcoreapp2.1\LINQ3ADVANCE.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\obj\Debug\netcoreapp2.1\LINQ3ADVANCE.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\obj\Debug\netcoreapp2.1\LINQ3ADVANCE.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\obj\Debug\netcoreapp2.1\LINQ3ADVANCE.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ3ADVANCE\obj\Debug\netcoreapp2.1\LINQ3ADVANCE.pdb

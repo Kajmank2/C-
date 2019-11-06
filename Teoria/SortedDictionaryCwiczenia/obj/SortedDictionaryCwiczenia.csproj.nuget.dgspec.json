@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Len\\Desktop\\C##\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj": {}
+    "C:\\Users\\Len\\Desktop\\C##\\Teoria\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Len\\Desktop\\C##\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj": {
+    "C:\\Users\\Len\\Desktop\\C##\\Teoria\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj",
+        "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj",
         "projectName": "SortedDictionaryCwiczenia",
-        "projectPath": "C:\\Users\\Len\\Desktop\\C##\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj",
+        "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\SortedDictionaryCwiczenia\\SortedDictionaryCwiczenia.csproj",
         "packagesPath": "C:\\Users\\Len\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Len\\Desktop\\C##\\SortedDictionaryCwiczenia\\obj\\",
+        "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\SortedDictionaryCwiczenia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\bin\Debug\netcoreapp2.1\LINQ4ADVANCED.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\bin\Debug\netcoreapp2.1\LINQ4ADVANCED.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\bin\Debug\netcoreapp2.1\LINQ4ADVANCED.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\bin\Debug\netcoreapp2.1\LINQ4ADVANCED.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\bin\Debug\netcoreapp2.1\LINQ4ADVANCED.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\obj\Debug\netcoreapp2.1\LINQ4ADVANCED.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\obj\Debug\netcoreapp2.1\LINQ4ADVANCED.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\obj\Debug\netcoreapp2.1\LINQ4ADVANCED.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\obj\Debug\netcoreapp2.1\LINQ4ADVANCED.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\obj\Debug\netcoreapp2.1\LINQ4ADVANCED.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ4ADVANCED\obj\Debug\netcoreapp2.1\LINQ4ADVANCED.csprojAssemblyReference.cache
