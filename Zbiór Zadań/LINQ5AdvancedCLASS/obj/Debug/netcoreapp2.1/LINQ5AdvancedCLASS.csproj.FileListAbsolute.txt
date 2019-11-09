@@ -1,0 +1,10 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\bin\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\bin\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\bin\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\bin\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\bin\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\obj\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\obj\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\obj\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\obj\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LINQ5AdvancedCLASS\obj\Debug\netcoreapp2.1\LINQ5AdvancedCLASS.pdb
