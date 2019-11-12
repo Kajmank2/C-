@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\bin\Debug\netcoreapp2.1\StringAllMetod.deps.json
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\bin\Debug\netcoreapp2.1\StringAllMetod.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\bin\Debug\netcoreapp2.1\StringAllMetod.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\bin\Debug\netcoreapp2.1\StringAllMetod.dll
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\bin\Debug\netcoreapp2.1\StringAllMetod.pdb
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\obj\Debug\netcoreapp2.1\StringAllMetod.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\obj\Debug\netcoreapp2.1\StringAllMetod.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\obj\Debug\netcoreapp2.1\StringAllMetod.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\obj\Debug\netcoreapp2.1\StringAllMetod.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\obj\Debug\netcoreapp2.1\StringAllMetod.dll
+C:\Users\Len\Desktop\C##\Teoria\StringAllMetod\obj\Debug\netcoreapp2.1\StringAllMetod.pdb

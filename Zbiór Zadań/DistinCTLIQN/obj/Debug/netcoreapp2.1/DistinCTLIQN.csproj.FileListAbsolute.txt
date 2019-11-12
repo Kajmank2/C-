@@ -1,0 +1,10 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\bin\Debug\netcoreapp2.1\DistinCTLIQN.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\bin\Debug\netcoreapp2.1\DistinCTLIQN.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\bin\Debug\netcoreapp2.1\DistinCTLIQN.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\bin\Debug\netcoreapp2.1\DistinCTLIQN.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\bin\Debug\netcoreapp2.1\DistinCTLIQN.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\obj\Debug\netcoreapp2.1\DistinCTLIQN.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\obj\Debug\netcoreapp2.1\DistinCTLIQN.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\obj\Debug\netcoreapp2.1\DistinCTLIQN.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\obj\Debug\netcoreapp2.1\DistinCTLIQN.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\DistinCTLIQN\obj\Debug\netcoreapp2.1\DistinCTLIQN.pdb

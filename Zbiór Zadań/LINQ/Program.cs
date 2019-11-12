@@ -38,19 +38,19 @@ namespace LINQ
             List<int> lista = new List<int>{ 10, 20, 30, 40, 50 };
             IEnumerable<int> sqrt = from num in tabliczka where num * num > 20 orderby num ascending select num;
             int numCount = tabliczka.Where(n => n < 3 || n > 7).Count();
-            var sqNov = from int Numer in tabliczka
-                        let SqrNo = Numer * Numer
-                        where SqrNo > 29
-                        select new { Numer, SqrNo };
+            //var sqNov = from int Numer in tabliczka
+            //            let SqrNo = Numer * Numer
+            //            where SqrNo > 29
+            //            select new { Numer, SqrNo };
             var sqFrq = from x in tabliczka
                         group x by x into y
                         select y;
             //operacja na Sringu
-            string str;
-            str = Console.ReadLine();
-            var sqSTR = from x in str
-                        group x by x into y
-                        select y;
+            //string str;
+            //str = Console.ReadLine();
+            //var sqSTR = from x in str
+            //            group x by x into y
+            //            select y;
             //Program wyswietlajacy nam ile jest danych liczb mnozy je i wyswietla ile ich jest
             var sqNumFrq = from x in tabliczka
                            group x by x into y
@@ -73,29 +73,29 @@ namespace LINQ
                 Console.WriteLine(item);
             }
 
-            foreach (var item in sqNumFrq)
-            {
-                int multiplication = item.Key * item.Count();
-                Console.WriteLine("Numer{0} , Count {1}, Frequency{2}" , item.Key ,multiplication , item.Count()); //badz item.Sum();
-            }
-            
+            //foreach (var item in sqNumFrq)
+            //{
+            //    int multiplication = item.Key * item.Count();
+            //    Console.WriteLine("Numer{0} , Count {1}, Frequency{2}", item.Key, multiplication, item.Count()); //badz item.Sum();
+            //}
 
-            foreach (var item in sqSTR)
-            {
-                Console.WriteLine("char {0} ile razy wystapil{1}", item.Key , item.Count());
-            }
 
-            foreach (var item in sqFrq)
-            {
-                Console.WriteLine("Numer {0} Frequency {1}", item.Key , item.Count());
-            }
+            //foreach (var item in sqSTR)
+            //{
+            //    Console.WriteLine("char {0} ile razy wystapil{1}", item.Key, item.Count());
+            //}
 
-            Console.WriteLine(numCount);
-            foreach (var item in sqrt)
-            {
-                int poteguj = item * item;
-                Console.WriteLine("Numer{0} sqrt {1}", item, poteguj);
-            }
+            //foreach (var item in sqFrq)
+            //{
+            //    Console.WriteLine("Numer {0} Frequency {1}", item.Key, item.Count());
+            //}
+
+            //Console.WriteLine(numCount);
+            //foreach (var item in sqrt)
+            //{
+            //    int poteguj = item * item;
+            //    Console.WriteLine("Numer{0} sqrt {1}", item, poteguj);
+            //}
             Console.ReadKey();
         }
     }

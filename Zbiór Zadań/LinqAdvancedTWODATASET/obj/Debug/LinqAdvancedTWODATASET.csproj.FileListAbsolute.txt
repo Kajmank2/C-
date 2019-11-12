@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LinqAdvancedTWODATASET\bin\Debug\LinqAdvancedTWODATASET.exe.config
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LinqAdvancedTWODATASET\bin\Debug\LinqAdvancedTWODATASET.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LinqAdvancedTWODATASET\bin\Debug\LinqAdvancedTWODATASET.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LinqAdvancedTWODATASET\obj\Debug\LinqAdvancedTWODATASET.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LinqAdvancedTWODATASET\obj\Debug\LinqAdvancedTWODATASET.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LinqAdvancedTWODATASET\obj\Debug\LinqAdvancedTWODATASET.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\LinqAdvancedTWODATASET\obj\Debug\LinqAdvancedTWODATASET.pdb

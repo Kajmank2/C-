@@ -11,26 +11,26 @@ namespace LINQ2_NaListach
         static void Main(string[] args)
         {
             #region Programik z Lista wypisujący tyle pozycji ile nam trzeba
-            //int i = 0;
-            //int memList, n, m;
-            //List<int> lista = new List<int>();
-            //Console.WriteLine("Wprowadz ");
-            //n = Convert.ToInt32(Console.ReadLine());
+            int i = 0;
+            int memList, n, m;
+            List<int> lista = new List<int>();
+            Console.WriteLine("Wprowadz ");
+            n = Convert.ToInt32(Console.ReadLine());
 
-            //for (i = 0; i < n; i++)
-            //{
-            //    Console.WriteLine("Member {0}: ", i);
-            //    memList = Convert.ToInt32(Console.ReadLine()); // wprowadzenie czlonka do listy
-            //    lista.Add(memList);
-            //}
-            //Console.WriteLine("Input numer which is more than ...");
-            //m = Convert.ToInt32(Console.ReadLine());
-            //List<int> filterList = lista.FindAll(x => x > m ? true : false);
-            //Console.WriteLine("\nThe numbers grater than {0} are " ,m);
-            //foreach (var item in filterList)
-            //{
-            //    Console.WriteLine(item) ;
-            //}
+            for (i = 0; i < n; i++)
+            {
+                Console.WriteLine("Member {0}: ", i);
+                memList = Convert.ToInt32(Console.ReadLine()); // wprowadzenie czlonka do listy
+                lista.Add(memList);
+            }
+            Console.WriteLine("Input numer which is more than ...");
+            m = Convert.ToInt32(Console.ReadLine());
+            List<int> filterList = lista.FindAll(x => x > m ? true : false);
+            Console.WriteLine("\nThe numbers grater than {0} are ", m);
+            foreach (var item in filterList)
+            {
+                Console.WriteLine(item);
+            }
             #endregion Lista
             //int i = 0;
             //int n, tempNum , m;

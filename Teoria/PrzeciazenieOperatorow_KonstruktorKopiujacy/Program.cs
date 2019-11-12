@@ -10,7 +10,7 @@ namespace PrzeciazenieOperatorow_KonstruktorKopiujacy
     {
         static void Main(string[] args) 
         {
-            StanKonta a = new StanKonta(5, 88);
+            StanKonta a = new StanKonta(5, 818);
             StanKonta b = new StanKonta(5, 89);
             Console.WriteLine(a);
             Console.WriteLine(a + b);

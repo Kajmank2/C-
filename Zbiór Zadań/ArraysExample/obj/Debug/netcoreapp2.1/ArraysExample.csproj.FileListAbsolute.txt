@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\bin\Debug\netcoreapp2.1\ArraysExample.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\bin\Debug\netcoreapp2.1\ArraysExample.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\bin\Debug\netcoreapp2.1\ArraysExample.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\bin\Debug\netcoreapp2.1\ArraysExample.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\bin\Debug\netcoreapp2.1\ArraysExample.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\obj\Debug\netcoreapp2.1\ArraysExample.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\obj\Debug\netcoreapp2.1\ArraysExample.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\obj\Debug\netcoreapp2.1\ArraysExample.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\obj\Debug\netcoreapp2.1\ArraysExample.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\obj\Debug\netcoreapp2.1\ArraysExample.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\ArraysExample\obj\Debug\netcoreapp2.1\ArraysExample.pdb

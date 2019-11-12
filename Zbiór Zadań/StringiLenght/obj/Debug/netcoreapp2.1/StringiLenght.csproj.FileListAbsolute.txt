@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\bin\Debug\netcoreapp2.1\StringiLenght.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\bin\Debug\netcoreapp2.1\StringiLenght.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\bin\Debug\netcoreapp2.1\StringiLenght.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\bin\Debug\netcoreapp2.1\StringiLenght.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\bin\Debug\netcoreapp2.1\StringiLenght.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\obj\Debug\netcoreapp2.1\StringiLenght.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\obj\Debug\netcoreapp2.1\StringiLenght.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\obj\Debug\netcoreapp2.1\StringiLenght.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\obj\Debug\netcoreapp2.1\StringiLenght.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\obj\Debug\netcoreapp2.1\StringiLenght.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\StringiLenght\obj\Debug\netcoreapp2.1\StringiLenght.pdb
