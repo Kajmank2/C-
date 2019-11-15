@@ -1,0 +1,10 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\bin\Debug\netcoreapp2.1\PersonSub.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\bin\Debug\netcoreapp2.1\PersonSub.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\bin\Debug\netcoreapp2.1\PersonSub.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\bin\Debug\netcoreapp2.1\PersonSub.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\bin\Debug\netcoreapp2.1\PersonSub.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\obj\Debug\netcoreapp2.1\PersonSub.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\obj\Debug\netcoreapp2.1\PersonSub.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\obj\Debug\netcoreapp2.1\PersonSub.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\obj\Debug\netcoreapp2.1\PersonSub.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\PersonSub\obj\Debug\netcoreapp2.1\PersonSub.pdb

@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\bin\Debug\netcoreapp2.1\The Discount System.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\bin\Debug\netcoreapp2.1\The Discount System.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\bin\Debug\netcoreapp2.1\The Discount System.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\bin\Debug\netcoreapp2.1\The Discount System.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\bin\Debug\netcoreapp2.1\The Discount System.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\obj\Debug\netcoreapp2.1\The Discount System.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\obj\Debug\netcoreapp2.1\The Discount System.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\obj\Debug\netcoreapp2.1\The Discount System.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\obj\Debug\netcoreapp2.1\The Discount System.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\obj\Debug\netcoreapp2.1\The Discount System.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\The Discount System\obj\Debug\netcoreapp2.1\The Discount System.pdb
