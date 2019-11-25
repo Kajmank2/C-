@@ -11,77 +11,77 @@ namespace LINQ2_NaListach
         static void Main(string[] args)
         {
             #region Programik z Lista wypisujący tyle pozycji ile nam trzeba
-            int i = 0;
-            int memList, n, m;
-            List<int> lista = new List<int>();
-            Console.WriteLine("Wprowadz ");
-            n = Convert.ToInt32(Console.ReadLine());
+            //int i = 0;
+            //int memList, n, m;
+            //List<int> lista = new List<int>();
+            //Console.WriteLine("Wprowadz ");
+            //n = Convert.ToInt32(Console.ReadLine());
 
-            for (i = 0; i < n; i++)
-            {
-                Console.WriteLine("Member {0}: ", i);
-                memList = Convert.ToInt32(Console.ReadLine()); // wprowadzenie czlonka do listy
-                lista.Add(memList);
-            }
-            Console.WriteLine("Input numer which is more than ...");
-            m = Convert.ToInt32(Console.ReadLine());
-            List<int> filterList = lista.FindAll(x => x > m ? true : false);
-            Console.WriteLine("\nThe numbers grater than {0} are ", m);
-            foreach (var item in filterList)
-            {
-                Console.WriteLine(item);
-            }
+            //for (i = 0; i < n; i++)
+            //{
+            //    Console.WriteLine("Member {0}: ", i);
+            //    memList = Convert.ToInt32(Console.ReadLine()); // wprowadzenie czlonka do listy
+            //    lista.Add(memList);
+            //}
+            //Console.WriteLine("Input numer which is more than ...");
+            //m = Convert.ToInt32(Console.ReadLine());
+            //List<int> filterList = lista.FindAll(x => x > m ? true : false);
+            //Console.WriteLine("\nThe numbers grater than {0} are ", m);
+            //foreach (var item in filterList)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion Lista
             //int i = 0;
-            //int n, tempNum , m;
+            //int n, tempNum, m;
             //List<int> tempList = new List<int>();
             //Console.WriteLine("Wpisz przedział liczb");
             //n = Convert.ToInt32(Console.ReadLine());
 
-            //for ( i = 0; i < n; i++)
+            //for (i = 0; i < n; i++)
             //{
             //    Console.WriteLine("Number nr  {0} ", i);
             //    tempNum = Convert.ToInt32(Console.ReadLine());
             //    tempList.Add(tempNum);
             //}
             //Console.WriteLine("number to display : ");
-            //m= Convert.ToInt32(Console.ReadLine());
-            //List<int> MainList = tempList.FindAll(x=>x >m ? true : false);
+            //m = Convert.ToInt32(Console.ReadLine());
+            //List<int> MainList = tempList.FindAll(x => x > m ? true : false);
             //foreach (var item in tempList)
             //{
             //    Console.WriteLine(item);
             //}
             #region lista wyswietlajaca ilosc wierszy
-            //List<int> templist = new List<int>();
-            //templist.Add(5);
-            //templist.Add(7);
-            //templist.Add(13);
-            //templist.Add(24);
-            //templist.Add(6);
-            //templist.Add(9);
-            //templist.Add(8);
-            //templist.Add(7);
+            List<int> templist = new List<int>();
+            templist.Add(5);
+            templist.Add(7);
+            templist.Add(13);
+            templist.Add(24);
+            templist.Add(6);
+            templist.Add(9);
+            templist.Add(8);
+            templist.Add(7);
 
-            //Console.Write("\nLINQ : Display top nth  records from the list : ");
-            //Console.Write("\n----------------------------------------------\n");
+            Console.Write("\nLINQ : Display top nth  records from the list : ");
+            Console.Write("\n----------------------------------------------\n");
 
-            //Console.WriteLine("\nThe members of the list are : ");
-            //foreach (var lstnum in templist)
-            //{
-            //    Console.WriteLine(lstnum + " ");
-            //}
+            Console.WriteLine("\nThe members of the list are : ");
+            foreach (var lstnum in templist)
+            {
+                Console.WriteLine(lstnum + " ");
+            }
 
-            //Console.Write("How many records you want to display ? : ");
-            //int n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("How many records you want to display ? : ");
+            int n = Convert.ToInt32(Console.ReadLine());
 
-            //templist.Sort();
-            //templist.Reverse();
+          
+            templist.Reverse();
 
-            //Console.Write("The top {0} records from the list are : \n", n);
-            //foreach (int topn in templist.Take(n))
-            //{
-            //    Console.WriteLine(topn);
-            //}
+            Console.Write("The top {0} records from the list are : \n", n);
+            foreach (int topn in templist.Take(n))
+            {
+                Console.WriteLine(topn);
+            }
             #endregion
 
             string strNew;

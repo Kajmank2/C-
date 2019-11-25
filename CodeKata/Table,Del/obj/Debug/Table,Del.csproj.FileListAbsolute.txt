@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\bin\Debug\Table,Del.exe.config
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\bin\Debug\Table,Del.exe
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\bin\Debug\Table,Del.pdb
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.exe
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.pdb
