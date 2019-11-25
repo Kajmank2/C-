@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\bin\Debug\netcoreapp2.1\AplikacjaSklep.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\bin\Debug\netcoreapp2.1\AplikacjaSklep.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\bin\Debug\netcoreapp2.1\AplikacjaSklep.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\bin\Debug\netcoreapp2.1\AplikacjaSklep.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\bin\Debug\netcoreapp2.1\AplikacjaSklep.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\obj\Debug\netcoreapp2.1\AplikacjaSklep.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\obj\Debug\netcoreapp2.1\AplikacjaSklep.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\obj\Debug\netcoreapp2.1\AplikacjaSklep.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\obj\Debug\netcoreapp2.1\AplikacjaSklep.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\obj\Debug\netcoreapp2.1\AplikacjaSklep.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\AplikacjaSklep\obj\Debug\netcoreapp2.1\AplikacjaSklep.pdb

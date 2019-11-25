@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\bin\Debug\netcoreapp2.1\YTKRS.deps.json
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\bin\Debug\netcoreapp2.1\YTKRS.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\bin\Debug\netcoreapp2.1\YTKRS.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\bin\Debug\netcoreapp2.1\YTKRS.dll
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\bin\Debug\netcoreapp2.1\YTKRS.pdb
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\obj\Debug\netcoreapp2.1\YTKRS.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\obj\Debug\netcoreapp2.1\YTKRS.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\obj\Debug\netcoreapp2.1\YTKRS.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\obj\Debug\netcoreapp2.1\YTKRS.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\obj\Debug\netcoreapp2.1\YTKRS.dll
+C:\Users\Len\Desktop\C##\Teoria\YTKRS\obj\Debug\netcoreapp2.1\YTKRS.pdb

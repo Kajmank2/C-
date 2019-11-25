@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Len\\Desktop\\C##\\KlasyGeneryczne\\KlasyGeneryczne.csproj": {}
+    "C:\\Users\\Len\\Desktop\\C##\\Teoria\\KlasyGeneryczne\\KlasyGeneryczne.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Len\\Desktop\\C##\\KlasyGeneryczne\\KlasyGeneryczne.csproj": {
+    "C:\\Users\\Len\\Desktop\\C##\\Teoria\\KlasyGeneryczne\\KlasyGeneryczne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\KlasyGeneryczne\\KlasyGeneryczne.csproj",
+        "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\KlasyGeneryczne\\KlasyGeneryczne.csproj",
         "projectName": "KlasyGeneryczne",
-        "projectPath": "C:\\Users\\Len\\Desktop\\C##\\KlasyGeneryczne\\KlasyGeneryczne.csproj",
+        "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\KlasyGeneryczne\\KlasyGeneryczne.csproj",
         "packagesPath": "C:\\Users\\Len\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Len\\Desktop\\C##\\KlasyGeneryczne\\obj\\",
+        "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\KlasyGeneryczne\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
