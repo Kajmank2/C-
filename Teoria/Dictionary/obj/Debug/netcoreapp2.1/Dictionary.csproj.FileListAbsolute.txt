@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\bin\Debug\netcoreapp2.1\Dictionary.deps.json
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\bin\Debug\netcoreapp2.1\Dictionary.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\bin\Debug\netcoreapp2.1\Dictionary.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\bin\Debug\netcoreapp2.1\Dictionary.dll
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\bin\Debug\netcoreapp2.1\Dictionary.pdb
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\obj\Debug\netcoreapp2.1\Dictionary.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\obj\Debug\netcoreapp2.1\Dictionary.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\obj\Debug\netcoreapp2.1\Dictionary.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\obj\Debug\netcoreapp2.1\Dictionary.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\obj\Debug\netcoreapp2.1\Dictionary.dll
+C:\Users\Len\Desktop\C##\Teoria\Dictionary\obj\Debug\netcoreapp2.1\Dictionary.pdb

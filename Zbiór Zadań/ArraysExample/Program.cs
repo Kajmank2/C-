@@ -11,11 +11,12 @@ namespace ArraysExample
             //int[] tab = new int[10];
             //for (int i = 0; i < 10; i++)
             //{
-            //    if (i==0)
+            //    if (i == 0)
             //    {
-            //        Console.WriteLine("element{0} = {1}",i ,1);
-            //    }else
-            //    Console.WriteLine("element{0} = {0}", i);
+            //        Console.WriteLine("element{0} = {1}", i, 1);
+            //    }
+            //    else
+            //        Console.WriteLine("element{0} = {0}", i);
             //}
             #endregion
             #region
@@ -25,17 +26,17 @@ namespace ArraysExample
             //arr = new int[b];
             //for (int i = 0; i < b; i++)
             //{
-            //    Console.WriteLine("wprowadz liczbe {0} do tablic",i);
-            //    arr[i]= Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("wprowadz liczbe {0} do tablic", i);
+            //    arr[i] = Convert.ToInt32(Console.ReadLine());
             //}
 
             //foreach (var item in arr)
             //{
             //    Console.WriteLine(item);
             //}
-            //for (int i = b - 1; i >= 0; i--)
+            //for (int i = b - 1; i >= 0; i--)  // b-1 ostatnia literka
             //{
-            //    Console.WriteLine("{0}",arr[i]);
+            //    Console.WriteLine("{0}", arr[i]);
             //}
             #endregion
             //int sum = 0;
@@ -53,7 +54,7 @@ namespace ArraysExample
             //arr = new int[b];
             //for (int i = 0; i < b; i++)
             //{
-            //    Console.WriteLine("liczba nr 1 {0}",i);
+            //    Console.WriteLine("liczba nr 1 {0}", i);
             //    arr[i] = Convert.ToInt32(Console.ReadLine());
             //}
 
@@ -68,12 +69,12 @@ namespace ArraysExample
             //int i, n;
             //Console.WriteLine("Ilosc elementow w aARRayu");
             //n = Convert.ToInt32(Console.ReadLine());
-            //for ( i = 0; i < n; i++)
+            //for (i = 0; i < n; i++)
             //{
-            //    Console.WriteLine("Liczba nr 1 w tablicy",i);
+            //    Console.WriteLine("Liczba nr 1 w tablicy", i);
             //    arr1[i] = Convert.ToInt32(Console.ReadLine());
             //}
-            //for  (i = 0; i < n; i++)
+            //for (i = 0; i < n; i++)
             //{
             //    arr2[i] = arr1[i];
             //}
@@ -83,13 +84,13 @@ namespace ArraysExample
             //    Console.WriteLine("{0} ", arr1[i]);
             //}
             //Console.WriteLine("Elementy w 2 array");
-            //for ( i = 0; i < n; i++)
+            //for (i = 0; i < n; i++)
             //{
-            //    Console.WriteLine("{0}",arr2[i]);
+            //    Console.WriteLine("{0}", arr2[i]);
             //}
-            //for (i =n-1; i >= 0; i--)
+            //for (i = n - 1; i >= 0; i--)
             //{
-            //    Console.WriteLine("arr po transofmarcji{0}",arr1[i]);
+            //    Console.WriteLine("arr po transofmarcji{0}", arr1[i]);
             //}
             #endregion
             #region w tablicy dupliakcje
@@ -132,39 +133,79 @@ namespace ArraysExample
             //Console.WriteLine("the numer of duplicate is {0} \n" ,ctr);
             //Console.ReadKey();
             #endregion
-            int[] arr1;
-            int[] arr2;
-            Console.WriteLine("Zakres dla tablicy nr 1");
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("zakres dla tablicy nr 2 ");
-            int m = Convert.ToInt32(Console.ReadLine());
-            arr1 = new int[n];
-            arr2 = new int[m];
-            int[] arr3;
-            for (int i = 0; i < n; i++)
-            {
-                Console.WriteLine("Pozycja nr {0}" ,i);
-                arr1[i] = Convert.ToInt32(Console.ReadLine());
-            }
-            for (int i = 0; i < m; i++)
-            {
-                Console.WriteLine("Pozycja nr {0}", i);
-                arr1[i] = Convert.ToInt32(Console.ReadLine());
-            }
-            foreach (var item in arr1)
-            {
-                Console.WriteLine(item);
-            }
-            foreach (var item in arr2)
-            {
-                Console.WriteLine(item);
-            }
-            var sqFrq = from x in arr1 group x by x into y select y;
+            #region
+            //int[] arr1;
+            //int[] arr2;
+            //Console.WriteLine("Zakres dla tablicy nr 1");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("zakres dla tablicy nr 2 ");
+            //int m = Convert.ToInt32(Console.ReadLine());
+            //arr1 = new int[n];
+            //arr2 = new int[m];
+            //int[] arr3;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.WriteLine("Pozycja nr {0}" ,i);
+            //    arr1[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //for (int i = 0; i < m; i++)
+            //{
+            //    Console.WriteLine("Pozycja nr {0}", i);
+            //    arr1[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //foreach (var item in arr1)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //foreach (var item in arr2)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //var sqFrq = from x in arr1 group x by x into y select y;
 
-            foreach (var item in sqFrq)
+            //foreach (var item in sqFrq)
+            //{
+            //    Console.WriteLine(item.Count());
+            //}
+            #endregion
+
+            int n, ctr = 0;
+            int[] arr1 = new int[100];
+            int i, j, k;
+            Console.WriteLine("Wprwoadz zakes N :");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (i = 0; i < n; i++)
             {
-                Console.WriteLine(item.Count());
+                Console.WriteLine("Elemnt -{0}", i);
+                arr1[i] = Convert.ToInt32(Console.ReadLine());
             }
+            for (i = 0; i < n; i++)
+            {
+                ctr = 0;
+                for (j = 0; j < i - 1; j++)
+                {
+                    if (arr1[i] == arr1[j])
+                    {
+                        ctr++;
+                    }
+                }
+                for (k = i + 1; k < n; k++)
+                {
+                    /*Increment the counter when the seaarch value is duplicate.*/
+                    if (arr1[i] == arr1[k])
+                    {
+                        ctr++;
+                    }
+                }
+                /*Print the value of the current position of the array as unique value 
+                when counter remain contains its initial value.*/
+                if (ctr == 0)
+                {
+                    Console.Write("{0} ", arr1[i]);
+                }
+            }
+            Console.Write("\n\n");
         }
     }
 }
+

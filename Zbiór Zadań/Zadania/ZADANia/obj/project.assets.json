@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Zadania\\ZADANia\\ZADANia.csproj",
+      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Zbiór Zadań\\Zadania\\ZADANia\\ZADANia.csproj",
       "projectName": "ZADANia",
-      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Zadania\\ZADANia\\ZADANia.csproj",
+      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Zbiór Zadań\\Zadania\\ZADANia\\ZADANia.csproj",
       "packagesPath": "C:\\Users\\Len\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Zadania\\ZADANia\\obj\\",
+      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Zbiór Zadań\\Zadania\\ZADANia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

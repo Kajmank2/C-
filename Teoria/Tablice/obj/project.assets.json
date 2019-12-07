@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Len\\Source\\Repos\\Tablice\\Tablice.csproj",
+      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Tablice\\Tablice.csproj",
       "projectName": "Tablice",
-      "projectPath": "C:\\Users\\Len\\Source\\Repos\\Tablice\\Tablice.csproj",
+      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Tablice\\Tablice.csproj",
       "packagesPath": "C:\\Users\\Len\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Len\\Source\\Repos\\Tablice\\obj\\",
+      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Tablice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

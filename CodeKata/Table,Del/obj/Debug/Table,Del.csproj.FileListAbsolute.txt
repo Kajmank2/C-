@@ -5,3 +5,7 @@ C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.csprojAssemblyRe
 C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.csproj.CoreCompileInputs.cache
 C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.exe
 C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.pdb
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\bin\Debug\nunit.framework.dll
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\bin\Debug\nunit.framework.pdb
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\bin\Debug\nunit.framework.xml
+C:\Users\Len\Desktop\C##\CodeKata\Table,Del\obj\Debug\Table,Del.csproj.CopyComplete

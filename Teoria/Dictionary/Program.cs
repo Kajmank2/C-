@@ -5,8 +5,38 @@ namespace Dictionary
 {
     class Program
     {
+        public static Dictionary<char, int> Count(string str)
+        {
+            Dictionary<char, int> d = new Dictionary<char, int>();
+            foreach (KeyValuePair<char, int> kvp in d)
+            {
+                for (int i = 0; i < kvp.Value; i++)
+                {
+                    Console.Write(kvp.Key);
+                }
+                return str.ToString(d.Values);
+            }
+            
+        }
         static void Main(string[] args)
         {
+            Dictionary<char, int> d = new Dictionary<char, int>();
+
+            d.Add('a', 2);
+            d.Add('b', 2);
+            foreach (KeyValuePair<char, int> kvp in d)
+            {
+                for (int i = 0; i < kvp.Value; i++)
+                {
+                    Console.Write(kvp.Key);
+                }
+               
+            }
+
+
+
+
+
             Dictionary<string, string> openWith =
     new Dictionary<string, string>();
 

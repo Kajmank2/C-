@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\1\\1.csproj",
+      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Petelki , tablica\\1.csproj",
       "projectName": "1",
-      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\1\\1.csproj",
+      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Petelki , tablica\\1.csproj",
       "packagesPath": "C:\\Users\\Len\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\1\\obj\\",
+      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Petelki , tablica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

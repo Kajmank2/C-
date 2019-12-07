@@ -24,19 +24,19 @@ namespace ZADANia
             #endregion
             #region zadnaia z upper stringi elko szukanie najdluzszego znaku
             string lancuch = " Elko elko hejasddsako hejko ";
-            //string[] words = lancuch.Split(new[] { " " }, StringSplitOptions.None);
-            //string word = "";
-            //int ctr = 0;
-            //foreach (String s in words)
-            //{
-            //    if (s.Length > ctr)
-            //    {
-            //        word = s;
-            //        ctr = s.Length;
-            //    }
-            //}
+            string[] words = lancuch.Split(new[] { " " }, StringSplitOptions.None);
+            string word = "";
+            int ctr = 0;
+            foreach (var s in words)
+            {
+                if (s.Length > ctr)
+                {
+                    word = s;
+                    ctr = s.Length;
+                }
+            }
 
-            //Console.WriteLine(word);
+            Console.WriteLine(word);
             #endregion
             #region while wyswietlajacy sume 500 liczb
             //int i = 0;
@@ -83,13 +83,13 @@ namespace ZADANia
 
             #endregion
             #region usuwanie znakow
-            //  string allWords = "PHP TUTORIAL";
-            //string s=String.Format(allWords.Replace("PH", ""));
-            //string str = "PHP Tutorial";
-            //Console.WriteLine((str.Substring(1, 2).Equals("HP") ? str.Remove(1, 2) : str));
-            //#endregion
-            //Console.ReadLine();
+            string allWords = "PHP TUTORIAL";
+           // string s = String.Format(allWords.Replace("PH", ""));
+            string str = "PHP Tutorial";
+            Console.WriteLine((str.Substring(1, 2).Equals("HP") ? str.Remove(1, 2) : str));
             #endregion
+            Console.ReadLine();
+
             #region Zamina znakow
             //string str = "CHuj CIpka";
             //string result = "";

@@ -9,3 +9,14 @@ C:\Users\Len\Desktop\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.AssemblyInf
 C:\Users\Len\Desktop\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.AssemblyInfo.cs
 C:\Users\Len\Desktop\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.dll
 C:\Users\Len\Desktop\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\bin\Debug\netcoreapp2.1\ZADANia.deps.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\bin\Debug\netcoreapp2.1\ZADANia.runtimeconfig.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\bin\Debug\netcoreapp2.1\ZADANia.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\bin\Debug\netcoreapp2.1\ZADANia.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\bin\Debug\netcoreapp2.1\ZADANia.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.AssemblyInfo.cs
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.dll
+C:\Users\Len\Desktop\C##\Zbiór Zadań\Zadania\ZADANia\obj\Debug\netcoreapp2.1\ZADANia.pdb

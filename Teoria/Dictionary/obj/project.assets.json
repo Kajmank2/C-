@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Dictionary\\Dictionary.csproj",
+      "projectUniqueName": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Dictionary\\Dictionary.csproj",
       "projectName": "Dictionary",
-      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Dictionary\\Dictionary.csproj",
+      "projectPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Dictionary\\Dictionary.csproj",
       "packagesPath": "C:\\Users\\Len\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Dictionary\\obj\\",
+      "outputPath": "C:\\Users\\Len\\Desktop\\C##\\Teoria\\Dictionary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
