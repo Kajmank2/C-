@@ -15,7 +15,7 @@ namespace Table_Del
     {
         class KajmanException : Exception
         {
-            public KajmanException(string msg): base(msg)
+            public KajmanException(string msg) : base(msg)
             {
 
             }
@@ -24,26 +24,27 @@ namespace Table_Del
         static void Main(string[] args)
         {
 
-            // Console.WriteLine(Kajman.DontGiveMeFive(4,17));
-            // Console.WriteLine(Kajman.AlphabetPosition("0"));
-            // Console.WriteLine(Kajman.GetUnique(new[] { 0, 0, 1, 0 }));
-            // Console.WriteLine(Kajman.Accum("abcd"));
-            // Console.WriteLine(Kajman.TowerBuilder(b));
-            // Console.WriteLine(Kajman.Multiply(16));
-            // Console.WriteLine(Kajman.NoNumerals("101"));
-            // Console.WriteLine(Kajman.ValidParentheses("(())((()())())"));
-            // Console.WriteLine(Kajman.ReverseWords("Hello World!"));
-            // Console.WriteLine(Kajman.Litres(12.3));
-            // Console.WriteLine(Kajman.Number(new List<int[]>() { new[] { 10, 0 }, new[] { 3, 5 }, new[] { 5, 8 } }));
-            // Console.WriteLine(Kajman.CalculateYears(1000,0.05,0.18,1500));
-            // Console.WriteLine(Kajman.IsIsogram("isogram"));
-            // Console.WriteLine(Kajman.InvertValues(new int[]{0,1,2,3,-2,-3 }));
-            // Console.WriteLine(Kajman.MSSG("1s2o3c4a5t6"));
-            // Console.WriteLine(Kajman.PigLatin(s));
-            // Console.WriteLine(Kajman.PigLatin("Pig latin is cool"));
-            // Console.WriteLine(Kajman.Longest("aretheyheresssss", "yestheyarehere"));
-            //Console.WriteLine(Kajman.AvgStr("Can you not do that?"));
-            Console.ReadKey();
+
+                // Console.WriteLine(Kajman.DontGiveMeFive(4,17));
+                // Console.WriteLine(Kajman.AlphabetPosition("0"));
+                // Console.WriteLine(Kajman.GetUnique(new[] { 0, 0, 1, 0 }));
+                // Console.WriteLine(Kajman.Accum("abcd"));
+                // Console.WriteLine(Kajman.TowerBuilder(b));
+                // Console.WriteLine(Kajman.Multiply(16));
+                // Console.WriteLine(Kajman.NoNumerals("101"));
+                // Console.WriteLine(Kajman.ValidParentheses("(())((()())())"));
+                // Console.WriteLine(Kajman.ReverseWords("Hello World!"));
+                // Console.WriteLine(Kajman.Litres(12.3));
+                // Console.WriteLine(Kajman.Number(new List<int[]>() { new[] { 10, 0 }, new[] { 3, 5 }, new[] { 5, 8 } }));
+                // Console.WriteLine(Kajman.CalculateYears(1000,0.05,0.18,1500));
+                // Console.WriteLine(Kajman.IsIsogram("isogram"));
+                // Console.WriteLine(Kajman.InvertValues(new int[]{0,1,2,3,-2,-3 }));
+                // Console.WriteLine(Kajman.MSSG("1s2o3c4a5t6"));
+                // Console.WriteLine(Kajman.PigLatin(s));
+                // Console.WriteLine(Kajman.PigLatin("Pig latin is cool"));
+                // Console.WriteLine(Kajman.Longest("aretheyheresssss", "yestheyarehere"));
+                //Console.WriteLine(Kajman.AvgStr("Can you not do that?"));
+                Console.ReadKey();
             // Console.WriteLine(Kajman.PigIt("ASd asd wee"));
             // Console.WriteLine(Kajman.CountPositivesSumNegatives(new int[] {0}));
             // Console.WriteLine(Kajman.PasswordValidator(s));
@@ -95,29 +96,101 @@ namespace Table_Del
 }
 public class Kajman
 {
-    public static string[] TowerBuilder(int nFloors)
-    {
-        string[] karolek = new string[nFloors];
-        for (int i = 0; i < nFloors; i++)
-        {
-            int spacenumb = nFloors - i - 1;
-            string space =  Kajman.RepeatConcat(" ", spacenumb);
-            int num = 2 * i + 1;
-            string blocks = Kajman.RepeatConcat("*", num);
+    //////////////////////////////////////////////////////////////////////
+    //public static bool IsUpperCase(this string text)
+    //{
+    //    if (text.Length==0)
+    //    {
+    //        return true;
+    //    }
+    //    var b = text.ToUpper();
+    //    for (int i = 0; i < text.Length; i++)
+    //    {
+    //        if (text == b )
+    //        {
+    //            return true;
+    //        }
+    //    }
+    //    return value.ToUpper() == value;
+    //    return !s.Any(x => Char.IsLower(x));
+    //    return !str.Any(x => char.IsLower(x));
+    //    return false;
+    //}
+    /////////////////////////////////////////////////////////////////////////////////////////////////grade == alphabet
+    //  public static char GetGrade(int s1, int s2, int s3)
+    // {
 
-            karolek[i] = space + blocks + space;
-        }
-        foreach (var item in karolek)
-        {
-            Console.WriteLine(item);
-        }
-        return  karolek;
-    }
-        static string RepeatConcat(string s, int n)
-        {
-            return String.Concat(Enumerable.Repeat(s, n));
-        }
+    //double d = (s1 + s2 + s3) / 3;
+    //if (d >= 0 & d < 60)
+    //{
+    //    return 'F';
+    //}
+    //else if (d >= 60 & d < 70)
+    //{
+    //    return 'D';
+    //}
+    //else if (d >= 70 & d < 80)
+    //{
+    //    return 'C';
+    //}
+    //else if (d >= 80 & d < 90)
+    //{
+    //    return 'B';
+    //}
+    //else
+    //    return'A';
+    //var s = (s1 + s2 + s3) / 3;
+    //if (60 > s) return 'F';
+    //if (70 > s) return 'D';
+    //if (80 > s) return 'C';
+    //if (90 > s) return 'B';
+    //return 'A';
+    //return m >= 90 ? 'A' : m >= 80 ? 'B' : m >= 70 ? 'C' : m >= 60 ? 'D' : 'F';
 
+    //return 'F';
+    //   }
+    /////////////////////////////////////////////////////////////////////////////////Budowanie 
+    //public static string[] TowerBuilder(int nFloors)
+    //{
+    //    string[] karolek = new string[nFloors];
+    //    for (int i = 0; i < nFloors; i++)
+    //    {
+    //        int spacenumb = nFloors - i - 1;
+    //        string space = Kajman.RepeatConcat(" ", spacenumb);
+    //        int num = 2 * i + 1;
+    //        string blocks = Kajman.RepeatConcat("*", num);
+
+    //        karolek[i] = space + blocks + space;
+    //    }
+    //    foreach (var item in karolek)
+    //    {
+    //        Console.WriteLine(item);
+    //    }
+    //    return karolek;
+    //}
+    //static string RepeatConcat(string s, int n)
+    //{
+    //    return String.Concat(Enumerable.Repeat(s, n));
+    //}
+    /////////////////////////////////////////////////////////////////////////////////DRIVING LICENSE !
+    //string s = Console.ReadLine();
+    //double number = Convert.ToInt32(Console.ReadLine());
+    //string name = Console.ReadLine();
+    //var xyz = name.Split(',');
+    //var xanax = xyz.Concat(new[] { s });
+    //var z = xanax.ToArray();
+    //Array.Sort(z);
+    //        double time = 0;
+    //        for (int i = 0; i<z.Length; i++)
+    //        {
+    //            if (z[i] == s)
+    //            {
+    //                double x = ++i;
+    //time = (x / number);
+    //                var y = Math.Ceiling(time) * 20;
+    //Console.WriteLine(y);
+    //            }
+    //        }
     //public static int Multiply(int x)
     //{
     //    int numb = 0;
@@ -488,28 +561,28 @@ public class Kajman
     public static string ClearNumber(string s) => Regex.Replace(s, "[1234567890]", "", RegexOptions.IgnoreCase);
     public static string ClearSpecialCharacter(string s) => Regex.Replace(s, "[!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~]", "", RegexOptions.IgnoreCase);
 }
-    //   public static string Disemvowel(string str)
-    //   {
-    //       return string.Concat(str.Where(ch => !"aeiouAEIOU".Contains(ch)));
-    //   }
-    //    return Regex.Replace(str,"[aeiou]", "", RegexOptions.IgnoreCase);
-    //         public static string Disemvowel(string str)
-    //   {
-    //       return Regex.Replace(str, "[euioa]", "", RegexOptions.IgnoreCase); ;
-    //   }
-    //   /// <summary>
-    //   /// 
-    //   /// </summary>
-    //   string strNew = "";
+//   public static string Disemvowel(string str)
+//   {
+//       return string.Concat(str.Where(ch => !"aeiouAEIOU".Contains(ch)));
+//   }
+//    return Regex.Replace(str,"[aeiou]", "", RegexOptions.IgnoreCase);
+//         public static string Disemvowel(string str)
+//   {
+//       return Regex.Replace(str, "[euioa]", "", RegexOptions.IgnoreCase); ;
+//   }
+//   /// <summary>
+//   /// 
+//   /// </summary>
+//   string strNew = "";
 
-    //   string[] strings = str.Split('a', 'u', 'e', 'i', 'o', 'A', 'U', 'E', 'I', 'O');
+//   string[] strings = str.Split('a', 'u', 'e', 'i', 'o', 'A', 'U', 'E', 'I', 'O');
 
-    //           foreach (var item in strings)
-    //           {
-    //               strNew += item;
-    //           }
+//           foreach (var item in strings)
+//           {
+//               strNew += item;
+//           }
 
-    //   return strNew;
+//   return strNew;
 
 
 //////////////////////////////////////////////////////////////////// pierwszy string _ dodanie

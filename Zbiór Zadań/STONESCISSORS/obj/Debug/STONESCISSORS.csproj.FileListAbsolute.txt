@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C##\Zbiór Zadań\STONESCISSORS\obj\Debug\STONESCISSORS.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\STONESCISSORS\obj\Debug\STONESCISSORS.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C##\Zbiór Zadań\STONESCISSORS\bin\Debug\STONESCISSORS.exe.config
+C:\Users\Len\Desktop\C##\Zbiór Zadań\STONESCISSORS\bin\Debug\STONESCISSORS.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\STONESCISSORS\bin\Debug\STONESCISSORS.pdb
+C:\Users\Len\Desktop\C##\Zbiór Zadań\STONESCISSORS\obj\Debug\STONESCISSORS.exe
+C:\Users\Len\Desktop\C##\Zbiór Zadań\STONESCISSORS\obj\Debug\STONESCISSORS.pdb
