@@ -7,8 +7,354 @@ namespace LongestArray.GOLD
 {
     public static class Gold
     {
-        //////////////////////////////////////////////////Tower *
-        public static string[] TowerBuilder(int nFloors)
+        public static char FindMissingLetter(char[] array)
+        {
+            char[] alphabetSmall = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
+            char[] alphabetBig = "abcdefghijklmnopqrstuvwxyz".ToUpper().ToCharArray();
+            int start = 0;
+            char[] alphabet;
+            if (alphabetSmall.Contains(array[0]))
+            {
+                alphabet = alphabetSmall;
+            }
+            else
+            {
+                alphabet = alphabetBig;
+            }
+            for (int i = 0; i < alphabet.Length; i++)
+            {
+                if (alphabet[i] == array[0])
+                {
+                    start = i;
+                }
+            }
+            int arrayindex = 0;
+            for (int i = start; i < alphabet.Length; i++)
+            {
+
+                if (alphabet[i] != array[arrayindex])
+                {
+                    return alphabet[i];
+                }
+                arrayindex++;
+            }
+            return ' ';
+            //public static char FindMissingLetter(char[] array) => (char)Enumerable.Range(array[0], 25).First(x => !array.Contains((char)x));
+        }
+        public static int CountDeafRats(string town)
+        {
+            int count = 0;
+            int x = Gold.CounDeafRatsLeft(town);
+            int y = Gold.CounDeafRatsRight(town);
+            count = x + y;
+            return count;
+            //var rats = town.Replace(" ", "").Split('P');
+            //var leftCount = rats[0].Where((x, i) => i % 2 == 1).Count(x => x == '~');
+            //var rightCount = rats[1].Where((x, i) => i % 2 == 0).Count(x => x == '~');
+            // return leftCount + rightCount;
+        }
+        public static int CounDeafRatsLeft(string town)
+        {
+            var Way = town.Split('P');
+            var left = Way[0];
+            var leftleft = left.ToString();
+            var b = Gold.RemoveWhitespace(leftleft);
+            int count = 0;
+            for (int i = 0; i < b.Length; i += 2)
+            {
+                if (b[i] == 'O')
+                {
+                    count++;
+                }
+            }
+            return count;
+
+        }
+        public static int CounDeafRatsRight(string town)
+        {
+            var Way = town.Split('P');
+            var right = Way[1];
+            var rightright = right.ToString();
+            var b = Gold.RemoveWhitespace(rightright);
+            int count = 0;
+            for (int i = 0; i < b.Length; i += 2)
+            {
+                if (b[i] == '~')
+                {
+                    count++;
+                }
+            }
+            return count;
+
+        }
+        public static string RemoveWhitespace(string input)
+        {
+            return new string(input.ToCharArray()
+                .Where(c => !Char.IsWhiteSpace(c))
+                .ToArray());
+        }
+        public static string CamelCase(this string str)
+        {
+            if (str.Length == 0)
+            {
+                return "";
+            }
+
+            var s = str.Split(' ');
+            string final = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == "")
+                {
+                    continue;
+                }
+                var rest = s[i].Remove(0, 1);
+                var x = s[i].ToCharArray();
+                final += x[0].ToString().ToUpper() + rest;
+
+            }
+            return final;
+            //TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
+            //str = cultInfo.ToTitleCase(str);
+            //str = str.Replace(" ", "");
+            //return str;
+            //return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str).Replace(" ", String.Empty);
+            //var words = str.Split(' ');
+            //var finalString = string.Empty;
+
+            //foreach (var word in words)
+            //{
+            //    finalString += word.Length > 0 ? (word.Substring(0, 1).ToUpper() + word.Substring(1)) : string.Empty;
+            //}
+
+            //return finalString;
+        }
+        public static bool Scramble(string str1, string str2)
+        {
+            Func<string, Dictionary<char, int>> fun = s =>
+               s.GroupBy(c => c)
+               .Select(g => new { g.Key, Count = g.Count() })
+               .ToDictionary(pair => pair.Key, pair => pair.Count);
+
+            var map1 = fun(str1);
+            var map2 = fun(str2);
+
+            foreach (KeyValuePair<char, int> p2 in map2)
+            {
+                if (!map1.ContainsKey(p2.Key)) return false;
+
+                if (map1[p2.Key] < p2.Value) return false;
+            }
+
+
+            return true;
+            //Other Solution
+            //return str2.All(x => str1.Count(y => y == x) >= str2.Count(y => y == x));
+            //var possible = str1.ToList();
+
+            //foreach (var c in str2)
+            //{
+            //    if (!possible.Remove(c))
+            //        return false;
+            //}
+
+            //return true;
+        }
+        public static int[] DeleteNth(int[] arr, int x)
+        {
+            var result = new List<int>();
+            foreach (var item in arr)
+            {
+                if (result.Count(i => i == item) < x)
+                    result.Add(item);
+            }
+            return result.ToArray();
+
+            //var occurences = new Dictionary<int, int>();
+            //var list = new List<int>();
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    if (!occurences.ContainsKey(arr[i])) occurences.Add(arr[i], 1);
+            //    else occurences[arr[i]]++;
+            //    if (occurences[arr[i]] <= x) list.Add(arr[i]);
+            //}
+            //return list.ToArray();
+            //public static int[] DeleteNth(int[] arr, int x)
+            //{
+            //    return arr.Where((t, i) => arr.Take(i + 1).Count(s => s == t) <= x).ToArray();
+            //}
+
+        }
+        //////////////////////////////////////////////////////////////////////////////////ENCRYPT 
+        /// public static string Encrypt(string text, int n)
+        //{
+        //    if (n <= 0)
+        //    {
+        //        return text;
+        //    }
+        //    else
+        //    {
+        //        for (int j = n; j >= 1; j--)
+        //        {
+        //            string s = "";
+        //string s2 = "";
+
+        //            for (int i = 0; i<text.Length; i++)
+        //            {
+        //                if (i % 2 == 1)
+        //                {
+        //                    s += text[i];
+        //                }
+        //                else
+        //                    s2 += text[i];
+        //            }
+        //            text = String.Concat(s, s2);
+        //        }
+        //        return text;
+        //    }
+        //}
+        //    public static string Encrypt(string text, int n)
+        //    {
+        //        if (text == "" || text == null || n <= 0) { return text; } // Sanity Check
+
+        //        string odd = "";
+        //        string even = "";
+
+        //        for (int i = 0; i < n; i++)
+        //        {
+        //            for (int j = 0; j < text.Length; j++)
+        //            {
+        //                switch (j % 2)
+        //                {
+        //                    case 0:
+        //                        even += text[j];
+        //                        break;
+        //                    case 1:
+        //                        odd += text[j];
+        //                        break;
+        //                    default:
+        //                        Console.WriteLine("An error occurred.");
+        //                        break;
+        //                }
+        //                //Console.WriteLine("Index: " + (j < 10 ? "0" + j.ToString() : j.ToString()) + " Char: " + text[j] + " Text: " + "Odd: " + odd + " Even: " + even);
+        //            }//end encryption iteration
+        //            text = odd + even;
+        //            odd = even = "";
+        //        }//end n times
+        //        return text;
+        //    }
+
+        //    public static string Decrypt(string encryptedText, int n)
+        //    {
+        //        if (encryptedText == "" || encryptedText == null || n <= 0) { return encryptedText; } // Sanity Check
+
+        //        int len = encryptedText.Length;
+        //        string evenHalf = "";
+        //        string oddHalf = "";
+
+        //        for (int i = 0; i < n; i++)
+        //        {
+        //            evenHalf = encryptedText.Substring(0, len / 2);
+        //            oddHalf = encryptedText.Substring(len / 2, (1 + len) / 2);
+        //            //Console.WriteLine("\n    Decrypt Iteration " + i + "\n    Even String: " + evenHalf + "    Odd String: " + oddHalf);
+        //            encryptedText = "";
+        //            for (int j = 0; j < len; j++)
+        //            {
+        //                switch (j % 2)
+        //                {
+        //                    case 0:
+        //                        encryptedText += oddHalf[0];
+        //                        oddHalf = oddHalf.Substring(1);
+        //                        break;
+        //                    case 1:
+        //                        encryptedText += evenHalf[0];
+        //                        evenHalf = evenHalf.Substring(1);
+        //                        break;
+        //                    default:
+        //                        Console.WriteLine("An error occurred.");
+        //                        break;
+        //                }
+        //                //Console.WriteLine("Index: " + (j < 10 ? "0" + j.ToString() : j.ToString()) + " Char: " + encryptedText[j] + " Text: " + encryptedText + " Odd: " + oddHalf + " Even: " + evenHalf);
+        //            } // end decrypt iteration    
+        //        } // end n times
+        //        return encryptedText;
+        //    }
+        //}
+        //////////////////////////////////////////////Program Count digts >1
+        public static int DuplicateCount(string str)
+        {
+            string s = "";
+            var FreQ = from x in str.ToLower()
+                       group x by x into y
+                       select y;
+
+            foreach (var ArrEle in FreQ)
+            {
+                if (ArrEle.Count() > 1)
+                {
+                    s += ArrEle.Key;
+                }
+            }
+
+            return s.Length;
+        }
+    
+            //    //Other Solution
+            //  //  return str.ToLower().GroupBy(c => c).Where(g => g.Count() > 1).Count();
+            ////////////////////////////////////////////////////////Compare 2 Tables wchich are sqrt
+            public static bool comp(int[] a, int[] b)
+        {
+            if (a == null || b == null)
+            {
+                return false;
+            }
+            var bb = b.Select(x => (double)x).ToArray();
+            var z = bb.Select(y => Math.Sqrt(y));
+            var aa = a.Select(x => (double)x).ToArray();
+            bb = z.ToArray();
+            Array.Sort(aa);
+            Array.Sort(bb);
+            return aa.SequenceEqual(bb);
+            //if ((a == null) || (b == null))
+            //{
+            //    return false;
+            //}
+
+            //int[] copy = a.Select(x => x * x).ToArray();
+            //Array.Sort(copy);
+            //Array.Sort(b);
+
+            //return copy.SequenceEqual(b);
+            //if (a == null || b == null) return false;
+            //var result = a.Select(x => x * x).OrderBy(x => x).SequenceEqual(b.OrderBy(x => x));
+            //return result;
+        }
+        ///////////////////////////////////////////Song DECODER - DELETE WUB IN STRING !
+        public static string SongDecoder(string input)
+        {
+
+            String[] separatpr = { "WUB" };
+            var inputAray = input.Split(separatpr, StringSplitOptions.RemoveEmptyEntries);
+            string song = "";
+            int totalCount = inputAray.Count();
+            foreach (var item in inputAray)
+            {
+                if (inputAray.LastOrDefault().Equals(item))
+                {
+                    song += item;
+                }
+                else
+                    song += item + " ";
+            }
+            return song;
+        }
+        //OTHER SOLUTION
+        //return String.Join(" ", input.Split(new string[] { "WUB" }, StringSplitOptions.RemoveEmptyEntries));
+        //return Regex.Replace(input, @"(WUB)+", " ").Trim();
+        //return Regex.Replace(input, "(WUB)+", " ").Trim();
+
+//////////////////////////////////////////////////Tower *
+public static string[] TowerBuilder(int nFloors)
         {
             string[] karolek = new string[nFloors];
             for (int i = 0; i < nFloors; i++)
@@ -26,7 +372,7 @@ namespace LongestArray.GOLD
             }
             return karolek;
         }
-        static string RepeatConcat(string s, int n)
+       public static string RepeatConcat(string s, int n)
         {
             return String.Concat(Enumerable.Repeat(s, n));
         }

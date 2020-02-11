@@ -2,7 +2,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -21,30 +25,59 @@ namespace Table_Del
             }
         }
 
+
         static void Main(string[] args)
         {
-
-
-                // Console.WriteLine(Kajman.DontGiveMeFive(4,17));
-                // Console.WriteLine(Kajman.AlphabetPosition("0"));
-                // Console.WriteLine(Kajman.GetUnique(new[] { 0, 0, 1, 0 }));
-                // Console.WriteLine(Kajman.Accum("abcd"));
-                // Console.WriteLine(Kajman.TowerBuilder(b));
-                // Console.WriteLine(Kajman.Multiply(16));
-                // Console.WriteLine(Kajman.NoNumerals("101"));
-                // Console.WriteLine(Kajman.ValidParentheses("(())((()())())"));
-                // Console.WriteLine(Kajman.ReverseWords("Hello World!"));
-                // Console.WriteLine(Kajman.Litres(12.3));
-                // Console.WriteLine(Kajman.Number(new List<int[]>() { new[] { 10, 0 }, new[] { 3, 5 }, new[] { 5, 8 } }));
-                // Console.WriteLine(Kajman.CalculateYears(1000,0.05,0.18,1500));
-                // Console.WriteLine(Kajman.IsIsogram("isogram"));
-                // Console.WriteLine(Kajman.InvertValues(new int[]{0,1,2,3,-2,-3 }));
-                // Console.WriteLine(Kajman.MSSG("1s2o3c4a5t6"));
-                // Console.WriteLine(Kajman.PigLatin(s));
-                // Console.WriteLine(Kajman.PigLatin("Pig latin is cool"));
-                // Console.WriteLine(Kajman.Longest("aretheyheresssss", "yestheyarehere"));
-                //Console.WriteLine(Kajman.AvgStr("Can you not do that?"));
-                Console.ReadKey();
+            Console.WriteLine(Kajman.FindMissingLetter(new char[] { 'a', 'b', 'c', 'd', 'f' }));
+            Console.WriteLine(Kajman.rowSumOddNumbers(42));
+            //Console.WriteLine(Kajman.OddOrEven(new int[] { -1023, -1, 3 }));
+            Console.WriteLine(Kajman.Solution("M"));
+            Console.WriteLine(Kajman.NameShuffler("Jan Karol"));
+            Console.WriteLine(Kajman.sumStrings("132111111231231231231","9312333333333333333333"));
+            //Console.WriteLine(Kajman.GetNumber("1234567898765"));
+            //Console.WriteLine(Kajman.GetSum(1,2));
+            // Console.WriteLine(Kajman.DigitalRoot(493193));
+            // Console.WriteLine(Kajman.CountDeafRats("O~~OO~~OO~~OO~P~OO~~OO~~OO~~O"));
+            // Console.WriteLine(Kajmans.GetVowelCount("abecadlo"));
+            // Console.WriteLine(Kajmans.ToAlternatingCase("Hello Worlds"));
+            //Console.WriteLine(Kajman.Range(5,10));
+            //Console.WriteLine(Kajman.minMax(new int[] { 1, 2, 5, -1, 12, 20 }));
+            //Hi Evrybody 
+            // Console.WriteLine(Kajman.formatDuration(132030240));
+            //string s = Console.ReadLine();
+            //Console.WriteLine(Kajmans.CamelCase(s));
+            // Console.WriteLine(Kajman.SumArray(new double[] {1,3.0,2,3.5,5 }));
+            // Console.WriteLine(Kajman.DeleteNth(new int[] {1,2,3,2,3,2},2));
+            // Console.WriteLine(Kajman.Scramble("javscripts", "javascript"));
+            // Console.WriteLine(Kajman.Decrypt(" Tah itse sits!", 4));
+            // Console.WriteLine(Kajman.Oper(Kajman.HorMirror,""));
+            // Console.WriteLine(Kajman.Bmi(12,23));
+            // Console.WriteLine(Kajman.sayMeOperations("5 5 10"));
+            // Console.WriteLine(Kajman.DuplicateCount("Indivisibilities"));
+            // Console.WriteLine(Kajman.comp(new int[] { 121, 144, 19, 161, 19, 144, 19, 11 }, new int[] { 11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19 }));
+            // Console.WriteLine(Kajman.NextBiggerNumber(2017));
+            // Console.WriteLine(Kajman.NextBiggerNumber(12));
+            // Console.WriteLine(Kajman.SongDecoder("RWUBWUBWUBLWUB"));
+            // Console.WriteLine(Kajman.DontGiveMeFive(4,17));
+            // Console.WriteLine(Kajman.AlphabetPosition("0"));
+            // Console.WriteLine(Kajman.GetUnique(new[] { 0, 0, 1, 0 }));
+            // Console.WriteLine(Kajman.Accum("abcd"));
+            // Console.WriteLine(Kajman.TowerBuilder(b));
+            // Console.WriteLine(Kajman.Multiply(16));
+            // Console.WriteLine(Kajman.NoNumerals("101"));
+            // Console.WriteLine(Kajman.ValidParentheses("(())((()())())"));
+            // Console.WriteLine(Kajman.ReverseWords("Hello World!"));
+            // Console.WriteLine(Kajman.Litres(12.3));
+            // Console.WriteLine(Kajman.Number(new List<int[]>() { new[] { 10, 0 }, new[] { 3, 5 }, new[] { 5, 8 } }));
+            // Console.WriteLine(Kajman.CalculateYears(1000,0.05,0.18,1500));
+            // Console.WriteLine(Kajman.IsIsogram("isogram"));
+            // Console.WriteLine(Kajman.InvertValues(new int[]{0,1,2,3,-2,-3 }));
+            // Console.WriteLine(Kajman.MSSG("1s2o3c4a5t6"));
+            // Console.WriteLine(Kajman.PigLatin(s));
+            // Console.WriteLine(Kajman.PigLatin("Pig latin is cool"));
+            // Console.WriteLine(Kajman.Longest("aretheyheresssss", "yestheyarehere"));
+            //Console.WriteLine(Kajman.AvgStr("Can you not do that?"));
+            Console.ReadKey();
             // Console.WriteLine(Kajman.PigIt("ASd asd wee"));
             // Console.WriteLine(Kajman.CountPositivesSumNegatives(new int[] {0}));
             // Console.WriteLine(Kajman.PasswordValidator(s));
@@ -90,477 +123,1320 @@ namespace Table_Del
             // Console.WriteLine(Digitizer.Digitize(34));
             //Console.WriteLine(Kata.Solution("karol"));
             //Console.WriteLine(Kata.High("TO jest super String wwxq"));
-        }
 
+        }
     }
 }
 public class Kajman
 {
-    //////////////////////////////////////////////////////////////////////
-    //public static bool IsUpperCase(this string text)
-    //{
-    //    if (text.Length==0)
-    //    {
-    //        return true;
-    //    }
-    //    var b = text.ToUpper();
-    //    for (int i = 0; i < text.Length; i++)
-    //    {
-    //        if (text == b )
-    //        {
-    //            return true;
-    //        }
-    //    }
-    //    return value.ToUpper() == value;
-    //    return !s.Any(x => Char.IsLower(x));
-    //    return !str.Any(x => char.IsLower(x));
-    //    return false;
-    //}
-    /////////////////////////////////////////////////////////////////////////////////////////////////grade == alphabet
-    //  public static char GetGrade(int s1, int s2, int s3)
-    // {
 
-    //double d = (s1 + s2 + s3) / 3;
-    //if (d >= 0 & d < 60)
-    //{
-    //    return 'F';
-    //}
-    //else if (d >= 60 & d < 70)
-    //{
-    //    return 'D';
-    //}
-    //else if (d >= 70 & d < 80)
-    //{
-    //    return 'C';
-    //}
-    //else if (d >= 80 & d < 90)
-    //{
-    //    return 'B';
-    //}
-    //else
-    //    return'A';
-    //var s = (s1 + s2 + s3) / 3;
-    //if (60 > s) return 'F';
-    //if (70 > s) return 'D';
-    //if (80 > s) return 'C';
-    //if (90 > s) return 'B';
-    //return 'A';
-    //return m >= 90 ? 'A' : m >= 80 ? 'B' : m >= 70 ? 'C' : m >= 60 ? 'D' : 'F';
-
-    //return 'F';
-    //   }
-    /////////////////////////////////////////////////////////////////////////////////Budowanie 
-    //public static string[] TowerBuilder(int nFloors)
-    //{
-    //    string[] karolek = new string[nFloors];
-    //    for (int i = 0; i < nFloors; i++)
-    //    {
-    //        int spacenumb = nFloors - i - 1;
-    //        string space = Kajman.RepeatConcat(" ", spacenumb);
-    //        int num = 2 * i + 1;
-    //        string blocks = Kajman.RepeatConcat("*", num);
-
-    //        karolek[i] = space + blocks + space;
-    //    }
-    //    foreach (var item in karolek)
-    //    {
-    //        Console.WriteLine(item);
-    //    }
-    //    return karolek;
-    //}
-    //static string RepeatConcat(string s, int n)
-    //{
-    //    return String.Concat(Enumerable.Repeat(s, n));
-    //}
-    /////////////////////////////////////////////////////////////////////////////////DRIVING LICENSE !
-    //string s = Console.ReadLine();
-    //double number = Convert.ToInt32(Console.ReadLine());
-    //string name = Console.ReadLine();
-    //var xyz = name.Split(',');
-    //var xanax = xyz.Concat(new[] { s });
-    //var z = xanax.ToArray();
-    //Array.Sort(z);
-    //        double time = 0;
-    //        for (int i = 0; i<z.Length; i++)
-    //        {
-    //            if (z[i] == s)
-    //            {
-    //                double x = ++i;
-    //time = (x / number);
-    //                var y = Math.Ceiling(time) * 20;
-    //Console.WriteLine(y);
-    //            }
-    //        }
-    //public static int Multiply(int x)
-    //{
-    //    int numb = 0;
-    //    if (x%2 == 1)
-    //        numb = x * 9;
-    //    else
-    //        if (x % 2 == 0)
-    //        numb  = x*8;
-    //    return numb;
-    //    public static int Multiply(int n) => n * (n % 2 == 0 ? 8 : 9);
-    //}
-
-    //        public static int DontGiveMeFive(int start, int end)
-    //    {
-
-    //   int i = start;
-    //    int count = 0;
-    //    for (; i <= end; i++)
-    //    {
-    //        if (i.ToString().Contains("5") == false)
-
-    //        count++;
-    //        return Enumerable.Range(start, end - start + 1)
-    //               .Where(x => !x.ToString().Contains("5"))
-    //               .Count();
-    //    }
-    //    return count;
-    //}
-    //   return Enumerable.Range(start, end-start+1).Count(x => !x.ToString().Contains("5"));
-    ////////////////////////////////////////////////////////////////////////////////Alphabet position 
-    //public static string AlphabetPosition(string text)
-    //{
-    //    char[] alphabet = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
-    //    var b = text.ToLower();
-    //    string s = "";
-    //    if (text.Length > 0)
-    //    {
-    //        for (int i = 0; i < b.Length; i++)
-    //            for (int j = 0; j < alphabet.Length; j++)
-    //            {
-
-    //                if (alphabet[j] == b[i])
-    //                {
-    //                    s += ++j + " ";
-    //                }
-    //            }
-
-    //        var x = s.TrimEnd(' ');
-    //        return x;
-    //    }
-    //    else
-    //        return s;
-    //}
-    /////////////////////////////////////////////////////////////////Unique Number
-    //public static int GetUnique(IEnumerable<int> numbers)
-    //{
-    //    //var b = numbers.ToArray();
-    //    // b.OrderByDescending(x => x);
-    //    // string s = "";
-    //    // for (int i = 0; i < b.Length; i++)
-    //    // {
-    //    //     int nums = b[0];
-    //    //     if (b[i] != b[b.Length - 1] & b[b.Length - 1] != b[0])
-    //    //           return b[i];
-    //    // }
-    //    // return 1;
-    //    int[] array;
-    //  var b=  numbers.ToArray();
-    //    numbers.OrderBy(x => x);
-
-    //    return (b[0] != b[1] ? b[0] : b.Reverse());
-    //}
-
-    //public static string ShowSequence(int n) /////////////////////////////////////////////////////////////////////Sequence
-    //{
-    //    //int sumInt = 0;
-    //    //string sum = "";
-    //    //for (int i = 0; i <= n; i++)
-    //    //{
-    //    //    if (n == 0)
-    //    //    {
-    //    //        sum += i + "=";
-    //    //    }
-    //    //    else if (n < 0)
-    //    //    {
-    //    //        sum += n + "<";
-    //    //    }
-    //    //    else
-    //    //   if (i == n)
-    //    //    {
-    //    //        sum += i + " = ";
-    //    //    }
-    //    //    else
-    //    //        sum += i + "+";
-    //    //    sumInt += i;
-    //    //}
-    //    //sum += sumInt;
-    //    //return sum;
-    //    if (n < 0) return $"{n}<0";
-    //    if (n == 0) return "0=0";
-
-    //    IEnumerable<int> sequence = Enumerable.Range(0, n + 1);
-
-    //    return $"{String.Join("+", sequence)} = {sequence.Sum()}";
-    //    if (n < 0)
-    //        return n + "<0";
-    //    if (n == 0)
-    //        return "0=0";
-    //    int sum = 0;
-    //    StringBuilder sequence = new StringBuilder("0");
-    //    for (int i = 1; i <= n; i++)
-    //    {
-    //        sequence.Append("+" + i);
-    //        sum += i;
-    //    }
-    //    sequence.Append(" = " + sum);
-    //    return sequence.ToString();
-    //    return n == 0 ? "0=0" : n < 0 ? $"{n}<0" : string.Join("+", Enumerable.Range(0, n + 1)) + " = " + (n * (n + 1) / 2);
-
-
-    //public static String Accum(string s)
-    //{
-    //string sum = "";
-    //for (int i = 0; i < s.Length; i++)
-    //{
-    //    sum = s.ToUpper()  + "-";
-    //}
-    //return sum;
-    //string ans = "";
-    //int i = 0;
-    //while (i <s.Length)
-    //{
-    //    int n = 0;
-    //    while (n<i+1)
-    //    {
-    //        if (n==0)
-    //        {
-    //            ans += s[i].;
-    //        }
-    //    }
-    //}
-    //String result = "";
-    //for (int i = 0; i < s.length(); i++)
-    //{
-    //    char currentChar = s.charAt(i);
-    //    for (int j = 0; j <= i; j++)
-    //    {
-    //        if (j == 0)
-    //        {
-    //            result += Character.toUpperCase(currentChar);
-    //        }
-    //        else
-    //        {
-    //            result += Character.toLowerCase(currentChar);
-    //        }
-    //    }
-    //    result += "-";
-    //}
-    //return result.substring(0, result.length() - 1);
-    //    ans = ''
-    //i = 0
-    //while i < len(s):
-    //	n = 0
-
-    //    while n < i + 1:
-    //		if n == 0:
-    //			ans += s[i].upper()
-
-    //        else:
-    //			ans += s[i].lower()
-
-    //        n += 1
-
-    //    ans += '-'
-
-    //    i += 1
-    //return ans[:len(ans) - 1]
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////// 10 - ten No numerals
-    //public static string NoNumerals(string str)
-    //{
-    //    //Kajman k = new Kajman();
-    //    //str = k.Ten(str);
-    //    //Console.WriteLine(str);
-    //    return str.Replace("10", "ten").Replace("0", "zero").Replace("2", "two").Replace("3", "three").Replace("4", "four").Replace("5", "five").Replace("6", "six")
-    //        .Replace("7", "seven").Replace("8", "eight").Replace("9", "nine").Replace("1", "one").Replace("10","ten");
-    //}
-    //public string Ten(string str)
-    //{
-    //    string x = "";
-    //    for (int i = 0; i < str.Length; i++)
-    //    {
-    //        if (str[i] == '1')
-    //        {
-    //            if (str[++i] == '0')
-    //            {
-    //                x = str.Replace("10", "ten");
-    //            }
-    //        }
-    //        else
-    //            x = str;
-    //    }
-    //    return x;
-    //}
-
-    //////////////////////////////////////////////////////////////////////////////////// chech valid ()()
-    //public static bool ValidParentheses(string input)
-    //{
-    //    var indent = 0;
-
-
-    //    for (var i = 0; i < input.Length && indent >= 0; i++)
-    //    { //indent>=0 is critical
-    //        indent += (input[i] == '(') ? 1 : -1;
-    //    }
-
-    //    return (indent == 0);
-    //int licznik1 = 0;
-    //int licznik2 = 0;
-    //for (int i = 0; i < input.Length; i++)
-    //{
-    //    if (input[0] == '(' )
-    //    {
-    //        if (/*input[i] ==('(') || input[i] ==(')') &*/ (0<=input.Length && input.Length<=100))
-    //        {
-
-    //            if (input[i] == '(')
-    //            {
-    //                licznik1++;
-    //            }
-    //            else if (input[i] == ')')
-    //            {
-    //                licznik2++;
-    //            }
-    //        }
-    //        else
-    //            return false;
-    //    }
-    //    else
-    //        return false;
-    //}
-    //if (licznik1 == licznik2)
-    //{
-    //    return true;
-    //}
-    //return false;
-    //public static string ReverseWords(string str)
-    //{
-    //    var b = str.Split(' ');
-    //    string s = "";
-    //    for (int i = b.Length-1; i >= 0; i--)
-    //    {
-    //        s += b[i] + " ";
-    //    }
-    //    var x = s.Remove(s.Length-1);
-    //    return x;
-    //    return string.Join(" ", str.Split(' ').Reverse());
-    //    string[] words = str.Split(' ');
-    //    Array.Reverse(words);
-    //    return string.Join(" ", words);
-    //}
-
-    //public static int Litres(double time)
-    //{
-    //    double drink = 0.5;
-    //    time = time * drink;
-    //    int value = (int)time;
-    //    return value;
-    //}
-    //public static int Number(List<int[]> peopleListInOut)
-    //{
-    //    int sum1 = 0;
-    //    int sum2 = 0;
-    //    int lastvalue = 0;
-
-    //    for (int i = 0; i<peopleListInOut.Count(); i++)
-    //    {
-    //        sum1 += peopleListInOut[i].First();
-    //        sum2 += peopleListInOut[i].Last();
-    //    }
-    //    lastvalue = sum1 - sum2;
-    //    if (lastvalue<0)
-    //    {
-    //        return 0;
-    //    }
-    //    return lastvalue;
-    //}
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////Skladeczki i oprocentowania
-    //public static int CalculateYears(double principal, double interest, double tax, double desiredPrincipal)
-    //{
-    //    int years = 0;
-    //    while (principal < desiredPrincipal)
-    //    {
-    //        double oprocentowanieWSkaliRoku = ((principal * interest) - (principal * interest * tax));
-    //        principal += oprocentowanieWSkaliRoku;
-    //        years++;
-    //    }
-    //    Console.WriteLine("v YEARS WHAT YOU NEED v");
-    //    return years;
-    //}
-
-    //return (int)Math.Ceiling(Math.Log(dp / p, 1 + (i * (1 - t))));
-    //var years = 0;
-    //while (Principal < DesiredPrincipal)
-    //{
-    //    Principal += Principal * Interest * (1 - Tax);
-    //    years++;
-    //}
-    //return years;
-
-    ///////////////////////////////////////////////////////////////2 Litery nie moga wystepowac kolo sb  
-    //public static bool IsIsogram(string str)
-    //{
-    //  string b= str.ToLower();
-    //    for (int i = 0; i < b.Length; i++)
-    //        for (int j =i+1; j < b.Length; j++)
-    //        {
-    //            if (b[i] == b[j])
-    //                return false;
-    //        }
-    //    return true;
-    //    var chars = str.ToLower().ToCharArray();
-    //    var hash = new HashSet<char>();
-
-    //    foreach (var c in chars)
-    //    {
-    //        if (hash.Contains(c))
-    //        {
-    //            return false;
-    //        }
-    //        else
-    //        {
-    //            hash.Add(c);
-    //        }
-    //    }
-    //    return str.ToLower().Distinct().Count() == str.Length;
-    //     => str.ToLower().Distinct().Count() == str.Length;
-    //}
-    //////////////////////////////////////////////////////////////////////////tablica gdzie 2 = -2
-    //public static int[] InvertValues(int[] input)
-    //{
-    //return input.Select(n => -n).ToArray();
-    //   for (int i = 0; i < input.Count(); i++) input[i] *= -1;
-    //return input;
-    //    for (int i = 0; i < input.Length; i++)
-    //    {
-    //        if (input[i]>0)
-    //        {
-    //            input[i] = -input[i];
-    //        }else if (input[i] < 0)
-    //        {
-    //            input[i] = input[i] * (-1);
-    //        }
-    //        else
-    //        {
-    //            input[i] = 0;
-    //        }
-    //    }
-    //    return input;
-    //}
-    public static string MSSG(string s)
+    public static char FindMissingLetter(char[] array)
     {
+        char[] alphabetSmall = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
+        char[] alphabetBig = "abcdefghijklmnopqrstuvwxyz".ToUpper().ToCharArray();
+        int start = 0;
+        char[] alphabet;
+        if (alphabetSmall.Contains(array[0]))
+        {
+            alphabet = alphabetSmall;
+        }
+        else
+        {
+            alphabet = alphabetBig;
+        }
+        for (int i = 0; i < alphabet.Length; i++)
+        {
+            if (alphabet[i] == array[0])
+            {
+                start = i;
+            }
+        }
+        int arrayindex = 0;
+        for (int i = start; i < alphabet.Length; i++)
+        {
 
-        var b = Kajman.ClearNumber(s);
-        var c = Kajman.ClearSpecialCharacter(b).ToString();
-        return new string(c.ToArray().Reverse().ToArray());
+            if (alphabet[i] != array[arrayindex])
+            {
+                return alphabet[i];
+            }
+            arrayindex++;
+        }
+        return ' ';
+        //public static char FindMissingLetter(char[] array) => (char)Enumerable.Range(array[0], 25).First(x => !array.Contains((char)x));
     }
-    public static string ClearNumber(string s) => Regex.Replace(s, "[1234567890]", "", RegexOptions.IgnoreCase);
-    public static string ClearSpecialCharacter(string s) => Regex.Replace(s, "[!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~]", "", RegexOptions.IgnoreCase);
+    public static int BreakChocolate(int n, int m)
+    {
+        int mult = n*m;
+        if (mult == 0 || mult ==1)
+        {
+            return 0;
+        }
+        else
+        {
+            return mult - 1;
+        }
+        return mult;
+    }
+    public static long rowSumOddNumbers(long n)
+    {
+        return (long)Math.Pow(n, 3);
+    }
+    public static string[] Solution(string str)
+    {
+        string ss = "";
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                ss += str[i];
+            }
+            else
+                ss += str[i] + " ";
+        }
+        if (ss.Length % 2 != 0)
+        {
+            ss += "_";
+        }
+        Console.WriteLine(ss);
+        ss = ss.TrimEnd(' ');
+        var table = ss.Split(' ').ToArray();
+        return table;
+    }
+    public static string NameShuffler(string str)
+    {
+        string s = "";
+        var str1= str.Split(' ');
+        for (int i = str1.Length-1; i >= 0; i--)
+        {
+            s += str1[i]+" ";
+        }
+        s = s.TrimEnd(' ');
+        return s;
+      //  string.Join(" ", str.Split(' ').Reverse());
+    }
+    public static string sumStrings(string a, string b)
+    {
+        var aa = Convert.ToDecimal(a);
+        var bb = Convert.ToDecimal(b);
+        decimal sum = aa + bb;
+        return  sum.ToString();
+    }
+    //public static int GetNumber(string str)
+    //{
+    //    return Enumerable.Range(0, str.Length - 4).Select(i => Convert.ToInt32(str.Substring(i, 5))).ToList().Max();
+    //}
+
+    //public static int DigitalRoot(long n)
+    //{
+    //   return (int)Kajman.Infinity(n);
+    //}
+    //public static long[] Loop(long n)
+    //{
+    //    var lent = n.ToString().Length;
+    //    var longi = new long[lent];
+    //    var b = n.ToString().ToCharArray();
+    //    for (int i = 0; i < longi.Length; i++)
+    //    {
+    //        longi[i] = (int)(b[i] - '0');
+    //    }
+    //    return longi;
+    //}
+    //public static long Infinity(long n)
+    //{
+    //    long sum = 0;
+    //    long sum2 = 0;
+    //    long x = 0;
+    //    var longi = Kajman.Loop(n);
+    //    for (long i = 0; i < longi.Length; i++)
+    //    {
+    //        sum += longi[i];
+    //    }
+    //    if (sum > 10)
+    //    {
+    //        var longi2 = Kajman.Loop(sum);
+    //        return Kajman.Infinity2(longi2);
+    //    }
+    //    return sum;
+    //}
+    //public static long Infinity2(long n)
+    //{
+    //    long sum = 0;
+    //    var longi = Kajman.Loop(n);
+    //    for (long i = 0; i < longi.Length; i++)
+    //    {
+    //        sum += longi[i];
+    //    }
+    //    return sum;
+    //}
+    public static int CountDeafRats(string town)
+    {
+        int count = 0;
+        int x= Kajman.CounDeafRatsLeft(town);
+        int y = Kajman.CounDeafRatsRight(town);
+        count = x + y;
+        return count;
+    }
+    public static int CounDeafRatsLeft(string town)
+    {
+        var Way = town.Split('P');
+        var left = Way[0];
+       var leftleft= left.ToString();
+        var b = Kajman.RemoveWhitespace(leftleft);
+        int count = 0;
+        for (int i = 0; i < b.Length; i+=2)
+        {
+            if (b[i] == 'O')
+            {
+                count++;
+            }
+        }
+        return count;
+        
+    }
+    public static int CounDeafRatsRight(string town)
+    {
+        var Way = town.Split('P');
+        var right = Way[1];
+        var rightright = right.ToString();
+      var b=  Kajman.RemoveWhitespace(rightright);
+        int count = 0;
+        for (int i = 0; i < b.Length; i += 2)
+        {
+            if (b[i] == '~')
+            {
+                count++;
+            }
+        }
+        return count;
+
+    }
+    public static string RemoveWhitespace( string input)
+    {
+        return new string(input.ToCharArray()
+            .Where(c => !Char.IsWhiteSpace(c))
+            .ToArray());
+    }
+    //var rats = town.Replace(" ", "").Split('P');
+    //var leftCount = rats[0].Where((x, i) => i % 2 == 1).Count(x => x == '~');
+    //var rightCount = rats[1].Where((x, i) => i % 2 == 0).Count(x => x == '~');
+    // return leftCount + rightCount;
+    public static int GetAverage(int[] marks) => (int)marks.Average();
+
+    public static int[] Range(int startnum ,int endNum)
+    {
+        var table = new int[++endNum];
+        string s = "";
+        int[] table2 = new int[] { };
+        for (int i = 0; i < table.Length; i++)
+        {
+            table[i] =i;
+            Console.WriteLine(table);
+        }
+        for (int i = 0; i < table.Length; i++)
+        {
+            if (table[i] >= startnum & table[i] <= endNum)
+            {
+                s += table[i] + " ";   
+            }
+        }
+        s = s.TrimEnd(' ');
+        var x = s.Split(' ');
+        var b = x.ToArray();
+        var myint = Array.ConvertAll(b, int.Parse);
+        return myint;
+    }
+    public static int[] minMax(int[] lst)
+    {
+        List<int> list = new List<int>();
+        Array.Sort(lst);
+       int a= lst.First();
+       int b= lst.Last();
+        list.Add(a);
+        list.Add(b);
+        return list.ToArray();
+    }
+    public static string formatDuration(int seconds)
+    {
+        if (seconds == 0)
+        {
+            return "now";
+        }else if(seconds == 1)
+        {
+            return "1 second";
+
+        }
+        else if (seconds > 0 & seconds < 60)
+        {
+            TimeSpan t = TimeSpan.FromSeconds(seconds);
+            string formatted = string.Format(CultureInfo.CurrentCulture,
+                    "{0} seconds", t.Seconds);
+            return Kajman.NoPrular(formatted);
+        }
+        else if (seconds >= 60 & seconds < 3600)
+        {
+            TimeSpan t = TimeSpan.FromSeconds(seconds);
+            string formatted = string.Format(CultureInfo.CurrentCulture,
+                    "{0} minutes and {1} seconds",  t.Minutes, t.Seconds);
+
+            if (t.Seconds == 0)
+            {
+                formatted = string.Format(CultureInfo.CurrentCulture,
+                    "{0} minutes", t.Minutes);
+            }
+            return Kajman.NoPrular(formatted);
+        }
+        else if (seconds >= 3600 & seconds < 86400)
+        {
+            TimeSpan t = TimeSpan.FromSeconds(seconds);
+            string formatted = string.Format(CultureInfo.CurrentCulture,
+                    "{0} hours, {1} minutes and {2} seconds", t.Hours, t.Minutes, t.Seconds);
+            return Kajman.NoPrular(formatted);
+        }
+        else if (seconds >= 2629743 & seconds < 31556926)
+        {
+            TimeSpan t = TimeSpan.FromSeconds(seconds);
+            string formatted = string.Format(CultureInfo.CurrentCulture,
+                    "{0} days, {1} hours, {2} minutes and {3} seconds", t.Days, t.Hours, t.Minutes, t.Seconds);
+            return Kajman.NoPrular(formatted);
+        }
+        else
+        {
+            TimeSpan t = TimeSpan.FromSeconds(seconds);
+            string formatted = string.Format(
+             CultureInfo.CurrentCulture,
+             "{0} years, {1} days, {2} hours, {3} minutes and {4} seconds",
+             t.Days / 365,
+             (t.Days - (t.Days / 365) * 365),
+             t.Hours,
+             t.Minutes,
+             t.Seconds);
+          return  Kajman.NoPrular(formatted);
+        }
+    }
+    public static string NoPrular(string formatted)
+    {
+        var str = formatted.Split(' ');
+        string b = "";
+        string s = "";
+        string cb = "";
+        for (int i = 0; i < str.Length; i++)
+        {
+            // FOR PLURAR 
+            string bad = "";
+            b += str[i] + " ";
+            if (str.Length <= 2 & str[i] == "seconds")
+            {
+                b += str[++i].TrimEnd('s');
+            }
+
+            else if (str[i] == "1")
+            {
+                b = b + str[++i].Replace("s,", ", ");
+            }
+   
+        } 
+        b = b.TrimEnd(' ');
+        var x = b.Split(' ');
+        for (int j = 0; j < x.Length; j++)
+        {
+            if (x[j] == "0")
+            {
+                if (x[j - 1] == "and")
+                {
+                    cb += x[j - 1];
+                }
+                cb += x[j] + x[j++];
+            }
+            else
+                s += str[j] + " ";
+        }
+
+        s = s.TrimEnd(' ');
+        s = s.TrimEnd('d');
+        s = s.TrimEnd('n');
+        s = s.TrimEnd('a');
+        var ss = s.Split(' ').ToArray();
+        Kajman k = new Kajman();
+        
+        return k.Arriks(ss);
+       
+    }
+    public string Arriks(string[] x)
+    {
+        string xx = "";
+        if (x[x.Length - 2] == "and")
+        {
+            x[x.Length - 2].Insert(x.Length - 3, "and");
+        }
+        else
+            return x.ToString();
+        return xx;
+    }
+    public static string Zero(string formatted)
+    {
+        var str = formatted.Split(' ');
+        string s = "";
+        string bad = "";
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (str[i] == "0")
+            {
+                if (str[i-1] == "and")
+                {
+                    bad += str[i - 1];
+                }
+                bad += str[i] + str[i++];
+            }
+            else
+                s += str[i];
+            s = s.TrimEnd(' ');
+            s = s.TrimEnd('d');
+            s = s.TrimEnd('n');
+            s = s.TrimEnd('a');
+        }
+        return s;
+    }
 }
+///////////////////////////////////////////////////////////Array sum
+//public static double SumArray(double[] array)
+//{
+//   var b= array.ToList();
+//    double sum = 0;
+//    if (array.Length == 0)
+//    {
+//        return 0;
+//    }
+//    else
+//    {
+//       sum = b.Sum();
+//    }
+//    return sum;
+// return array.Sum();
+//}
+////////////////////////////////////////////////////////////////////////////// s1 == s2 
+//public static bool Scramble(string str1, string str2)
+//{
+//    Func<string, Dictionary<char, int>> fun = s =>
+//       s.GroupBy(c => c)
+//       .Select(g => new { g.Key, Count = g.Count() })
+//       .ToDictionary(pair => pair.Key, pair => pair.Count);
+
+//    var map1 = fun(str1);
+//    var map2 = fun(str2);
+
+//    foreach (KeyValuePair<char, int> p2 in map2)
+//    {
+//        if (!map1.ContainsKey(p2.Key)) return false;
+
+//        if (map1[p2.Key] < p2.Value) return false;
+//    }
+
+
+//    return true;
+//    //Other Solution
+//    //return str2.All(x => str1.Count(y => y == x) >= str2.Count(y => y == x));
+//    //var possible = str1.ToList();
+
+//    //foreach (var c in str2)
+//    //{
+//    //    if (!possible.Remove(c))
+//    //        return false;
+//    //}
+
+//    //return true;
+//}
+
+// public static int[] DeleteNth(int[] arr, int x)
+//  {
+//var result = new List<int>();
+//foreach (var item in arr)
+//{
+//    if (result.Count(i => i == item) < x)
+//        result.Add(item);
+//}
+//return result.ToArray();
+
+//var occurences = new Dictionary<int, int>();
+//var list = new List<int>();
+//for (int i = 0; i < arr.Length; i++)
+//{
+//    if (!occurences.ContainsKey(arr[i])) occurences.Add(arr[i], 1);
+//    else occurences[arr[i]]++;
+//    if (occurences[arr[i]] <= x) list.Add(arr[i]);
+//}
+//return list.ToArray();
+//public static int[] DeleteNth(int[] arr, int x)
+//{
+//    return arr.Where((t, i) => arr.Take(i + 1).Count(s => s == t) <= x).ToArray();
+//}
+
+//  }
+//public static string Encrypt(string s, int n)
+//{
+//    if (s == null) return s;
+//    while (n-- > 0)
+//    {
+//        s = string.Join("", s.Where((x, i) => i % 2 == 1)) + string.Join("", s.Where((x, i) => i % 2 == 0));
+//    }
+//    return s;
+//}
+
+//public static string Decrypt(string s, int n)
+//{
+//    if (s == null) return s;
+//    while (n-- > 0)
+//    {
+//        var len = s.Length / 2;
+//        string s1 = s.Substring(0, len), s2 = s.Substring(len), rs = "";
+//        for (int i = 0; i < len; i++) rs += "" + s2[i] + s1[i];
+//        s = (s.Length % 2 == 0) ? rs : rs + s[s.Length - 1];
+//    }
+//    return s;
+//}
+//public static string Encrypt(string text, int n)
+//{
+//    if (n <= 0)
+//    {
+//        return text;
+//    }
+//    else
+//    {
+//        for (int j = n; j >= 1; j--)
+//        {
+//            string s = "";
+//            string s2 = "";
+
+//            for (int i = 0; i < text.Length; i++)
+//            {
+//                if (i % 2 == 1)
+//                {
+//                    s += text[i];
+//                }
+//                else
+//                    s2 += text[i];
+//            }
+//            text = String.Concat(s, s2);
+//        }
+//        return text;
+//    }
+//}
+
+//public static string Decrypt(string encryptedText, int n)
+//{
+//    if (encryptedText == "" || encryptedText == null || n <= 0) { return encryptedText; } // Sanity Check
+
+//    int len = encryptedText.Length;
+//    string evenHalf = "";
+//    string oddHalf = "";
+
+//    for (int i = 0; i < n; i++)
+//    {
+//        evenHalf = encryptedText.Substring(0, len / 2);
+//        oddHalf = encryptedText.Substring(len / 2, (1 + len) / 2);
+
+//        for (int j = 0; j < len; j++)
+//        {
+//            switch (j % 2)
+//            {
+//                case 0:
+//                    encryptedText += oddHalf[0];
+//                    oddHalf = oddHalf.Substring(1);
+//                    break;
+//                case 1:
+//                    encryptedText += evenHalf[0];
+//                    evenHalf = evenHalf.Substring(1);
+//                    break;
+//                default:
+//                    Console.WriteLine("An error occurred.");
+//                    break;
+//            }
+//        }
+//        return encryptedText;
+//    }
+//    return encryptedText;
+//if (n <= 0)
+//{
+//    return encryptedText;
+//}
+//else
+//{
+//    {
+//        string s = "";
+//        string s2 = "";
+
+//        for (int i = 0; i < encryptedText.Length; i++)
+//        {
+//            if (i % 2 == 1)
+//            {
+//                s2 += encryptedText[i];
+//            }
+//            else
+//                s += encryptedText[i];
+//        }
+//        encryptedText = String.Concat(s2, s);
+//    }
+//    return encryptedText;
+
+/////////////////////////////////////////////////////////VertMirror
+//public static string VertMirror(string strng)
+//{
+//    string[] separator = new string[] { "\n" };
+//    string[] str = strng.Split(separator, StringSplitOptions.None);
+//    string s = "";
+//    foreach (var item in str)
+//    {
+//        item.Reverse();
+//        s += item + @"\n";
+//    }
+//    s = s.TrimEnd(new[] { '\\', 'n' });
+//    return s;
+//}
+//public static string HorMirror(string strng)
+//{
+//    string[] separator = new string[] { "\n" };
+//    string[] str = strng.Split(separator, StringSplitOptions.None);
+//    var b = str.Reverse();
+//    string s = "";
+//    foreach (var item in b)
+//    {
+//        s += item + @"\n";
+//    }
+//    s = s.TrimEnd(new[] { '\\', 'n' });
+//    return s;
+//}
+
+//public static string Oper(Func<string,string> func, string s)
+//{
+//    return func(s);
+//}
+//public static string VertMirror(string strng)
+//{
+//    return string.Join("\n", strng.Split('\n').Select(i => string.Concat(i.Reverse())));
+//}
+//public static string HorMirror(string strng)
+//{
+//    return string.Join("\n", strng.Split('\n').Reverse());
+//}
+//public static string Oper(Func<string, string> fct, string s)
+//{
+//    return fct(s);
+//}
+//public static string Bmi(double weight, double height)
+//{
+//    double bmi = weight / Math.Pow(height,2);
+//    return bmi <= 18.5 ? "Underweight" : bmi <= 25.0 ? "Normal" : bmi <= 30.0 ? "Overweight" : "Obese";
+//}
+//public static string sayMeOperations(string stringNumbers)
+//{
+
+//int x = 0;
+//int add = 0;
+//int multi = 0;
+//int sub = 0;
+//int divi = 0;
+//int z = 0;
+//var v = stringNumbers.Split(' ').ToArray();
+//var list = stringNumbers.Split(' ').ToList();
+//string s = "";
+
+//for (int i = 0; i < v.Length; i++)
+//{
+//    int j = i + 1;
+//    int k = i + 2;
+//    if (k == v.Length)
+//    {
+//        break;
+//    }
+//    x = int.Parse(v[i]);
+//    z = int.Parse(v[j]);
+//    add = x + z;
+//    multi = x * z;
+//    sub = x - z;
+//    divi = x / z;
+
+//    if (add == int.Parse(v[k]))
+//    {
+//        s += "addition, ";
+//    }
+//    else if (sub == int.Parse(v[k]))
+//    {
+//        s += "subtraction, ";
+//    }
+//    else if (multi == int.Parse(v[k]))
+//    {
+//        s += "multiplication, ";
+//    }
+//    else if (divi == int.Parse(v[k]))
+//    {
+//        if (int.Parse(v[i]) != 0)
+
+//            s += "division, ";
+//    }
+//}
+
+
+//s = s.Remove(s.Length - 2, 2);
+//return s;
+// List<int> l = s.Split(' ').Select(Int32.Parse).ToList();
+//   return String.Join(", ", Enumerable.Range(0, l.Count - 2).Select(i => l[i] + l[i + 1] == l[i + 2] ? "addition" : l[i] - l[i + 1] == l[i + 2] ? "subtraction" : l[i] * l[i + 1] == l[i + 2] ? "multiplication" : "division"));
+//string buffer = "";
+//int n1 = 0;
+//int n2 = 0;
+//int n3 = 0;
+//string[] numbers = stringNumbers.Split(' ');
+//for (int i = 0; i < numbers.Length - 2; i++)
+//{
+//    n1 = Convert.ToInt32(numbers[i]);
+//    n2 = Convert.ToInt32(numbers[i + 1]);
+//    n3 = Convert.ToInt32(numbers[i + 2]);
+//    if ((n1 + n2) == n3)
+//        buffer += "addition";
+//    else if ((n1 - n2) == n3)
+//        buffer += "subtraction";
+//    else if ((n1 * n2) == n3)
+//        buffer += "multiplication";
+//    else
+//        buffer += "division";
+//    if (i != numbers.Length - 3)
+//        buffer += ", ";
+//}
+//return buffer;
+
+
+
+
+//public static int DuplicateCount(string str)
+//{
+//    string s = "";
+//    var FreQ = from x in str.ToLower()
+//               group x by x into y
+//               select y;
+
+//    foreach (var ArrEle in FreQ)
+//    {
+//        if ( ArrEle.Count() > 1)
+//        {
+//            s += ArrEle.Key;
+//        }
+//    }
+
+//    return s.Length;
+//    //Other Solution
+//  //  return str.ToLower().GroupBy(c => c).Where(g => g.Count() > 1).Count();
+//for (int i = 0; i < str.Length; i++)
+//{
+//    if (str.Contains(str[i]))
+//    {
+//        s += str[i];
+//        Console.WriteLine(s);
+//    }
+//}
+
+
+//public static bool AreTablesTheSame(DataTable tbl1, DataTable tbl2)
+//{
+//    if (tbl1.Rows.Count != tbl2.Rows.Count || tbl1.Columns.Count != tbl2.Columns.Count)
+//        return false;
+
+
+//    for (int i = 0; i < tbl1.Rows.Count; i++)
+//    {
+//        for (int c = 0; c < tbl1.Columns.Count; c++)
+//        {
+//            if (!Equals(tbl1.Rows[i][c], tbl2.Rows[i][c]))
+//                return false;
+//        }
+//    }
+//    return true;
+//}
+
+//public static long NextBiggerNumber(long n)
+//{
+//if (n > 9)
+//{
+//    string mystr = n.ToString();
+//    char right = mystr[mystr.Length - 1];
+//    char middle = mystr[mystr.Length - 2];
+//    char left=' ';
+//    if (n>99)
+//    {
+//       left = mystr[mystr.Length - 3];
+//    }
+//    var sumRight = right + "" + middle;
+//    var OneCHecksumRight = long.Parse(sumRight);
+//    var sumLeft = left + "" + middle;
+//    var OneCHeckSumLeft = long.Parse(sumLeft);
+//    long finishleft=0;
+//    long finishRight = 0 ;
+
+//        var d = mystr.Remove(mystr.Length - 2, 2);
+//        var builder = new StringBuilder();
+//        builder.Append(d);
+//        builder.Append(sumRight);
+//        d = builder.ToString();
+//        finishRight = long.Parse(d);
+
+//    if (n > 99)
+//    {
+//        var lastRight = mystr[mystr.Length - 1];
+//        var x = mystr.Remove(mystr.Length - 3, 3);
+//        var builder2 = new StringBuilder();
+//        builder2.Append(x);
+//        builder2.Append(lastRight);
+//        builder2.Append(sumLeft);
+//        x = builder2.ToString();
+//        finishleft = long.Parse(x);
+//    }
+//    if (n> finishleft & n> finishRight)
+//    {
+//        return -1;
+//    }else
+//    if (finishleft > finishRight)
+//        return finishleft;
+//    else
+//        return finishRight;
+//}
+//return -1;
+
+// public static long NextBiggerNumber(long n)
+// {
+//        var arr = n.ToString();
+//        var y= arr.ToCharArray();
+//        var x = arr.Length;
+
+//      return  Kajman.findNext(y, x);
+//}
+//    public static void swap(char[] ar, int i, int j)
+//        {
+//            char temp = ar[i];
+//            ar[i] = ar[j];
+//            ar[j] = temp;
+//        }
+//     public   static long findNext(char[] ar, int n)
+//        {
+//            int i;
+//        string s = "";
+//            for (i = n - 1; i > 0; i--)
+//            {
+//                if (ar[i] > ar[i - 1])
+//                {
+//                    break;
+//                }
+//            }
+
+//            if (i == 0)
+//            {
+//            return -1;
+//            }
+//            else
+//            {
+//                int x = ar[i - 1], min = i;
+//                for (int j = i + 1; j < n; j++)
+//                {
+//                    if (ar[j] > x && ar[j] < ar[min])
+//                    {
+//                        min = j;
+//                    }
+//                }
+
+//                swap(ar, i - 1, min);
+
+//                Array.Sort(ar, i, n - i);
+//                for (i = 0; i < n; i++)
+//                   s+=ar[i];
+//            var finish = long.Parse(s);
+//            return finish;
+//            }
+//        }
+//    }
+///////////////////////////////////////////Song DECODER - DELETE WUB IN STRING !
+//public static string SongDecoder(string input)
+//{
+
+//String[] separatpr = {"WUB"};     
+//var inputAray = input.Split(separatpr, StringSplitOptions.RemoveEmptyEntries);
+//string song = "";
+//int totalCount = inputAray.Count();
+//foreach (var item in inputAray)
+//{
+//    if (inputAray.LastOrDefault().Equals(item))
+//    {
+//        song += item;
+//    }else
+//    song += item+ " ";          
+//}
+//return song;
+////OTHER SOLUTION
+//return String.Join(" ", input.Split(new string[] { "WUB" }, StringSplitOptions.RemoveEmptyEntries));
+//return Regex.Replace(input, @"(WUB)+", " ").Trim();
+//return Regex.Replace(input, "(WUB)+", " ").Trim();
+//}
+
+//////////////////////////////////////////////////////////////////////
+//public static bool IsUpperCase(this string text)
+//{
+//    if (text.Length==0)
+//    {
+//        return true;
+//    }
+//    var b = text.ToUpper();
+//    for (int i = 0; i < text.Length; i++)
+//    {
+//        if (text == b )
+//        {
+//            return true;
+//        }
+//    }
+//    return value.ToUpper() == value;
+//    return !s.Any(x => Char.IsLower(x));
+//    return !str.Any(x => char.IsLower(x));
+//    return false;
+//}
+/////////////////////////////////////////////////////////////////////////////////////////////////grade == alphabet
+//  public static char GetGrade(int s1, int s2, int s3)
+// {
+
+//double d = (s1 + s2 + s3) / 3;
+//if (d >= 0 & d < 60)
+//{
+//    return 'F';
+//}
+//else if (d >= 60 & d < 70)
+//{
+//    return 'D';
+//}
+//else if (d >= 70 & d < 80)
+//{
+//    return 'C';
+//}
+//else if (d >= 80 & d < 90)
+//{
+//    return 'B';
+//}
+//else
+//    return'A';
+//var s = (s1 + s2 + s3) / 3;
+//if (60 > s) return 'F';
+//if (70 > s) return 'D';
+//if (80 > s) return 'C';
+//if (90 > s) return 'B';
+//return 'A';
+//return m >= 90 ? 'A' : m >= 80 ? 'B' : m >= 70 ? 'C' : m >= 60 ? 'D' : 'F';
+
+//return 'F';
+//   }
+/////////////////////////////////////////////////////////////////////////////////Budowanie 
+//public static string[] TowerBuilder(int nFloors)
+//{
+//    string[] karolek = new string[nFloors];
+//    for (int i = 0; i < nFloors; i++)
+//    {
+//        int spacenumb = nFloors - i - 1;
+//        string space = Kajman.RepeatConcat(" ", spacenumb);
+//        int num = 2 * i + 1;
+//        string blocks = Kajman.RepeatConcat("*", num);
+
+//        karolek[i] = space + blocks + space;
+//    }
+//    foreach (var item in karolek)
+//    {
+//        Console.WriteLine(item);
+//    }
+//    return karolek;
+//}
+//static string RepeatConcat(string s, int n)
+//{
+//    return String.Concat(Enumerable.Repeat(s, n));
+//}
+/////////////////////////////////////////////////////////////////////////////////DRIVING LICENSE !
+//string s = Console.ReadLine();
+//double number = Convert.ToInt32(Console.ReadLine());
+//string name = Console.ReadLine();
+//var xyz = name.Split(',');
+//var xanax = xyz.Concat(new[] { s });
+//var z = xanax.ToArray();
+//Array.Sort(z);
+//        double time = 0;
+//        for (int i = 0; i<z.Length; i++)
+//        {
+//            if (z[i] == s)
+//            {
+//                double x = ++i;
+//time = (x / number);
+//                var y = Math.Ceiling(time) * 20;
+//Console.WriteLine(y);
+//            }
+//        }
+//public static int Multiply(int x)
+//{
+//    int numb = 0;
+//    if (x%2 == 1)
+//        numb = x * 9;
+//    else
+//        if (x % 2 == 0)
+//        numb  = x*8;
+//    return numb;
+//    public static int Multiply(int n) => n * (n % 2 == 0 ? 8 : 9);
+//}
+
+//        public static int DontGiveMeFive(int start, int end)
+//    {
+
+//   int i = start;
+//    int count = 0;
+//    for (; i <= end; i++)
+//    {
+//        if (i.ToString().Contains("5") == false)
+
+//        count++;
+//        return Enumerable.Range(start, end - start + 1)
+//               .Where(x => !x.ToString().Contains("5"))
+//               .Count();
+//    }
+//    return count;
+//}
+//   return Enumerable.Range(start, end-start+1).Count(x => !x.ToString().Contains("5"));
+////////////////////////////////////////////////////////////////////////////////Alphabet position 
+//public static string AlphabetPosition(string text)
+//{
+//    char[] alphabet = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
+//    var b = text.ToLower();
+//    string s = "";
+//    if (text.Length > 0)
+//    {
+//        for (int i = 0; i < b.Length; i++)
+//            for (int j = 0; j < alphabet.Length; j++)
+//            {
+
+//                if (alphabet[j] == b[i])
+//                {
+//                    s += ++j + " ";
+//                }
+//            }
+
+//        var x = s.TrimEnd(' ');
+//        return x;
+//    }
+//    else
+//        return s;
+//}
+/////////////////////////////////////////////////////////////////Unique Number
+//public static int GetUnique(IEnumerable<int> numbers)
+//{
+//    //var b = numbers.ToArray();
+//    // b.OrderByDescending(x => x);
+//    // string s = "";
+//    // for (int i = 0; i < b.Length; i++)
+//    // {
+//    //     int nums = b[0];
+//    //     if (b[i] != b[b.Length - 1] & b[b.Length - 1] != b[0])
+//    //           return b[i];
+//    // }
+//    // return 1;
+//    int[] array;
+//  var b=  numbers.ToArray();
+//    numbers.OrderBy(x => x);
+
+//    return (b[0] != b[1] ? b[0] : b.Reverse());
+//}
+
+//public static string ShowSequence(int n) /////////////////////////////////////////////////////////////////////Sequence
+//{
+//    //int sumInt = 0;
+//    //string sum = "";
+//    //for (int i = 0; i <= n; i++)
+//    //{
+//    //    if (n == 0)
+//    //    {
+//    //        sum += i + "=";
+//    //    }
+//    //    else if (n < 0)
+//    //    {
+//    //        sum += n + "<";
+//    //    }
+//    //    else
+//    //   if (i == n)
+//    //    {
+//    //        sum += i + " = ";
+//    //    }
+//    //    else
+//    //        sum += i + "+";
+//    //    sumInt += i;
+//    //}
+//    //sum += sumInt;
+//    //return sum;
+//    if (n < 0) return $"{n}<0";
+//    if (n == 0) return "0=0";
+
+//    IEnumerable<int> sequence = Enumerable.Range(0, n + 1);
+
+//    return $"{String.Join("+", sequence)} = {sequence.Sum()}";
+//    if (n < 0)
+//        return n + "<0";
+//    if (n == 0)
+//        return "0=0";
+//    int sum = 0;
+//    StringBuilder sequence = new StringBuilder("0");
+//    for (int i = 1; i <= n; i++)
+//    {
+//        sequence.Append("+" + i);
+//        sum += i;
+//    }
+//    sequence.Append(" = " + sum);
+//    return sequence.ToString();
+//    return n == 0 ? "0=0" : n < 0 ? $"{n}<0" : string.Join("+", Enumerable.Range(0, n + 1)) + " = " + (n * (n + 1) / 2);
+
+
+//public static String Accum(string s)
+//{
+//string sum = "";
+//for (int i = 0; i < s.Length; i++)
+//{
+//    sum = s.ToUpper()  + "-";
+//}
+//return sum;
+//string ans = "";
+//int i = 0;
+//while (i <s.Length)
+//{
+//    int n = 0;
+//    while (n<i+1)
+//    {
+//        if (n==0)
+//        {
+//            ans += s[i].;
+//        }
+//    }
+//}
+//String result = "";
+//for (int i = 0; i < s.length(); i++)
+//{
+//    char currentChar = s.charAt(i);
+//    for (int j = 0; j <= i; j++)
+//    {
+//        if (j == 0)
+//        {
+//            result += Character.toUpperCase(currentChar);
+//        }
+//        else
+//        {
+//            result += Character.toLowerCase(currentChar);
+//        }
+//    }
+//    result += "-";
+//}
+//return result.substring(0, result.length() - 1);
+//    ans = ''
+//i = 0
+//while i < len(s):
+//	n = 0
+
+//    while n < i + 1:
+//		if n == 0:
+//			ans += s[i].upper()
+
+//        else:
+//			ans += s[i].lower()
+
+//        n += 1
+
+//    ans += '-'
+
+//    i += 1
+//return ans[:len(ans) - 1]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// 10 - ten No numerals
+//public static string NoNumerals(string str)
+//{
+//    //Kajman k = new Kajman();
+//    //str = k.Ten(str);
+//    //Console.WriteLine(str);
+//    return str.Replace("10", "ten").Replace("0", "zero").Replace("2", "two").Replace("3", "three").Replace("4", "four").Replace("5", "five").Replace("6", "six")
+//        .Replace("7", "seven").Replace("8", "eight").Replace("9", "nine").Replace("1", "one").Replace("10","ten");
+//}
+//public string Ten(string str)
+//{
+//    string x = "";
+//    for (int i = 0; i < str.Length; i++)
+//    {
+//        if (str[i] == '1')
+//        {
+//            if (str[++i] == '0')
+//            {
+//                x = str.Replace("10", "ten");
+//            }
+//        }
+//        else
+//            x = str;
+//    }
+//    return x;
+//}
+
+//////////////////////////////////////////////////////////////////////////////////// chech valid ()()
+//public static bool ValidParentheses(string input)
+//{
+//    var indent = 0;
+
+
+//    for (var i = 0; i < input.Length && indent >= 0; i++)
+//    { //indent>=0 is critical
+//        indent += (input[i] == '(') ? 1 : -1;
+//    }
+
+//    return (indent == 0);
+//int licznik1 = 0;
+//int licznik2 = 0;
+//for (int i = 0; i < input.Length; i++)
+//{
+//    if (input[0] == '(' )
+//    {
+//        if (/*input[i] ==('(') || input[i] ==(')') &*/ (0<=input.Length && input.Length<=100))
+//        {
+
+//            if (input[i] == '(')
+//            {
+//                licznik1++;
+//            }
+//            else if (input[i] == ')')
+//            {
+//                licznik2++;
+//            }
+//        }
+//        else
+//            return false;
+//    }
+//    else
+//        return false;
+//}
+//if (licznik1 == licznik2)
+//{
+//    return true;
+//}
+//return false;
+//public static string ReverseWords(string str)
+//{
+//    var b = str.Split(' ');
+//    string s = "";
+//    for (int i = b.Length-1; i >= 0; i--)
+//    {
+//        s += b[i] + " ";
+//    }
+//    var x = s.Remove(s.Length-1);
+//    return x;
+//    return string.Join(" ", str.Split(' ').Reverse());
+//    string[] words = str.Split(' ');
+//    Array.Reverse(words);
+//    return string.Join(" ", words);
+//}
+
+//public static int Litres(double time)
+//{
+//    double drink = 0.5;
+//    time = time * drink;
+//    int value = (int)time;
+//    return value;
+//}
+//public static int Number(List<int[]> peopleListInOut)
+//{
+//    int sum1 = 0;
+//    int sum2 = 0;
+//    int lastvalue = 0;
+
+//    for (int i = 0; i<peopleListInOut.Count(); i++)
+//    {
+//        sum1 += peopleListInOut[i].First();
+//        sum2 += peopleListInOut[i].Last();
+//    }
+//    lastvalue = sum1 - sum2;
+//    if (lastvalue<0)
+//    {
+//        return 0;
+//    }
+//    return lastvalue;
+//}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////Skladeczki i oprocentowania
+//public static int CalculateYears(double principal, double interest, double tax, double desiredPrincipal)
+//{
+//    int years = 0;
+//    while (principal < desiredPrincipal)
+//    {
+//        double oprocentowanieWSkaliRoku = ((principal * interest) - (principal * interest * tax));
+//        principal += oprocentowanieWSkaliRoku;
+//        years++;
+//    }
+//    Console.WriteLine("v YEARS WHAT YOU NEED v");
+//    return years;
+//}
+
+//return (int)Math.Ceiling(Math.Log(dp / p, 1 + (i * (1 - t))));
+//var years = 0;
+//while (Principal < DesiredPrincipal)
+//{
+//    Principal += Principal * Interest * (1 - Tax);
+//    years++;
+//}
+//return years;
+
+///////////////////////////////////////////////////////////////2 Litery nie moga wystepowac kolo sb  
+//public static bool IsIsogram(string str)
+//{
+//  string b= str.ToLower();
+//    for (int i = 0; i < b.Length; i++)
+//        for (int j =i+1; j < b.Length; j++)
+//        {
+//            if (b[i] == b[j])
+//                return false;
+//        }
+//    return true;
+//    var chars = str.ToLower().ToCharArray();
+//    var hash = new HashSet<char>();
+
+//    foreach (var c in chars)
+//    {
+//        if (hash.Contains(c))
+//        {
+//            return false;
+//        }
+//        else
+//        {
+//            hash.Add(c);
+//        }
+//    }
+//    return str.ToLower().Distinct().Count() == str.Length;
+//     => str.ToLower().Distinct().Count() == str.Length;
+//}
+//////////////////////////////////////////////////////////////////////////tablica gdzie 2 = -2
+//public static int[] InvertValues(int[] input)
+//{
+//return input.Select(n => -n).ToArray();
+//   for (int i = 0; i < input.Count(); i++) input[i] *= -1;
+//return input;
+//    for (int i = 0; i < input.Length; i++)
+//    {
+//        if (input[i]>0)
+//        {
+//            input[i] = -input[i];
+//        }else if (input[i] < 0)
+//        {
+//            input[i] = input[i] * (-1);
+//        }
+//        else
+//        {
+//            input[i] = 0;
+//        }
+//    }
+//    return input;
+//}
+//    public static string MSSG(string s)
+//    {
+
+//        var b = Kajman.ClearNumber(s);
+//        var c = Kajman.ClearSpecialCharacter(b).ToString();
+//        return new string(c.ToArray().Reverse().ToArray());
+//    }
+//    public static string ClearNumber(string s) => Regex.Replace(s, "[1234567890]", "", RegexOptions.IgnoreCase);
+//    public static string ClearSpecialCharacter(string s) => Regex.Replace(s, "[!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~]", "", RegexOptions.IgnoreCase);
+//}
 //   public static string Disemvowel(string str)
 //   {
 //       return string.Concat(str.Where(ch => !"aeiouAEIOU".Contains(ch)));
@@ -2379,3 +3255,130 @@ public class Kajman
 
 //    }
 //}
+
+public static class Kajmans
+{
+    public static int GetVowelCount(string str)
+    {
+        int vowelCount = 0;
+
+        char[] vowel = new char[] { 'a', 'e', 'i', 'o','u'};
+        for (int i = 0; i < str.Length; i++)
+            for (int j = 0; j < vowel.Length; j++)
+        {
+            if (str[i] == vowel[j])
+            {
+                vowelCount++;
+            }
+        }
+        return vowelCount;
+    }
+    public static string ToAlternatingCase(this string s)
+    {
+        var low = s.ToLower().ToCharArray();
+        var Up = s.ToUpper().ToCharArray();
+        string str = "";
+        for (int i = 0 ; i < s.Length; i++)
+        {
+            int j=0;
+            j++;
+            int k=0;
+            k++;
+            if (s[i] == low[i])
+            {
+                str += s[i].ToString().ToUpper();
+            }
+            else if (s[i] == Up[i])
+            {
+                str += s[i].ToString().ToLower();
+            }
+            else
+                str += s[i];
+        }
+        return str;
+       // return string.Concat(s.Select(c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
+       // return String.Join("", Input.ToCharArray().Select(character => Char.IsLower(character) ? Char.ToUpper(character) : Char.ToLower(character)));
+    }
+    public static string greet()
+    {
+        return "hello world!";
+    }
+
+    public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> source, string property)
+    {
+        return ApplyOrder<T>(source, property, "OrderBy");
+    }
+    public static IOrderedQueryable<T> OrderByDescending<T>(this IQueryable<T> source, string property)
+    {
+        return ApplyOrder<T>(source, property, "OrderByDescending");
+    }
+    public static IOrderedQueryable<T> ThenBy<T>(this IOrderedQueryable<T> source, string property)
+    {
+        return ApplyOrder<T>(source, property, "ThenBy");
+    }
+    public static IOrderedQueryable<T> ThenByDescending<T>(this IOrderedQueryable<T> source, string property)
+    {
+        return ApplyOrder<T>(source, property, "ThenByDescending");
+    }
+    static IOrderedQueryable<T> ApplyOrder<T>(IQueryable<T> source, string property, string methodName)
+    {
+        string[] props = property.Split('.');
+        Type type = typeof(T);
+        ParameterExpression arg = Expression.Parameter(type, "x");
+        Expression expr = arg;
+        foreach (string prop in props)
+        {
+            // use reflection (not ComponentModel) to mirror LINQ
+            PropertyInfo pi = type.GetProperty(prop);
+            expr = Expression.Property(expr, pi);
+            type = pi.PropertyType;
+        }
+        Type delegateType = typeof(Func<,>).MakeGenericType(typeof(T), type);
+        LambdaExpression lambda = Expression.Lambda(delegateType, expr, arg);
+
+        object result = typeof(Queryable).GetMethods().Single(
+                method => method.Name == methodName
+                        && method.IsGenericMethodDefinition
+                        && method.GetGenericArguments().Length == 2
+                        && method.GetParameters().Length == 2)
+                .MakeGenericMethod(typeof(T), type)
+                .Invoke(null, new object[] { source, lambda });
+        return (IOrderedQueryable<T>)result;
+    }
+    public static string CamelCase(this string str)
+    {
+        if (str.Length == 0)
+        {
+            return "";
+        }
+
+        var s = str.Split(' ');
+        string final = "";
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (s[i] == "")
+            {
+                continue;
+            }
+            var rest = s[i].Remove(0, 1);
+            var x = s[i].ToCharArray();
+            final += x[0].ToString().ToUpper() + rest;
+
+        }
+        return final;
+        //TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
+        //str = cultInfo.ToTitleCase(str);
+        //str = str.Replace(" ", "");
+        //return str;
+        //   return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str).Replace(" ", String.Empty);
+        //var words = str.Split(' ');
+        //var finalString = string.Empty;
+
+        //foreach (var word in words)
+        //{
+        //    finalString += word.Length > 0 ? (word.Substring(0, 1).ToUpper() + word.Substring(1)) : string.Empty;
+        //}
+
+        //return finalString;
+    }
+}
