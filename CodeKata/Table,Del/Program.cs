@@ -28,6 +28,7 @@ namespace Table_Del
 
         static void Main(string[] args)
         {
+            Console.WriteLine(Kajman.ExpandedForm(7302));
             Console.WriteLine(Kajman.FindMissingLetter(new char[] { 'a', 'b', 'c', 'd', 'f' }));
             Console.WriteLine(Kajman.rowSumOddNumbers(42));
             //Console.WriteLine(Kajman.OddOrEven(new int[] { -1023, -1, 3 }));
@@ -129,7 +130,40 @@ namespace Table_Del
 }
 public class Kajman
 {
+    public static string ExpandedForm(long num)
+    {
+        string modifed = "";
+        string s = "";
+        var d = num.ToString();
+        for (int i = 0; i < d.Length; i++)
+        {
+            if (d[i]-'0' > 0)
+            {
+                s += d[i];
+                int zero = d.Length-1 - i;
+                for (int j = 0; j < zero; j++)
+                {
+                    s += "0";
+                }
+                s += " + ";
+            }
+        }
+        
+        //var builder = new StringBuilder();
+        //int index = 0;
+        //foreach (var item in s)
+        //{
+        //    builder.Append(item);
 
+        //        if (item- '0' == 0)
+        //        {
+        //            builder.Append(" + ");
+        //        }
+        //        index++;       
+        //}
+
+        return  s.Substring(0,s.Length-3);
+    }
     public static char FindMissingLetter(char[] array)
     {
         char[] alphabetSmall = "abcdefghijklmnopqrstuvwxyz".ToCharArray();

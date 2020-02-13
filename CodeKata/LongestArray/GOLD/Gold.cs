@@ -7,7 +7,52 @@ namespace LongestArray.GOLD
 {
     public static class Gold
     {
-        public static char FindMissingLetter(char[] array)
+//        Write Number in Expanded Form
+//You will be given a number and you will need to return it as a string in Expanded Form.For example:
+
+//Kata.ExpandedForm(12); # Should return "10 + 2"
+//Kata.ExpandedForm(42); # Should return "40 + 2"
+//Kata.ExpandedForm(70304); # Should return "70000 + 300 + 4"
+//NOTE: All numbers will be whole numbers greater than 0.
+
+//If you liked this kata, check out part 2!!
+        public static string ExpandedForm(long num)
+        {
+            string s = "";
+            var d = num.ToString();
+            for (int i = 0; i < d.Length; i++)
+            {
+                if (d[i] - '0' > 0)
+                {
+                    s += d[i];
+                    int zero = d.Length - 1 - i;
+                    for (int j = 0; j < zero; j++)
+                    {
+                        s += "0";
+                    }
+                    s += " + ";
+                }
+            }
+            return s.Substring(0, s.Length - 3);
+
+            //    var str = num.ToString();
+            //    return String.Join(" + ", str
+            //        .Select((x, i) => char.GetNumericValue(x) * Math.Pow(10, str.Length - i - 1))
+            //        .Where(x => x > 0));
+            //    string numString = num.ToString();
+            //    string blah = "";
+            //    for (int i = 0; i < numString.Length; i++)
+            //    {
+            //        if (numString[i] != '0')
+            //        {
+            //            blah += numString[i];
+            //            blah += new String('0', numString.Length - i - 1);
+            //            blah += " + ";
+            //        }
+            //    }
+            //    return blah.Substring(0, blah.Length - 3);
+            //}
+            public static char FindMissingLetter(char[] array)
         {
             char[] alphabetSmall = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
             char[] alphabetBig = "abcdefghijklmnopqrstuvwxyz".ToUpper().ToCharArray();
@@ -28,15 +73,15 @@ namespace LongestArray.GOLD
                     start = i;
                 }
             }
-            int arrayindex = 0;
+            int arrayIndex = 0;
             for (int i = start; i < alphabet.Length; i++)
             {
 
-                if (alphabet[i] != array[arrayindex])
+                if (alphabet[i] != array[arrayIndex])
                 {
                     return alphabet[i];
                 }
-                arrayindex++;
+                arrayIndex++;
             }
             return ' ';
             //public static char FindMissingLetter(char[] array) => (char)Enumerable.Range(array[0], 25).First(x => !array.Contains((char)x));
