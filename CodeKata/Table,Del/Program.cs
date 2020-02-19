@@ -28,13 +28,18 @@ namespace Table_Del
 
         static void Main(string[] args)
         {
+            Kajman kajman = new Kajman();
+            Console.WriteLine(kajman.wave("this Is a few words"));
+           // Console.WriteLine(Kajman.wave("hello"));
+            Console.WriteLine(Kajman.IsPrime(17));
+            // Console.WriteLine(Kajman.ToUnderScore("This_IsKarolKa20"));
             Console.WriteLine(Kajman.ExpandedForm(7302));
             Console.WriteLine(Kajman.FindMissingLetter(new char[] { 'a', 'b', 'c', 'd', 'f' }));
             Console.WriteLine(Kajman.rowSumOddNumbers(42));
             //Console.WriteLine(Kajman.OddOrEven(new int[] { -1023, -1, 3 }));
             Console.WriteLine(Kajman.Solution("M"));
             Console.WriteLine(Kajman.NameShuffler("Jan Karol"));
-            Console.WriteLine(Kajman.sumStrings("132111111231231231231","9312333333333333333333"));
+            Console.WriteLine(Kajman.sumStrings("132111111231231231231", "9312333333333333333333"));
             //Console.WriteLine(Kajman.GetNumber("1234567898765"));
             //Console.WriteLine(Kajman.GetSum(1,2));
             // Console.WriteLine(Kajman.DigitalRoot(493193));
@@ -130,17 +135,122 @@ namespace Table_Del
 }
 public class Kajman
 {
+
+    public List<string> wave(string str)
+    {
+        List<string> ls = new List<string>();
+        str = str.ToLower();
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (i < str.Length)
+            {
+                if (str[i] == ' ')
+                {
+                    continue;
+                }
+                else
+                {
+                    var xar = str[i].ToString().ToUpper();
+                    var chhar = Convert.ToChar(xar);
+                    StringBuilder ns = new StringBuilder(str);
+                    ns.Remove(i, 1);
+                    ns.Insert(i, chhar);
+                    ls.Add(ns.ToString());
+                }
+            }
+        }
+        
+        return ls;
+    }
+    public static int RentalCarCost(int d)
+    {
+        if (d < 3)
+        {
+            return d * 40;
+        }
+        else if (d < 7)
+        {
+            return d * 40 - 20;
+        }
+        else
+            return d * 40 - 50;
+    }
+    public static int OtherAngle(int a, int b)
+    {
+        return 180 - a - b;
+    }
+    //    Define a function that takes an integer argument and returns logical value true or false depending on if the integer is a prime.
+
+    //Per Wikipedia, a prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+    //Example
+    //is_prime(1)  /* false */
+    //is_prime(2)  /* true  */
+    //is_prime(-1) /* false */
+    public static bool IsPrime(int n)
+    {
+        if (n <= 1) return false;
+        if (n == 2) return true;
+        if (n % 2 == 0) return false;
+
+        var boundary = (int)Math.Floor(Math.Sqrt(n));
+
+        for (int i = 3; i <= boundary; i += 2)
+            if (n % i == 0)
+                return false;
+
+        return true;
+    }
+
+    // 12  , , , , _if exsist do no create
+    //public static string ToUnderScore(string name)
+    //{
+    //    string up = "abcdefghijklmnopqrstuvwxyz01234567890".ToUpper();
+    //    string number = "0123456789";
+    //    string s = "";
+    //    for (int i = 0; i < name.Length; i++)
+    //    {
+    //        if (i > 0)
+    //        {
+
+    //            if (up.Contains(name[i]) & name[i - 1] != '_' 
+
+    //                    //& name[i - 1] != '0'
+    //                    //& name[i - 1] != '1'
+    //                    //& name[i - 1] != '2'
+    //                    //& name[i - 1] != '3'
+    //                    //& name[i - 1] != '4'
+    //                    //& name[i - 1] != '5'
+    //                    //& name[i - 1] != '6'
+    //                    //& name[i - 1] != '7'
+    //                    //& name[i - 1] != '8'
+    //                    //& name[i - 1] != '9'
+
+    //            {
+    //                s += "_" + name[i];
+    //            }
+    //            else
+    //            {
+    //                s += name[i];
+    //            }
+    //        }
+    //        else
+    //            s += name[0];
+    //    }
+
+    //    return s;
+    //}
+    //"ThisIsAUnitTest" => "This_Is_A_Unit_Test"
     public static string ExpandedForm(long num)
     {
-        string modifed = "";
         string s = "";
         var d = num.ToString();
         for (int i = 0; i < d.Length; i++)
         {
-            if (d[i]-'0' > 0)
+            if (d[i] - '0' > 0)
             {
                 s += d[i];
-                int zero = d.Length-1 - i;
+                int zero = d.Length - 1 - i;
                 for (int j = 0; j < zero; j++)
                 {
                     s += "0";
@@ -148,21 +258,24 @@ public class Kajman
                 s += " + ";
             }
         }
-        
-        //var builder = new StringBuilder();
-        //int index = 0;
-        //foreach (var item in s)
-        //{
-        //    builder.Append(item);
-
-        //        if (item- '0' == 0)
+        return s.Substring(0, s.Length - 3);
+        //    var str = num.ToString();
+        //    return String.Join(" + ", str
+        //        .Select((x, i) => char.GetNumericValue(x) * Math.Pow(10, str.Length - i - 1))
+        //        .Where(x => x > 0));
+        //    string numString = num.ToString();
+        //    string blah = "";
+        //    for (int i = 0; i < numString.Length; i++)
+        //    {
+        //        if (numString[i] != '0')
         //        {
-        //            builder.Append(" + ");
+        //            blah += numString[i];
+        //            blah += new String('0', numString.Length - i - 1);
+        //            blah += " + ";
         //        }
-        //        index++;       
+        //    }
+        //    return blah.Substring(0, blah.Length - 3);
         //}
-
-        return  s.Substring(0,s.Length-3);
     }
     public static char FindMissingLetter(char[] array)
     {
@@ -200,8 +313,8 @@ public class Kajman
     }
     public static int BreakChocolate(int n, int m)
     {
-        int mult = n*m;
-        if (mult == 0 || mult ==1)
+        int mult = n * m;
+        if (mult == 0 || mult == 1)
         {
             return 0;
         }
@@ -239,21 +352,21 @@ public class Kajman
     public static string NameShuffler(string str)
     {
         string s = "";
-        var str1= str.Split(' ');
-        for (int i = str1.Length-1; i >= 0; i--)
+        var str1 = str.Split(' ');
+        for (int i = str1.Length - 1; i >= 0; i--)
         {
-            s += str1[i]+" ";
+            s += str1[i] + " ";
         }
         s = s.TrimEnd(' ');
         return s;
-      //  string.Join(" ", str.Split(' ').Reverse());
+        //  string.Join(" ", str.Split(' ').Reverse());
     }
     public static string sumStrings(string a, string b)
     {
         var aa = Convert.ToDecimal(a);
         var bb = Convert.ToDecimal(b);
         decimal sum = aa + bb;
-        return  sum.ToString();
+        return sum.ToString();
     }
     //public static int GetNumber(string str)
     //{
@@ -305,7 +418,7 @@ public class Kajman
     public static int CountDeafRats(string town)
     {
         int count = 0;
-        int x= Kajman.CounDeafRatsLeft(town);
+        int x = Kajman.CounDeafRatsLeft(town);
         int y = Kajman.CounDeafRatsRight(town);
         count = x + y;
         return count;
@@ -314,10 +427,10 @@ public class Kajman
     {
         var Way = town.Split('P');
         var left = Way[0];
-       var leftleft= left.ToString();
+        var leftleft = left.ToString();
         var b = Kajman.RemoveWhitespace(leftleft);
         int count = 0;
-        for (int i = 0; i < b.Length; i+=2)
+        for (int i = 0; i < b.Length; i += 2)
         {
             if (b[i] == 'O')
             {
@@ -325,14 +438,14 @@ public class Kajman
             }
         }
         return count;
-        
+
     }
     public static int CounDeafRatsRight(string town)
     {
         var Way = town.Split('P');
         var right = Way[1];
         var rightright = right.ToString();
-      var b=  Kajman.RemoveWhitespace(rightright);
+        var b = Kajman.RemoveWhitespace(rightright);
         int count = 0;
         for (int i = 0; i < b.Length; i += 2)
         {
@@ -344,7 +457,7 @@ public class Kajman
         return count;
 
     }
-    public static string RemoveWhitespace( string input)
+    public static string RemoveWhitespace(string input)
     {
         return new string(input.ToCharArray()
             .Where(c => !Char.IsWhiteSpace(c))
@@ -356,21 +469,21 @@ public class Kajman
     // return leftCount + rightCount;
     public static int GetAverage(int[] marks) => (int)marks.Average();
 
-    public static int[] Range(int startnum ,int endNum)
+    public static int[] Range(int startnum, int endNum)
     {
         var table = new int[++endNum];
         string s = "";
         int[] table2 = new int[] { };
         for (int i = 0; i < table.Length; i++)
         {
-            table[i] =i;
+            table[i] = i;
             Console.WriteLine(table);
         }
         for (int i = 0; i < table.Length; i++)
         {
             if (table[i] >= startnum & table[i] <= endNum)
             {
-                s += table[i] + " ";   
+                s += table[i] + " ";
             }
         }
         s = s.TrimEnd(' ');
@@ -383,8 +496,8 @@ public class Kajman
     {
         List<int> list = new List<int>();
         Array.Sort(lst);
-       int a= lst.First();
-       int b= lst.Last();
+        int a = lst.First();
+        int b = lst.Last();
         list.Add(a);
         list.Add(b);
         return list.ToArray();
@@ -394,7 +507,8 @@ public class Kajman
         if (seconds == 0)
         {
             return "now";
-        }else if(seconds == 1)
+        }
+        else if (seconds == 1)
         {
             return "1 second";
 
@@ -410,7 +524,7 @@ public class Kajman
         {
             TimeSpan t = TimeSpan.FromSeconds(seconds);
             string formatted = string.Format(CultureInfo.CurrentCulture,
-                    "{0} minutes and {1} seconds",  t.Minutes, t.Seconds);
+                    "{0} minutes and {1} seconds", t.Minutes, t.Seconds);
 
             if (t.Seconds == 0)
             {
@@ -444,7 +558,7 @@ public class Kajman
              t.Hours,
              t.Minutes,
              t.Seconds);
-          return  Kajman.NoPrular(formatted);
+            return Kajman.NoPrular(formatted);
         }
     }
     public static string NoPrular(string formatted)
@@ -467,8 +581,8 @@ public class Kajman
             {
                 b = b + str[++i].Replace("s,", ", ");
             }
-   
-        } 
+
+        }
         b = b.TrimEnd(' ');
         var x = b.Split(' ');
         for (int j = 0; j < x.Length; j++)
@@ -491,9 +605,9 @@ public class Kajman
         s = s.TrimEnd('a');
         var ss = s.Split(' ').ToArray();
         Kajman k = new Kajman();
-        
+
         return k.Arriks(ss);
-       
+
     }
     public string Arriks(string[] x)
     {
@@ -515,7 +629,7 @@ public class Kajman
         {
             if (str[i] == "0")
             {
-                if (str[i-1] == "and")
+                if (str[i - 1] == "and")
                 {
                     bad += str[i - 1];
                 }
@@ -3296,15 +3410,15 @@ public static class Kajmans
     {
         int vowelCount = 0;
 
-        char[] vowel = new char[] { 'a', 'e', 'i', 'o','u'};
+        char[] vowel = new char[] { 'a', 'e', 'i', 'o', 'u' };
         for (int i = 0; i < str.Length; i++)
             for (int j = 0; j < vowel.Length; j++)
-        {
-            if (str[i] == vowel[j])
             {
-                vowelCount++;
+                if (str[i] == vowel[j])
+                {
+                    vowelCount++;
+                }
             }
-        }
         return vowelCount;
     }
     public static string ToAlternatingCase(this string s)
@@ -3312,11 +3426,11 @@ public static class Kajmans
         var low = s.ToLower().ToCharArray();
         var Up = s.ToUpper().ToCharArray();
         string str = "";
-        for (int i = 0 ; i < s.Length; i++)
+        for (int i = 0; i < s.Length; i++)
         {
-            int j=0;
+            int j = 0;
             j++;
-            int k=0;
+            int k = 0;
             k++;
             if (s[i] == low[i])
             {
@@ -3330,8 +3444,8 @@ public static class Kajmans
                 str += s[i];
         }
         return str;
-       // return string.Concat(s.Select(c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
-       // return String.Join("", Input.ToCharArray().Select(character => Char.IsLower(character) ? Char.ToUpper(character) : Char.ToLower(character)));
+        // return string.Concat(s.Select(c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
+        // return String.Join("", Input.ToCharArray().Select(character => Char.IsLower(character) ? Char.ToUpper(character) : Char.ToLower(character)));
     }
     public static string greet()
     {

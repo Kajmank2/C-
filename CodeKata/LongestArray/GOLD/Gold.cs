@@ -7,15 +7,113 @@ namespace LongestArray.GOLD
 {
     public static class Gold
     {
-//        Write Number in Expanded Form
-//You will be given a number and you will need to return it as a string in Expanded Form.For example:
+//        The wave(known as the Mexican wave in the English-speaking world outside North America) is an example of metachronal rhythm achieved in a packed stadium when successive groups of spectators briefly stand, yell, and raise their arms.Immediately upon stretching to full height, the spectator returns to the usual seated position.
+//The result is a wave of standing spectators that travels through the crowd, even though individual spectators never move away from their seats.In many large arenas the crowd is seated in a contiguous circuit all the way around the sport field, and so the wave is able to travel continuously around the arena; in discontiguous seating arrangements, the wave can instead reflect back and forth through the crowd.When the gap in seating is narrow, the wave can sometimes pass through it.Usually only one wave crest will be present at any given time in an arena, although simultaneous, counter-rotating waves have been produced. (Source Wikipedia)
+        public static List<string> wave(string str)
+        {
+            List<string> ls = new List<string>();
+            str = str.ToLower();
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (i < str.Length)
+                {
+                    if (str[i] == ' ')
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        var xar = str[i].ToString().ToUpper();
+                        var chhar = Convert.ToChar(xar);
+                        StringBuilder ns = new StringBuilder(str);
+                        ns.Remove(i, 1);
+                        ns.Insert(i, chhar);
+                        ls.Add(ns.ToString());
+                    }
+                }
+            }
 
-//Kata.ExpandedForm(12); # Should return "10 + 2"
-//Kata.ExpandedForm(42); # Should return "40 + 2"
-//Kata.ExpandedForm(70304); # Should return "70000 + 300 + 4"
-//NOTE: All numbers will be whole numbers greater than 0.
+            return ls;
+        }
 
-//If you liked this kata, check out part 2!!
+        //    Define a function that takes an integer argument and returns logical value true or false depending on if the integer is a prime.
+        //Per Wikipedia, a prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+        //Example
+        //is_prime(1)  /* false */
+        //is_prime(2)  /* true  */
+        //is_prime(-1) /* false */
+        public static bool IsPrime(int n)
+        {
+            if (n <= 1) return false;
+            if (n == 2) return true;
+            if (n % 2 == 0) return false;
+
+            var boundary = (int)Math.Floor(Math.Sqrt(n));
+
+            for (int i = 3; i <= boundary; i += 2)
+                if (n % i == 0)
+                    return false;
+
+            return true;
+        }
+        //        You wrote all your unit test names in camelCase.But some of your colleagues have troubles reading these long test names.So you make a compromise to switch to underscore separation.
+
+        //To make these changes fast you wrote a class to translate a camelCase name into an underscore separated name.
+
+        //Implement the ToUnderscore() method.
+
+        //Example:
+
+        //"ThisIsAUnitTest" => "This_Is_A_Unit_Test"
+        ////        Write Number in Expanded Form
+        /// 
+        public static string ToUnderScore(string name)
+        {
+            string up = "abcdefghijklmnopqrstuvwxyz01234567890".ToUpper();
+            string number = "0123456789";
+            string s = "";
+            for (int i = 0; i < name.Length; i++)
+            {
+                if (i > 0)
+                {
+
+                    if (up.Contains(name[i]) & name[i - 1] != '_')
+    
+                        //& name[i - 1] != '0'
+                        //& name[i - 1] != '1'
+                        //& name[i - 1] != '2'
+                        //& name[i - 1] != '3'
+                        //& name[i - 1] != '4'
+                        //& name[i - 1] != '5'
+                        //& name[i - 1] != '6'
+                        //& name[i - 1] != '7'
+                        //& name[i - 1] != '8'
+                        //& name[i - 1] != '9'
+
+                    {
+                        s += "_" + name[i];
+                    }
+                    else
+                    {
+                        s += name[i];
+                    }
+                }
+                else
+                    s += name[0];
+            }
+
+            return s;
+        }
+
+
+        //You will be given a number and you will need to return it as a string in Expanded Form.For example:
+
+        //Kata.ExpandedForm(12); # Should return "10 + 2"
+        //Kata.ExpandedForm(42); # Should return "40 + 2"
+        //Kata.ExpandedForm(70304); # Should return "70000 + 300 + 4"
+        //NOTE: All numbers will be whole numbers greater than 0.
+
+        //If you liked this kata, check out part 2!!
         public static string ExpandedForm(long num)
         {
             string s = "";
@@ -51,7 +149,7 @@ namespace LongestArray.GOLD
             //        }
             //    }
             //    return blah.Substring(0, blah.Length - 3);
-            //}
+            }
             public static char FindMissingLetter(char[] array)
         {
             char[] alphabetSmall = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
