@@ -28,6 +28,7 @@ namespace Table_Del
 
         static void Main(string[] args)
         {
+            Console.WriteLine(Kajman.StrCount("Hello","o"));
             Kajman kajman = new Kajman();
             Console.WriteLine(kajman.wave("this Is a few words"));
            // Console.WriteLine(Kajman.wave("hello"));
@@ -135,6 +136,19 @@ namespace Table_Del
 }
 public class Kajman
 {
+    public static int StrCount(string str, string letter)
+    {
+        int count = 0;
+        char x = Convert.ToChar(letter);
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (str[i] == x)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
 
     public List<string> wave(string str)
     {
