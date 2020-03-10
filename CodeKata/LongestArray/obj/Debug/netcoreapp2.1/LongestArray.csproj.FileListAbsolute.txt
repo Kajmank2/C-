@@ -4,7 +4,6 @@ C:\Users\Len\Desktop\C##\CodeKata\LongestArray\bin\Debug\netcoreapp2.1\LongestAr
 C:\Users\Len\Desktop\C##\CodeKata\LongestArray\bin\Debug\netcoreapp2.1\LongestArray.dll
 C:\Users\Len\Desktop\C##\CodeKata\LongestArray\bin\Debug\netcoreapp2.1\LongestArray.pdb
 C:\Users\Len\Desktop\C##\CodeKata\LongestArray\obj\Debug\netcoreapp2.1\LongestArray.csprojAssemblyReference.cache
-C:\Users\Len\Desktop\C##\CodeKata\LongestArray\obj\Debug\netcoreapp2.1\LongestArray.csproj.CoreCompileInputs.cache
 C:\Users\Len\Desktop\C##\CodeKata\LongestArray\obj\Debug\netcoreapp2.1\LongestArray.AssemblyInfoInputs.cache
 C:\Users\Len\Desktop\C##\CodeKata\LongestArray\obj\Debug\netcoreapp2.1\LongestArray.AssemblyInfo.cs
 C:\Users\Len\Desktop\C##\CodeKata\LongestArray\obj\Debug\netcoreapp2.1\LongestArray.dll

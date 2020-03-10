@@ -25,13 +25,27 @@ namespace Table_Del
             }
         }
 
-
+        public class Vector3D
+        {
+            private double x;
+            private double y;
+            private double z;
+            public Vector3D(double x, double y, double z)
+            {
+                this.x = x;
+                this.y = y;
+                this.z = z;
+            }
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine(Kajman.StrCount("Hello","o"));
+            Console.WriteLine(Kajman.DigitalRoot(456));
+            Console.WriteLine(Kajman.ReverseSeq(54321));
+            Console.WriteLine(Kajman.AlphabetWar("ztztztzs"));
+            Console.WriteLine(Kajman.StrCount("Hello", "o"));
             Kajman kajman = new Kajman();
             Console.WriteLine(kajman.wave("this Is a few words"));
-           // Console.WriteLine(Kajman.wave("hello"));
+            // Console.WriteLine(Kajman.wave("hello"));
             Console.WriteLine(Kajman.IsPrime(17));
             // Console.WriteLine(Kajman.ToUnderScore("This_IsKarolKa20"));
             Console.WriteLine(Kajman.ExpandedForm(7302));
@@ -136,6 +150,144 @@ namespace Table_Del
 }
 public class Kajman
 {
+    public static int DigitalRoot(long n)
+    {
+        int sum = 0;
+        var v = n.ToString().ToCharArray();
+        for (int i = 0; i < v.Length; i++)
+        {
+            sum += (int)(v[i] - '0');
+        }
+        if (sum > 9)
+            sum = Kajman.Loop(sum);
+        return sum;
+    }
+    public static int Loop(int n)
+    {
+        int sum = 0;
+
+        var vx = n.ToString().ToCharArray();
+        for (int i = 0; i < vx.Length; i++)
+        {
+            sum += (int)(vx[i] - '0');
+        }
+
+        return sum;
+    }
+
+    //public static int DigitalRoot(long n)
+    //{
+    //    return (int)Kajman.Loop(n);
+    //}
+    //public static long Loop(long n)
+    //{
+    //    long sum = 0;
+    //    var b = n.ToString().ToCharArray();
+    //    for (int i = 0; i < b.Length; i++)
+    //    {
+    //        sum= (int)(b[i] - '0');
+    //    }
+
+    //    long sum = 0;
+    //    for (long i = 0; i < longi.Length; i++)
+    //    {
+    //        sum += longi[i];
+    //    }
+    //    return sum;
+    
+    public static int[] ReverseSeq(int n)
+    {
+        int[] tab = new int[n];
+        for (int i = n; i <=0 ; i--)
+        {
+            tab[i] = i;
+        }
+
+        return tab;
+    }
+    public static IEnumerable<T> UniqueInOrder<T>(IEnumerable<T> iterable)
+        {
+            var retList = new List<T>();
+            foreach (var element in iterable) if (!element.Equals(retList.LastOrDefault())) retList.Add(element);
+            return retList;
+        }
+    public static int PositiveSum(int[] arr)
+    {
+        int sum = 0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] > 0)
+            {
+                sum += arr[i];
+            }
+        }
+        return sum;
+        //int sum = 0;
+        //for (int i = 0; i < arr.Length; i++)
+        //{
+        //    if (arr[i] > 0)
+        //    {
+        //        sum += arr[i];
+        //    }
+        //}
+        //return sum;
+    }
+    public static string AlphabetWar(string fight)
+    {
+        int numbleft = 0;
+        int numbright = 0;
+        for (int i = 0; i < fight.Length; i++)
+        {
+            if (fight[i] == 'm' || fight[i] == 'q' || fight[i] == 'd' || fight[i] == 'z' || fight[i] == 'j')
+            {
+                switch (fight[i])
+                {
+                    case 'm':
+                        numbright += 4;
+                        break;
+                    case 'q':
+                        numbright += 3;
+                        break;
+                    case 'd':
+                        numbright += 2;
+                        break;
+                    case 'z':
+                        numbright += 1;
+                        break;
+                    case 'j':
+                        numbright += 0;
+                        break;
+                }
+            }
+            else if (fight[i] == 'w' || fight[i] == 'p' || fight[i] == 'b' || fight[i] == 's' || fight[i] == 't')
+            {
+                switch (fight[i])
+                {
+                    case 'w':
+                        numbleft += 4;
+                        break;
+                    case 'p':
+                        numbleft += 3;
+                        break;
+                    case 'b':
+                        numbleft += 2;
+                        break;
+                    case 's':
+                        numbleft += 1;
+                        break;
+                    case 't':
+                        numbleft += 0;
+                        break;
+                }
+            }
+        }
+        if (numbleft > numbright)
+            return "Left side wins!";
+        else if (numbright > numbleft)
+            return "Right side wins!";
+        else
+            return "Let's fight again!";
+    }
     public static int StrCount(string str, string letter)
     {
         int count = 0;
@@ -173,7 +325,7 @@ public class Kajman
                 }
             }
         }
-        
+
         return ls;
     }
     public static int RentalCarCost(int d)

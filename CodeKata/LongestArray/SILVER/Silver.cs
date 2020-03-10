@@ -7,40 +7,74 @@ namespace LongestArray.SILVER
 {
   public static class Silver
     {
-         //public static string OddOrEven(int[] array)
+        public static int PositiveSum(int[] arr)
+        {
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > 0)
+                {
+                    sum += arr[i];
+                }
+            }
+            return sum;
+            //int sum = 0;
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    if (arr[i] > 0)
+            //    {
+            //        sum += arr[i];
+            //    }
+            //}
+            //return sum;
+        }
+        public static int StrCount(string str, string letter)
+        {
+            int count = 0;
+            char x = Convert.ToChar(letter);
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == x)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        //public static string OddOrEven(int[] array)
     //{
     //    return array.Sum() % 2 == 1 || array.Sum() % 2 == -1 ? "odd" : "even";
     //    return array.Sum() % 2 == 0 ? "even" : "odd";
     //}   public static int GetNumber(string str)
-        {
-            return Enumerable.Range(0, str.Length - 4).Select(i => Convert.ToInt32(str.Substring(i, 5))).ToList().Max();
-        }
-        public static string ToAlternatingCase(this string s)
-        {
-            var low = s.ToLower().ToCharArray();
-            var Up = s.ToUpper().ToCharArray();
-            string str = "";
-            for (int i = 0; i < s.Length; i++)
-            {
-                int j = 0;
-                j++;
-                int k = 0;
-                k++;
-                if (s[i] == low[i])
-                {
-                    str += s[i].ToString().ToUpper();
-                }
-                else if (s[i] == Up[i])
-                {
-                    str += s[i].ToString().ToLower();
-                }
-                else
-                    str += s[i];
-            }
+        //{
+        //    return Enumerable.Range(0, str.Length - 4).Select(i => Convert.ToInt32(str.Substring(i, 5))).ToList().Max();
+        //}
+        //public static string ToAlternatingCase(this string s)
+        //{
+        //    var low = s.ToLower().ToCharArray();
+        //    var Up = s.ToUpper().ToCharArray();
+        //    string str = "";
+        //    for (int i = 0; i < s.Length; i++)
+        //    {
+        //        int j = 0;
+        //        j++;
+        //        int k = 0;
+        //        k++;
+        //        if (s[i] == low[i])
+        //        {
+        //            str += s[i].ToString().ToUpper();
+        //        }
+        //        else if (s[i] == Up[i])
+        //        {
+        //            str += s[i].ToString().ToLower();
+        //        }
+        //        else
+        //            str += s[i];
+        //    }
             //  return str;
             // return string.Concat(s.Select(c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
             // return String.Join("", Input.ToCharArray().Select(character => Char.IsLower(character) ? Char.ToUpper(character) : Char.ToLower(character)));
-        }
+        //}
         ///////////////////////////////////////////////////////////Array sum
         public static double SumArray(double[] array)
         {
