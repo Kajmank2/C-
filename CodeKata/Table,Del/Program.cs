@@ -39,6 +39,9 @@ namespace Table_Del
         }
         static void Main(string[] args)
         {
+            Console.WriteLine(Kajman.fiveStar(1));
+            Console.WriteLine(Kajman.DigitDifferenceSort(new int[] {152,23,7,887,243 }));
+            Console.WriteLine(Kajman.RemoveSmallest(new List<int>{ }));
             Console.WriteLine(Kajman.DigitalRoot(456));
             Console.WriteLine(Kajman.ReverseSeq(54321));
             Console.WriteLine(Kajman.AlphabetWar("ztztztzs"));
@@ -150,6 +153,108 @@ namespace Table_Del
 }
 public class Kajman
 {
+
+    public static string fiveStar(int number)
+    {
+        var x = number.ToString();
+        x.Split().ToArray();
+        string sum = "";
+        if (x.Contains('3') || x.Contains('5'))
+        {
+            for (int i = 0; i < x.Length; i++)
+            {
+                if (x[i] == '5')
+                {
+                    sum += "Star ";
+                }
+                else if (x[i] == '3')
+                {
+                    sum += "Five ";
+                }
+                else
+                    sum += null;
+            }
+        }
+        else
+            return null;
+        sum = sum.TrimEnd(' ');
+
+        return sum;
+    }
+    public static int[] DigitDifferenceSort(int[] a)
+    {
+        List<int> ls = new List<int>();
+
+        // Delte alone number
+        for (int i = 0; i < a.Length; i++)
+        {
+            if (a[i] < 10)
+            {
+                a[i] = 0;
+                ls.Add(a[i]);
+            }
+            else
+            {
+                ls.Add(a[i]);
+            }
+        }
+        return a;
+        //var seq = from x in ls orderby x where x= ls[0,0]
+        //int newNumb;
+        //public int[] DigitDifferenceSort(int[] a)
+        //{
+        //    return a.Reverse().OrderBy(x =>
+        //    {
+        //        string digits = x.ToString();
+        //        return digits.Max() - digits.Min();
+        //    }).ToArray();
+            // True Digit
+        //    List<string> l2 = ls.ConvertAll<string>(delegate (int i) { return i.ToString(); });
+        //List<int> l3 = new List<int>();
+        //foreach (var item in l2)
+        //{
+
+        //    newNumb = item[1] - item[0];
+        //   Console.WriteLine(newNumb);
+        //    l3.Add(newNumb);
+        //}
+        //foreach (var item in l2)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        //// Sort List
+        //l3.Sort();
+        //foreach (var item in l3)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        //return ls.ToArray();
+    }
+
+
+        public static List<int> RemoveSmallest(List<int> numbers)
+    {
+        List<int> aggre = new List<int>(numbers);
+        if (numbers.Count >0)
+        { 
+        int minNumber = numbers.Min();
+        aggre = new List<int>(numbers);
+
+        foreach (var item in numbers)
+        {
+            if (item != minNumber)
+            {
+                aggre.Remove(minNumber);
+                break;
+            }
+        }
+        }
+        return aggre;
+    }
+    public static int FindSmallestInt(int[] args)
+    {
+       return (int)args.Min();
+    }
     public static int DigitalRoot(long n)
     {
         int sum = 0;
