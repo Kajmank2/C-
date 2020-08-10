@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C#Podstawy\KlasyKonstruktory\bin\Debug\KlasyKonstruktory.exe.config
+C:\Users\Len\Desktop\C#Podstawy\KlasyKonstruktory\bin\Debug\KlasyKonstruktory.exe
+C:\Users\Len\Desktop\C#Podstawy\KlasyKonstruktory\bin\Debug\KlasyKonstruktory.pdb
+C:\Users\Len\Desktop\C#Podstawy\KlasyKonstruktory\obj\Debug\KlasyKonstruktory.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C#Podstawy\KlasyKonstruktory\obj\Debug\KlasyKonstruktory.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\KlasyKonstruktory\obj\Debug\KlasyKonstruktory.exe
+C:\Users\Len\Desktop\C#Podstawy\KlasyKonstruktory\obj\Debug\KlasyKonstruktory.pdb

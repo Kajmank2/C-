@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C#Podstawy\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Len\Desktop\C#Podstawy\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Len\Desktop\C#Podstawy\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Len\Desktop\C#Podstawy\ConsoleApp1\obj\Debug\KlasyGetSet.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Len\Desktop\C#Podstawy\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Len\Desktop\C#Podstawy\ConsoleApp1\obj\Debug\KlasyGetSet.csprojAssemblyReference.cache

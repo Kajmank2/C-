@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\Nauka c#\KLASYY\bin\Debug\KLASYY.exe.config
+C:\Users\Len\Desktop\Nauka c#\KLASYY\bin\Debug\KLASYY.exe
+C:\Users\Len\Desktop\Nauka c#\KLASYY\bin\Debug\KLASYY.pdb
+C:\Users\Len\Desktop\Nauka c#\KLASYY\obj\Debug\KLASYY.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\Nauka c#\KLASYY\obj\Debug\KLASYY.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\Nauka c#\KLASYY\obj\Debug\KLASYY.exe
+C:\Users\Len\Desktop\Nauka c#\KLASYY\obj\Debug\KLASYY.pdb
+C:\Users\Len\Desktop\C#Podstawy\KLASYY\obj\Debug\KLASYY.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C#Podstawy\KLASYY\obj\Debug\KLASYY.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\KLASYY\obj\Debug\KLASYY.exe
+C:\Users\Len\Desktop\C#Podstawy\KLASYY\obj\Debug\KLASYY.pdb

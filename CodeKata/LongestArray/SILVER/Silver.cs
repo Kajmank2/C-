@@ -7,6 +7,89 @@ namespace LongestArray.SILVER
 {
   public static class Silver
     {
+        //reverse stringow
+        public static string Reverse(string text)
+        {
+            string newtext = "";
+            var stext = text.Split(' ');
+            for (int i = stext.Length - 1; i >= 0; i--)
+            {
+                newtext += stext[i] + " ";
+            }
+            newtext = newtext.TrimEnd(' ');
+            return newtext;
+            //return String.Join(" ", text.Split(' ').Reverse());
+        }
+        public static string FakeBin(string x)
+        {
+            string s = "";
+            for (int i = 0; i < x.Length; i++)
+            {
+                if ((int)x[i] - '0' >= 5 & (int)x[i] - '0' != 1)
+                {
+                    s += 1;
+                }
+                else
+                {
+                    s += 0;
+                }
+            }
+            return s;
+        }
+        public static long[] Digitize(long n)
+        {
+            var x = n.ToString().ToArray();
+            string z = "";
+            for (int i = x.Length - 1; i >= 0; i--)
+            {
+                z += x[i];
+            }
+            long l = long.Parse(z);
+
+            long[] result = Array.ConvertAll(l.ToString().ToArray(), y => (long)y - 48);
+            if (result == null)
+            {
+                return null;
+            }
+            return result;
+            //public static long[] Digitize(long n)
+            //{
+            //    return n.ToString()
+            //            .Reverse()
+            //            .Select(t => Convert.ToInt64(t.ToString()))
+            //            .ToArray();
+            //}
+        }
+        public static int SquareDigits(int n)
+        {
+            var x = Convert.ToString(n);
+            var xy = x.ToArray();
+            int s = 0;
+            string finish = "";
+            for (int i = 0; i < xy.Length; i++)
+            {
+                int val = (int)Char.GetNumericValue(xy[i]);
+                int pow = val * val;
+                string j = Convert.ToString(pow);
+                finish += j;
+            }
+            s = Convert.ToInt32(finish);
+            return s;
+
+            //string output = "";
+            //foreach (char c in n.ToString())
+            //{
+            //    int square = int.Parse(c.ToString());
+            //    output += (square * square);
+            //}
+            //return int.Parse(output);
+        }
+        public static string Transpose(string noteName, int transposition)
+        {
+            string[] notes = new string[] { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
+            int index = (12 + (Array.IndexOf(notes, noteName) + transposition)) % 12;
+            return notes[index];
+        }
         public static int PositiveSum(int[] arr)
         {
             int sum = 0;

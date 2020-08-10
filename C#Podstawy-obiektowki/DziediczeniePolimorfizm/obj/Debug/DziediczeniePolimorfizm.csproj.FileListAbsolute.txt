@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C#Podstawy\DziediczeniePolimorfizm\bin\Debug\DziediczeniePolimorfizm.exe.config
+C:\Users\Len\Desktop\C#Podstawy\DziediczeniePolimorfizm\bin\Debug\DziediczeniePolimorfizm.exe
+C:\Users\Len\Desktop\C#Podstawy\DziediczeniePolimorfizm\bin\Debug\DziediczeniePolimorfizm.pdb
+C:\Users\Len\Desktop\C#Podstawy\DziediczeniePolimorfizm\obj\Debug\DziediczeniePolimorfizm.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C#Podstawy\DziediczeniePolimorfizm\obj\Debug\DziediczeniePolimorfizm.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\DziediczeniePolimorfizm\obj\Debug\DziediczeniePolimorfizm.exe
+C:\Users\Len\Desktop\C#Podstawy\DziediczeniePolimorfizm\obj\Debug\DziediczeniePolimorfizm.pdb

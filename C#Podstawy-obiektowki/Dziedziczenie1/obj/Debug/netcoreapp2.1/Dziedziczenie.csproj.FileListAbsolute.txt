@@ -1,0 +1,11 @@
+C:\Users\Len\Source\Repos\Dziedziczenie\bin\Debug\netcoreapp2.1\Dziedziczenie.deps.json
+C:\Users\Len\Source\Repos\Dziedziczenie\bin\Debug\netcoreapp2.1\Dziedziczenie.runtimeconfig.json
+C:\Users\Len\Source\Repos\Dziedziczenie\bin\Debug\netcoreapp2.1\Dziedziczenie.runtimeconfig.dev.json
+C:\Users\Len\Source\Repos\Dziedziczenie\bin\Debug\netcoreapp2.1\Dziedziczenie.dll
+C:\Users\Len\Source\Repos\Dziedziczenie\bin\Debug\netcoreapp2.1\Dziedziczenie.pdb
+C:\Users\Len\Source\Repos\Dziedziczenie\obj\Debug\netcoreapp2.1\Dziedziczenie.csprojAssemblyReference.cache
+C:\Users\Len\Source\Repos\Dziedziczenie\obj\Debug\netcoreapp2.1\Dziedziczenie.csproj.CoreCompileInputs.cache
+C:\Users\Len\Source\Repos\Dziedziczenie\obj\Debug\netcoreapp2.1\Dziedziczenie.AssemblyInfoInputs.cache
+C:\Users\Len\Source\Repos\Dziedziczenie\obj\Debug\netcoreapp2.1\Dziedziczenie.AssemblyInfo.cs
+C:\Users\Len\Source\Repos\Dziedziczenie\obj\Debug\netcoreapp2.1\Dziedziczenie.dll
+C:\Users\Len\Source\Repos\Dziedziczenie\obj\Debug\netcoreapp2.1\Dziedziczenie.pdb

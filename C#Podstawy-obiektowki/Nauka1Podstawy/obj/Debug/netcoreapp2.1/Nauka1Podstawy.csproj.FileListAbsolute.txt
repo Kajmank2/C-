@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\bin\Debug\netcoreapp2.1\Nauka1Podstawy.deps.json
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\bin\Debug\netcoreapp2.1\Nauka1Podstawy.runtimeconfig.json
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\bin\Debug\netcoreapp2.1\Nauka1Podstawy.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\bin\Debug\netcoreapp2.1\Nauka1Podstawy.dll
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\bin\Debug\netcoreapp2.1\Nauka1Podstawy.pdb
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\obj\Debug\netcoreapp2.1\Nauka1Podstawy.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\obj\Debug\netcoreapp2.1\Nauka1Podstawy.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\obj\Debug\netcoreapp2.1\Nauka1Podstawy.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\obj\Debug\netcoreapp2.1\Nauka1Podstawy.AssemblyInfo.cs
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\obj\Debug\netcoreapp2.1\Nauka1Podstawy.dll
+C:\Users\Len\Desktop\C#Podstawy\Nauka1Podstawy\obj\Debug\netcoreapp2.1\Nauka1Podstawy.pdb

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -39,25 +40,27 @@ namespace Table_Del
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(Kajman.fiveStar(1));
-            Console.WriteLine(Kajman.DigitDifferenceSort(new int[] {152,23,7,887,243 }));
-            Console.WriteLine(Kajman.RemoveSmallest(new List<int>{ }));
-            Console.WriteLine(Kajman.DigitalRoot(456));
-            Console.WriteLine(Kajman.ReverseSeq(54321));
-            Console.WriteLine(Kajman.AlphabetWar("ztztztzs"));
-            Console.WriteLine(Kajman.StrCount("Hello", "o"));
-            Kajman kajman = new Kajman();
-            Console.WriteLine(kajman.wave("this Is a few words"));
+            //Console.WriteLine(Kajman.FirstNonRepeatingLetter("stress"));
+            // Console.WriteLine(Kajman.Sum(new int[] { }));
+            // Console.WriteLine(Kajman.fiveStar(1));
+            // Console.WriteLine(Kajman.DigitDifferenceSort(new int[] {152,23,7,887,243 }));
+            // Console.WriteLine(Kajman.RemoveSmallest(new List<int>{ }));
+            //  Console.WriteLine(Kajman.DigitalRoot(456));
+            //  Console.WriteLine(Kajman.ReverseSeq(54321));
+            // Console.WriteLine(Kajman.AlphabetWar("ztztztzs"));
+            //  Console.WriteLine(Kajman.StrCount("Hello", "o"));
+            // Kajman kajman = new Kajman();
+            // Console.WriteLine(kajman.wave("this Is a few words"));
             // Console.WriteLine(Kajman.wave("hello"));
-            Console.WriteLine(Kajman.IsPrime(17));
+            //  Console.WriteLine(Kajman.IsPrime(17));
             // Console.WriteLine(Kajman.ToUnderScore("This_IsKarolKa20"));
-            Console.WriteLine(Kajman.ExpandedForm(7302));
-            Console.WriteLine(Kajman.FindMissingLetter(new char[] { 'a', 'b', 'c', 'd', 'f' }));
-            Console.WriteLine(Kajman.rowSumOddNumbers(42));
+            //  Console.WriteLine(Kajman.ExpandedForm(7302));
+            //  Console.WriteLine(Kajman.FindMissingLetter(new char[] { 'a', 'b', 'c', 'd', 'f' }));
+            // Console.WriteLine(Kajman.rowSumOddNumbers(42));
             //Console.WriteLine(Kajman.OddOrEven(new int[] { -1023, -1, 3 }));
-            Console.WriteLine(Kajman.Solution("M"));
-            Console.WriteLine(Kajman.NameShuffler("Jan Karol"));
-            Console.WriteLine(Kajman.sumStrings("132111111231231231231", "9312333333333333333333"));
+
+            // Console.WriteLine(Kajman.NameShuffler("Jan Karol"));
+            // Console.WriteLine(Kajman.sumStrings("132111111231231231231", "9312333333333333333333"));
             //Console.WriteLine(Kajman.GetNumber("1234567898765"));
             //Console.WriteLine(Kajman.GetSum(1,2));
             // Console.WriteLine(Kajman.DigitalRoot(493193));
@@ -67,7 +70,7 @@ namespace Table_Del
             //Console.WriteLine(Kajman.Range(5,10));
             //Console.WriteLine(Kajman.minMax(new int[] { 1, 2, 5, -1, 12, 20 }));
             //Hi Evrybody 
-            // Console.WriteLine(Kajman.formatDuration(132030240));
+            Console.WriteLine(Kajman.formatDuration(132211));
             //string s = Console.ReadLine();
             //Console.WriteLine(Kajmans.CamelCase(s));
             // Console.WriteLine(Kajman.SumArray(new double[] {1,3.0,2,3.5,5 }));
@@ -101,7 +104,6 @@ namespace Table_Del
             // Console.WriteLine(Kajman.PigLatin("Pig latin is cool"));
             // Console.WriteLine(Kajman.Longest("aretheyheresssss", "yestheyarehere"));
             //Console.WriteLine(Kajman.AvgStr("Can you not do that?"));
-            Console.ReadKey();
             // Console.WriteLine(Kajman.PigIt("ASd asd wee"));
             // Console.WriteLine(Kajman.CountPositivesSumNegatives(new int[] {0}));
             // Console.WriteLine(Kajman.PasswordValidator(s));
@@ -147,13 +149,434 @@ namespace Table_Del
             // Console.WriteLine(Digitizer.Digitize(34));
             //Console.WriteLine(Kata.Solution("karol"));
             //Console.WriteLine(Kata.High("TO jest super String wwxq"));
-
+            //Console.WriteLine(Kajman.EncryptThis("Abc dss a wqwq"));
+            //Console.WriteLine(Kajman.Transpose("A",2));
+            //Console.WriteLine(Kajman.Digitize(35231));
+            //Console.WriteLine(Kajman.SquareDigits(9119));
+            //Console.WriteLine(Kajman.Solution("abcAS"));
+            //Console.WriteLine(Kajman.boolean_to_string(true));
+            Console.WriteLine(Kajman.FormatMoney(1));
+            Console.WriteLine(Kajman.Accum("EQuhXoswch"));
+            Console.WriteLine(Kajman.ToCamelCase("sr-sw-adWQ"));
+            Console.WriteLine(Kajman.GetReadableTime(86400));
+            Console.WriteLine(Kajman.WhoIsNext(new string[] { "Sheldon", "Leonard", "Penny", "Rajesh", "Howard" }, 6));
+            Console.WriteLine(Kajman.FakeBin("45385593107843568"));
+            Console.WriteLine(Kajman.ToJadenCase("karol to gosc"));
+            Console.WriteLine(Kajman.Greet("flemish"));
+            Console.WriteLine(Kajman.Reverse("Hi there"));
+     
+            Console.ReadKey();
         }
     }
 }
 public class Kajman
 {
+    public static string Reverse(string text)
+    {
+        string newtext = "";
+       var stext = text.Split(' ');
+        for (int i = stext.Length-1; i >= 0; i--)
+        {
+            newtext += stext[i] + " ";
+        }
+        newtext = newtext.TrimEnd(' ');
+        return newtext;
+        //return String.Join(" ", text.Split(' ').Reverse());
+    }
+    //public static string Problem(String a)
+    //{
+    //    //Double value;
+    //    //return (Double.TryParse(Input, out value)) ? (value * 50 + 6).ToString() : "Error";
+    //    string sum = "";
+    //    int[] ls = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+    //    string num = "01234567890";
+    //    var x = num.ToCharArray();
+    //    for (int i = 0; i < a.Length; i++)
+    //    {
+    //        for (int j = 0; j < x.Length; j++)
+    //        {
 
+    //            if (a[i] == a[j])
+    //            {
+    //                var aa = Convert.ToInt32(a);
+    //                aa = aa * 50 + 6;
+    //                return aa.ToString();
+    //            }
+    //            else
+    //                return "Error";
+    //        }
+    //    }
+            
+    //    return string.Empty;
+    //}
+    public static string Greet(string language)
+        {
+        switch (language)
+        { 
+            case ("english"):
+                return "welcome";
+                break;
+            case ("polish"):
+                return "witamy";
+                break;
+            case ("czech"):
+                return "Vitejte";
+                break;
+            case ("danish"):
+                return "Velkomst";
+                break;
+            case ("dutch"):
+                return "Welkom";
+                break;
+            case ("estonian"):
+                return "Tere tulemast";
+                break;
+            case ("finnish"):
+                return "Tervetuloa";
+                break;
+            case ("flemish"):
+                return "Welgekomen";
+        }
+        return "";
+    }
+  
+
+
+public class Kata
+    {
+        public static int Angle(int n)
+        {
+           return n= (n - 2) * 180;
+        }
+    }
+
+
+    public static string FakeBin(string x)
+    {
+        string s = "";
+        for (int i = 0; i < x.Length; i++)
+        {
+            if ((int)x[i]-'0' >= 5 & (int)x[i] - '0' != 1)
+            {
+                s += 1;
+            }
+            else
+            {
+                s += 0;
+            }
+        }
+        return s;
+    }
+    public static string ToJadenCase( string phrase)
+    {
+        string s = "";
+        var str = phrase.Split(' ').ToArray();
+        for (int i = 0; i < str.Length; i++)
+        {
+            s += str[i][0].ToString().ToUpper() + str[i].Remove(0,1)+ ' ';
+        }
+        s = s.TrimEnd(' ');
+        return s;
+    }
+    public static string WhoIsNext(string[] names, long n)
+    {
+        n++;
+        long numb = n % 5;
+        if (n == 1)
+        {
+            return "Sheldon";
+        }
+        return names[numb];
+    }
+    public static string GetReadableTime(int seconds)
+    {
+        TimeSpan t = TimeSpan.FromSeconds(seconds);
+        if (t.Hours > 24 )
+        {
+
+        }
+        string answer = string.Format("{0:D2}:{1:D2}:{2:D2}",
+                        t.Hours,
+                        t.Minutes,
+                        t.Seconds
+                       );
+        return answer;
+    }
+    public static string FormatMoney(double amount)
+    {
+        return String.Format("${0:#.00}", amount);
+    }
+    static string Repeat(int n , char s)
+    {
+        string str = "";
+        for (int i = 1; i <= n; i++)
+        {
+            str += s.ToString().ToLower(); 
+        }
+        return str;
+    }
+    public static String Accum(string s)
+    {
+        string str = "";
+        for (int i = 0; i < s.Length; i++)
+        {
+
+            str += s[i].ToString().ToUpper()+ Kajman.Repeat(i,s[i])+ '-';
+        }
+        str = str.Remove(str.Length - 1);
+        return str;
+    }
+    public static int StringToNumber(String str)
+    {
+        return Convert.ToInt32(str);
+    }
+
+    public static string ToCamelCase(string str)
+    {
+        if (str.Length == 0)
+        {
+            return str;
+        }
+        var Arr = str.Split('_', '-');
+        string s = "";
+        for (int i = 0; i < Arr.Length; i++)
+        {
+            s += Arr[i][0].ToString().ToUpper() + Arr[i].Remove(0, 1).ToLower();
+        }
+        if (str[0] == s[0])
+        {
+            return s;
+        }
+        var x= s[0].ToString().ToLower() + s.Remove(0,1);
+        return x;
+       
+    }
+    public static string EncryptThis(string input)
+    {
+        string newString = "";
+        string newestString = "";
+        var sx = input.Split(' ');
+        for (int i = 0; i < sx.Length; i++)
+        {
+            if (sx[i].Length > 2)
+            {
+                newString += (int)Convert.ToChar(sx[i][0]);
+                char temporary = sx[i][1];
+                newString += sx[i].Remove(0, 1).Replace(sx[i][1], sx[i][sx[i].Length - 1]);
+                Console.WriteLine(newString);
+                newestString += newString.Remove(newString.Length - 1) + temporary + ' ';
+            }
+            else
+            {
+                newestString += (int)Convert.ToChar(sx[i][0]);
+                newestString += sx[i].Remove(0, 1) + ' ';
+            }
+        }
+        var x = newestString.Remove(newestString.Length - 1);
+        return x;
+    }
+    public static string boolean_to_string(bool b)
+    {
+        return b.ToString();
+    }
+    public static string[] Solution(string str)
+    {
+        string ss = "";
+        if (str.Length % 2 == 1)
+        {
+            str += '_';
+        }
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                ss += str[i];
+            }
+            else
+                ss += str[i] + " ";
+        }
+
+        ss = ss.TrimEnd(' ');
+        var table = ss.Split(' ').ToArray();
+        return table;
+    }
+    public static int Persistence(long n)
+    {
+        var sx = n.ToString();
+        if (sx.Length < 1)
+        {
+            return 0;
+        }
+        int mult = 1;
+        var splitStr = n.ToString().Split(' ');
+        for (int i = 0; i < splitStr.Length; i++)
+        {
+            mult *= int.Parse(splitStr[i]);
+        }
+        return 1 + Persistence(mult);
+        //var sx = n.ToString();
+        //int finish = 0;
+
+        //if (n<9)
+        //{
+        //    return 0;
+        //}
+        //else
+        //{
+        //  finish += Kajman.Forek(sx);
+        //  Console.WriteLine("FINISH {0}", finish);
+        //}
+        //return finish;
+    }
+    public static int Forek(string x)
+    {
+        string se = "";
+        int count = 0;
+        int pow = 0;
+        if (x.Length > 1)
+        {
+            for (int i = 0; i < x.Length; i++)
+            {
+                int val = (int)Char.GetNumericValue(x[i]);
+                int val2 = (int)Char.GetNumericValue(x[++i]);
+                pow = val * val2;
+                Console.WriteLine(pow);
+                if (pow > 9)
+                {
+                    ++count;
+                    Console.WriteLine("KOUNT Z LICZBA POWYZEJ 2 CYFER {0}", count);
+                }
+                else
+                {
+                    Console.WriteLine("KOUNT Z LICZBA PONIZEJ 2 Cyfer{0}", count);
+                    return count;
+                }
+            }
+        }
+        return count;
+    }
+    public static int SquareDigits(int n)
+    {
+        var x = Convert.ToString(n);
+        var xy = x.ToArray();
+        int s = 0;
+        string finish = "";
+        for (int i = 0; i < xy.Length; i++)
+        {
+            int val = (int)Char.GetNumericValue(xy[i]);
+            int pow = val * val;
+            string j = Convert.ToString(pow);
+            finish += j;
+        }
+        s = Convert.ToInt32(finish);
+        return s;
+    }
+    //persistence(39) == 3 // because 3*9 = 27, 2*7 = 14, 1*4=4
+    //                  // and 4 has only one digit
+    public static long[] Digitize(long n)
+    {
+        var x = n.ToString().ToArray();
+        string z = "";
+        for (int i = x.Length - 1; i >= 0; i--)
+        {
+            z += x[i];
+        }
+        long l = long.Parse(z);
+
+        long[] result = Array.ConvertAll(l.ToString().ToArray(), y => (long)y - 48);
+        if (result == null)
+        {
+            return null;
+        }
+        return result;
+        //public static long[] Digitize(long n)
+        //{
+        //    return n.ToString()
+        //            .Reverse()
+        //            .Select(t => Convert.ToInt64(t.ToString()))
+        //            .ToArray();
+        //}
+    }
+    public static string Transpose(string noteName, int transposition)
+    {
+        List<string> sl = new List<string>();
+        sl.Add("C");
+        sl.Add("C#");
+        sl.Add("D");
+        sl.Add("D#");
+        sl.Add("E");
+        sl.Add("F");
+        sl.Add("F#");
+        sl.Add("G");
+        sl.Add("G#");
+        sl.Add("A");
+        sl.Add("A#");
+        sl.Add("B");
+        sl.Add("C");
+        string x = "";
+        string y = "";
+        for (int i = 0; i < sl.Count(); i++)
+        {
+            if (noteName == sl[i])
+            {
+                x = sl[i];
+            }
+        }
+        if (transposition == 0 || transposition == 12)
+        {
+            return x;
+        }
+        else
+        {
+            if (sl.Contains(x))
+            {
+                foreach (var item in sl)
+                {
+                    y = (item + transposition);
+                }
+            }
+        }
+        Console.WriteLine(y);
+        return x;
+    }
+
+    public static string FirstNonRepeatingLetter(string s)
+    {
+        //stress => return s ;
+        var x = s.ToArray();
+        string str = "";
+        for (int i = 0; i < x.Length; i++)
+        {
+            for (int j = 1; j < x.Length; j++)
+            {
+                if (s[i] == x[j])
+                {
+                    str += s[i];
+                }
+            }
+        }
+        return str;
+    }
+    public static int Sum(int[] numbers)
+    {
+        int sum = 0;
+        if (numbers.Length < 2 || numbers == null)
+        {
+            return 0;
+        }
+        else
+        {
+            int lastindex = 0;
+            Array.Sort(numbers);
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                lastindex = i;
+            }
+            sum = numbers.Sum() - numbers.ElementAt(lastindex) - numbers.ElementAt(0);
+        }
+        return sum;
+
+    }
     public static string fiveStar(int number)
     {
         var x = number.ToString();
@@ -208,7 +631,7 @@ public class Kajman
         //        string digits = x.ToString();
         //        return digits.Max() - digits.Min();
         //    }).ToArray();
-            // True Digit
+        // True Digit
         //    List<string> l2 = ls.ConvertAll<string>(delegate (int i) { return i.ToString(); });
         //List<int> l3 = new List<int>();
         //foreach (var item in l2)
@@ -232,28 +655,28 @@ public class Kajman
     }
 
 
-        public static List<int> RemoveSmallest(List<int> numbers)
+    public static List<int> RemoveSmallest(List<int> numbers)
     {
         List<int> aggre = new List<int>(numbers);
-        if (numbers.Count >0)
-        { 
-        int minNumber = numbers.Min();
-        aggre = new List<int>(numbers);
-
-        foreach (var item in numbers)
+        if (numbers.Count > 0)
         {
-            if (item != minNumber)
+            int minNumber = numbers.Min();
+            aggre = new List<int>(numbers);
+
+            foreach (var item in numbers)
             {
-                aggre.Remove(minNumber);
-                break;
+                if (item != minNumber)
+                {
+                    aggre.Remove(minNumber);
+                    break;
+                }
             }
-        }
         }
         return aggre;
     }
     public static int FindSmallestInt(int[] args)
     {
-       return (int)args.Min();
+        return (int)args.Min();
     }
     public static int DigitalRoot(long n)
     {
@@ -299,11 +722,11 @@ public class Kajman
     //        sum += longi[i];
     //    }
     //    return sum;
-    
+
     public static int[] ReverseSeq(int n)
     {
         int[] tab = new int[n];
-        for (int i = n; i <=0 ; i--)
+        for (int i = n; i <= 0; i--)
         {
             tab[i] = i;
         }
@@ -311,11 +734,11 @@ public class Kajman
         return tab;
     }
     public static IEnumerable<T> UniqueInOrder<T>(IEnumerable<T> iterable)
-        {
-            var retList = new List<T>();
-            foreach (var element in iterable) if (!element.Equals(retList.LastOrDefault())) retList.Add(element);
-            return retList;
-        }
+    {
+        var retList = new List<T>();
+        foreach (var element in iterable) if (!element.Equals(retList.LastOrDefault())) retList.Add(element);
+        return retList;
+    }
     public static int PositiveSum(int[] arr)
     {
         int sum = 0;
@@ -593,33 +1016,33 @@ public class Kajman
         {
             return mult - 1;
         }
-        return mult;
+
     }
     public static long rowSumOddNumbers(long n)
     {
         return (long)Math.Pow(n, 3);
     }
-    public static string[] Solution(string str)
-    {
-        string ss = "";
-        for (int i = 0; i < str.Length; i++)
-        {
-            if (i % 2 == 0)
-            {
-                ss += str[i];
-            }
-            else
-                ss += str[i] + " ";
-        }
-        if (ss.Length % 2 != 0)
-        {
-            ss += "_";
-        }
-        Console.WriteLine(ss);
-        ss = ss.TrimEnd(' ');
-        var table = ss.Split(' ').ToArray();
-        return table;
-    }
+    //public static string[] Solution(string str)
+    //{
+    //    string ss = "";
+    //    for (int i = 0; i < str.Length; i++)
+    //    {
+    //        if (i % 2 == 0)
+    //        {
+    //            ss += str[i];
+    //        }
+    //        else
+    //            ss += str[i] + " ";
+    //    }
+    //    if (ss.Length % 2 != 0)
+    //    {
+    //        ss += "_";
+    //    }
+    //    Console.WriteLine(ss);
+    //    ss = ss.TrimEnd(' ');
+    //    var table = ss.Split(' ').ToArray();
+    //    return table;
+    //}
     public static string NameShuffler(string str)
     {
         string s = "";
@@ -841,7 +1264,6 @@ public class Kajman
         for (int i = 0; i < str.Length; i++)
         {
             // FOR PLURAR 
-            string bad = "";
             b += str[i] + " ";
             if (str.Length <= 2 & str[i] == "seconds")
             {
@@ -856,19 +1278,19 @@ public class Kajman
         }
         b = b.TrimEnd(' ');
         var x = b.Split(' ');
-        for (int j = 0; j < x.Length; j++)
-        {
-            if (x[j] == "0")
-            {
-                if (x[j - 1] == "and")
-                {
-                    cb += x[j - 1];
-                }
-                cb += x[j] + x[j++];
-            }
-            else
-                s += str[j] + " ";
-        }
+        //for (int j = 0; j < x.Length; j++)
+        //{
+        //    if (x[j] == "0")
+        //    {
+        //        if (x[j - 1] == "and")
+        //        {
+        //            cb += x[j - 1];
+        //        }
+        //        cb += x[j] + x[j++];
+        //    }
+        //    else
+        //        s += str[j] + " ";
+        //}
 
         s = s.TrimEnd(' ');
         s = s.TrimEnd('d');
@@ -883,11 +1305,11 @@ public class Kajman
     public string Arriks(string[] x)
     {
         string xx = "";
-        if (x[x.Length - 2] == "and")
-        {
-            x[x.Length - 2].Insert(x.Length - 3, "and");
-        }
-        else
+        //if (x[x.Length - 2] == "and")
+        //{
+        //    x[x.Length - 2].Insert(x.Length - 3, "and");
+        //}
+        //else
             return x.ToString();
         return xx;
     }

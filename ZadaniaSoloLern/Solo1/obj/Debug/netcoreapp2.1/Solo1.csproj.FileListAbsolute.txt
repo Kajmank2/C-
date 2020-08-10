@@ -1,0 +1,11 @@
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\bin\Debug\netcoreapp2.1\Solo1.deps.json
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\bin\Debug\netcoreapp2.1\Solo1.runtimeconfig.json
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\bin\Debug\netcoreapp2.1\Solo1.runtimeconfig.dev.json
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\bin\Debug\netcoreapp2.1\Solo1.dll
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\bin\Debug\netcoreapp2.1\Solo1.pdb
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\obj\Debug\netcoreapp2.1\Solo1.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\obj\Debug\netcoreapp2.1\Solo1.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\obj\Debug\netcoreapp2.1\Solo1.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\obj\Debug\netcoreapp2.1\Solo1.AssemblyInfo.cs
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\obj\Debug\netcoreapp2.1\Solo1.dll
+C:\Users\Len\Desktop\ZadaniaSoloLern\Solo1\obj\Debug\netcoreapp2.1\Solo1.pdb

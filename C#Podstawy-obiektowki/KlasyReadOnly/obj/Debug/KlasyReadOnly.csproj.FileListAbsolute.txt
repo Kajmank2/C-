@@ -1,0 +1,7 @@
+C:\Users\Len\Desktop\C#Podstawy\KlasyReadOnly\bin\Debug\KlasyReadOnly.exe.config
+C:\Users\Len\Desktop\C#Podstawy\KlasyReadOnly\bin\Debug\KlasyReadOnly.exe
+C:\Users\Len\Desktop\C#Podstawy\KlasyReadOnly\bin\Debug\KlasyReadOnly.pdb
+C:\Users\Len\Desktop\C#Podstawy\KlasyReadOnly\obj\Debug\KlasyReadOnly.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C#Podstawy\KlasyReadOnly\obj\Debug\KlasyReadOnly.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\KlasyReadOnly\obj\Debug\KlasyReadOnly.exe
+C:\Users\Len\Desktop\C#Podstawy\KlasyReadOnly\obj\Debug\KlasyReadOnly.pdb

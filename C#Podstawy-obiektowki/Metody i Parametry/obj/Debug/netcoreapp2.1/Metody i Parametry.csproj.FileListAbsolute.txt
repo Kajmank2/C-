@@ -1,0 +1,22 @@
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.deps.json
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.runtimeconfig.json
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.runtimeconfig.dev.json
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.dll
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.pdb
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.AssemblyInfo.cs
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.dll
+C:\Users\Len\Desktop\Nauka c#\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.pdb
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.deps.json
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.runtimeconfig.json
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.runtimeconfig.dev.json
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.dll
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\bin\Debug\netcoreapp2.1\Metody i Parametry.pdb
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.csprojAssemblyReference.cache
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.csproj.CoreCompileInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.AssemblyInfoInputs.cache
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.AssemblyInfo.cs
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.dll
+C:\Users\Len\Desktop\C#Podstawy\Metody i Parametry\obj\Debug\netcoreapp2.1\Metody i Parametry.pdb
